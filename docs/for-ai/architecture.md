@@ -338,52 +338,22 @@ Technical documentation for developers
 
 ## Development Workflow
 
-### Branch Strategy
+**For complete development environment strategy, see:** [docs/development/ENVIRONMENTS.md](../development/ENVIRONMENTS.md)
 
-**Three permanent branches:**
+**For quick developer onboarding, see:** [docs/development/QUICKSTART.md](../development/QUICKSTART.md)
 
-- **`main`** - Production environment (mx-thegathering.ai)
-- **`staging`** - Pre-production testing (staging.mx-thegathering.ai)
-- **`dev`** - Active development (dev.mx-thegathering.ai)
+### Development Quick Reference
 
-**Feature branches:**
+**Branch strategy:** `feature/* → dev → staging → main (production)`
 
-- Pattern: `feature/descriptive-name`
-- Created from: `dev` branch
-- Merged to: `dev` branch
-- Automatic preview deployments on Cloudflare Pages
+**Environment mapping:**
 
-**Workflow:**
+- Production: `main` branch → mx-thegathering.ai
+- Staging: `staging` branch → staging.mx-thegathering.ai
+- Development: `dev` branch → dev.mx-thegathering.ai
+- Preview: `feature/*` branches → Auto-generated URLs
 
-```text
-feature/xyz → dev → staging → main (production)
-     ↓         ↓       ↓         ↓
-  preview    dev.    staging.   mx-thegathering.ai
-   deploy   domain    domain
-```
-
-### CI/CD Automation
-
-**GitHub Actions workflows:**
-
-1. **PR Checks** (`.github/workflows/pr-checks.yml`):
-   - HTML validation (html-validate)
-   - Broken link checking
-   - Accessibility audits (Pa11y)
-   - Performance testing (Lighthouse)
-
-2. **Deployment Notifications** (`.github/workflows/deployment-notify.yml`):
-   - Triggers on push to main/staging/dev
-   - Creates deployment summary in Actions
-
-### Deployment Targets
-
-| Environment | Branch | Domain | Auto-Deploy | Purpose |
-| --- | --- | --- | --- | --- |
-| Production | `main` | mx-thegathering.ai | Yes | Live site |
-| Staging | `staging` | staging.mx-thegathering.ai | Yes | QA testing |
-| Development | `dev` | dev.mx-thegathering.ai | Yes | Development |
-| Preview | `feature/*` | Auto-generated URL | Yes | Feature testing |
+**Automated testing:** All PRs trigger HTML validation, link checking, accessibility audits, and performance testing via GitHub Actions.
 
 ## AI Assistant Guidance
 
@@ -474,40 +444,22 @@ When working with this repository, AI assistants should read in this order:
 
 ## Domain and Hosting Architecture
 
-### Domain Portfolio (5 domains)
+**For complete domain portfolio strategy, see:** [docs/domains/DOMAIN-STRATEGY.md](../domains/DOMAIN-STRATEGY.md)
 
-**Primary domain:**
+**For DNS, Cloudflare, and hosting configuration, see:** [docs/domains/HOSTING-SETUP.md](../domains/HOSTING-SETUP.md)
 
-- `mx-thegathering.ai` - Main community hub (£239.98/year, 2-year term)
+**For deployment checklist, see:** [TODO.txt](../../TODO.txt)
 
-**Secondary domains:**
+### Domain Quick Reference
 
-- `mx-thegathering.net` - Technical documentation (£19.97/year)
-- `mx-thegathering.info` - Educational resources (£32.99/year)
-- `mx-thegathering.store` - Commerce and premium content (£74.97/year)
-- `mx-thegathering.xyz` - Experimental features (£17.73/year)
+**5 purchased domains:**
 
-**Redirect strategy options:**
+- Primary: `mx-thegathering.ai`
+- Secondary: `mx-thegathering.net`, `.info`, `.store`, `.xyz`
 
-1. **All → Primary** (simplest): All secondary domains redirect to .ai
-2. **Subdirectory mapping** (recommended): .net → .ai/docs, .info → .ai/learn, etc.
-3. **Independent sites** (maximum flexibility): Each domain hosts separate content
+**Hosting platform:** Cloudflare Pages with branch-based deployments
 
-**Current implementation:** Awaiting Cloudflare configuration (see [TODO.txt](../../TODO.txt))
-
-### Hosting Strategy
-
-**Platform:** Cloudflare Pages (primary) + GitHub Pages (backup)
-
-**Advantages:**
-
-- Automatic deployments from GitHub
-- Global CDN distribution
-- Free SSL/TLS certificates
-- Branch-based preview deployments
-- Zero server management
-
-**Configuration status:** Infrastructure documented, Cloudflare connection pending
+**Configuration status:** Infrastructure documented, Cloudflare connection pending (see TODO.txt)
 
 ## File Metadata Standards
 
