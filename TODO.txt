@@ -301,5 +301,19 @@ After completing steps 1-3 above, verify:
 - **Preview deployments:** Every feature branch gets automatic preview URL
 - **No build process:** Plain HTML/CSS/JS deploys directly
 
+---
+
+### AI Assistant Side Notice (24/Jan/2026)
+
+During HTML validation work comparing web pages against Appendix D (AI-Friendly HTML Guide), discovered three patterns implemented in index.html and about.html that were not yet documented in Appendix D:
+
+1. **Heading anchor IDs for deep linking** - H2-H6 elements with id attributes derived from heading text (e.g., `<h2 id="what-is-machine-experience">`)
+2. **External CSS separation** - Inline styles extracted to shared-gathering.css for better caching and maintainability
+3. **Social media card meta tags with accessibility** - twitter:image:alt attributes providing alt text for social media preview images
+
+These patterns are production-ready in the MX-Gathering web pages and should be documented in Appendix D for future reference. Implementation complete; documentation pending.
+
+---
+
 **Last Updated:** 24 January 2026
 **Status:** Ready for Cloudflare configuration
