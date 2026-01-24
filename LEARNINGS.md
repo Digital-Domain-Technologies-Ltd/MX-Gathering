@@ -37,6 +37,8 @@ Critical insights for AI assistants working on this project. Focus: actionable g
 
 **YAML Frontmatter Mandate** (2026-01-24): MX-Gathering requires ALL markdown files to include YAML frontmatter metadata. This was established from the start to ensure machine-readable metadata for AI agent discovery. When creating or editing any .md file, always include minimum required fields: `author`, `date`, `description`, `purpose`, `keywords`. This applies workspace-wide per main repo CLAUDE.md, but is especially critical for MX-Gathering as a public, AI-agent-discoverable repository.
 
+**Context-Free References (Anti-pattern 14)** (2026-01-24): Relative links lose all context when files are extracted, downloaded, printed to PDF, or fed to AI agents outside repository structure. Always use the pattern: `[file](relative-path) ("Document Title" at <absolute-url>)`. This preserves IDE navigation for humans whilst providing machine-readable context. Example: `[README.md](../../README.md) ("MX-Gathering: Community Resources and Thought Leadership" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/README.md>)`. Internal section anchors (like `#contents`) within the same document can remain relative as they maintain context even when extracted.
+
 ---
 
 ## How to Use This File

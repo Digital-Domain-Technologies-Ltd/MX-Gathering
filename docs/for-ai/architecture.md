@@ -17,7 +17,7 @@ This document explains the MX-Gathering repository structure, organization princ
 
 MX-Gathering is a **public, open-source community repository** for Machine Experience (MX) patterns.
 
-**For complete overview, see:** [README.md](../../README.md)
+**For complete overview, see:** [README.md](../../README.md) ("MX-Gathering: Community Resources and Thought Leadership" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/README.md>)
 
 **Key purposes:**
 
@@ -48,7 +48,7 @@ MX-Gathering is part of the broader MX ecosystem:
 
 ## Repository Structure
 
-**For high-level contents overview, see:** [README.md - Contents](../../README.md#contents)
+**For high-level contents overview, see:** [README.md - Contents](../../README.md#contents) ("MX-Gathering: Community Resources and Thought Leadership" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/README.md#contents>)
 
 **Detailed file structure for AI assistants:**
 
@@ -339,9 +339,9 @@ Technical documentation for developers
 
 ## Development Workflow
 
-**For complete development environment strategy, see:** [docs/development/ENVIRONMENTS.md](../development/ENVIRONMENTS.md)
+**For complete development environment strategy, see:** [docs/development/ENVIRONMENTS.md](../development/ENVIRONMENTS.md) ("MX-Gathering Development Environments" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/development/ENVIRONMENTS.md>)
 
-**For quick developer onboarding, see:** [docs/development/QUICKSTART.md](../development/QUICKSTART.md)
+**For quick developer onboarding, see:** [docs/development/QUICKSTART.md](../development/QUICKSTART.md) ("Developer Quick Start Guide" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/development/QUICKSTART.md>)
 
 ### Development Quick Reference
 
@@ -437,19 +437,19 @@ All markdown files require YAML frontmatter. When creating or editing markdown:
 
 When working with this repository, AI assistants should read in this order:
 
-1. **[README.md](../../README.md)** - Repository overview and purpose
-2. **[CLAUDE.md](../../CLAUDE.md)** - AI assistant guidance and writing standards
-3. **[docs/for-ai/architecture.md](architecture.md)** - This file (structure and patterns)
-4. **[llms.txt](../../llms.txt)** - AI discovery metadata
+1. **[README.md](../../README.md)** ("MX-Gathering: Community Resources and Thought Leadership" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/README.md>) - Repository overview and purpose
+2. **[CLAUDE.md](../../CLAUDE.md)** ("AI Assistant Guidance" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/CLAUDE.md>) - AI assistant guidance and writing standards
+3. **[docs/for-ai/architecture.md](architecture.md)** ("MX-Gathering Repository Architecture" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/for-ai/architecture.md>) - This file (structure and patterns)
+4. **[llms.txt](../../llms.txt)** ("MX-Gathering: Community Resources and Thought Leadership" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/llms.txt>) - AI discovery metadata
 5. Relevant subdirectory README.md for specific work area
 
 ## Domain and Hosting Architecture
 
-**For complete domain portfolio strategy, see:** [docs/domains/DOMAIN-STRATEGY.md](../domains/DOMAIN-STRATEGY.md)
+**For complete domain portfolio strategy, see:** [docs/domains/DOMAIN-STRATEGY.md](../domains/DOMAIN-STRATEGY.md) ("MX-Gathering Domain Strategy" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/domains/DOMAIN-STRATEGY.md>)
 
-**For DNS, Cloudflare, and hosting configuration, see:** [docs/domains/HOSTING-SETUP.md](../domains/HOSTING-SETUP.md)
+**For DNS, Cloudflare, and hosting configuration, see:** [docs/domains/HOSTING-SETUP.md](../domains/HOSTING-SETUP.md) ("MX-Gathering Hosting and DNS Setup Guide" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/domains/HOSTING-SETUP.md>)
 
-**For deployment checklist, see:** [TODO.txt](../../TODO.txt)
+**For deployment checklist, see:** [TODO.txt](../../TODO.txt) ("MX-Gathering: Next Steps and Deployment Tasks" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/TODO.txt>)
 
 ### Domain Quick Reference
 
@@ -535,17 +535,17 @@ These references are informational only - MX-Gathering is self-contained.
 
 ## Contribution Workflow
 
-**For complete contribution guidelines, see:** [contributors/contribution-guidelines.md](../../contributors/contribution-guidelines.md)
+**For complete contribution guidelines, see:** [contributors/contribution-guidelines.md](../../contributors/contribution-guidelines.md) ("Contribution Guidelines" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/contribution-guidelines.md>)
 
-**For code of conduct, see:** [contributors/code-of-conduct.md](../../contributors/code-of-conduct.md)
+**For code of conduct, see:** [contributors/code-of-conduct.md](../../contributors/code-of-conduct.md) ("Code of Conduct" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/code-of-conduct.md>)
 
-**For writing style guide, see:** [contributors/style-guide-summary.md](../../contributors/style-guide-summary.md)
+**For writing style guide, see:** [contributors/style-guide-summary.md](../../contributors/style-guide-summary.md) ("Style Guide Summary" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/style-guide-summary.md>)
 
 ### Quick Reference for AI Assistants
 
 **Essential workflow:**
 
-1. Read [CLAUDE.md](../../CLAUDE.md) for writing style and YAML frontmatter requirements
+1. Read [CLAUDE.md](../../CLAUDE.md) ("AI Assistant Guidance" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/CLAUDE.md>) for writing style and YAML frontmatter requirements
 2. Check existing templates in relevant directory
 3. Follow branch strategy: feature/* → dev → staging → main
 4. All markdown files MUST include YAML frontmatter
@@ -558,7 +558,7 @@ These references are informational only - MX-Gathering is self-contained.
 
 ## Contact and Maintainership
 
-**For contact information and license details, see:** [README.md](../../README.md)
+**For contact information and license details, see:** [README.md](../../README.md) ("MX-Gathering: Community Resources and Thought Leadership" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/README.md>)
 
 **Repository:** <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering>
 
@@ -566,4 +566,4 @@ These references are informational only - MX-Gathering is self-contained.
 
 **Last Updated:** 24 January 2026
 
-**For AI Assistants:** This architecture document provides the foundation for working with MX-Gathering. Read [CLAUDE.md](../../CLAUDE.md) for writing style guidance and [llms.txt](../../llms.txt) for project context before making changes.
+**For AI Assistants:** This architecture document provides the foundation for working with MX-Gathering. Read [CLAUDE.md](../../CLAUDE.md) ("AI Assistant Guidance" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/CLAUDE.md>) for writing style guidance and [llms.txt](../../llms.txt) ("MX-Gathering: Community Resources and Thought Leadership" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/llms.txt>) for project context before making changes.
