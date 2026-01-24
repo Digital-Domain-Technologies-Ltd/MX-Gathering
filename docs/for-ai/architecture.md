@@ -47,6 +47,10 @@ MX-Gathering is part of the broader MX ecosystem:
 
 ## Repository Structure
 
+**For high-level contents overview, see:** [README.md - Contents](../../README.md#contents)
+
+**Detailed file structure for AI assistants:**
+
 ```text
 MX-Gathering/
 ├── README.md                          # Repository overview (standalone-friendly)
