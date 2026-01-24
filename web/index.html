@@ -370,31 +370,44 @@
         </div>
     </header>
 
-    <main id="main-content">
-        <section class="hero">
+    <main id="main-content" data-page-type="home" data-content-category="landing-page">
+        <section class="hero" data-section="hero" data-cta-count="2">
             <h1>MX-Gathering</h1>
             <p class="hero-description">
                 Open-source community resources for Machine Experience patterns, AI agent interactions, and convergence principles.
             </p>
             <div class="cta-buttons">
-                <a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering" class="btn btn-primary">
+                <a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering"
+                   class="btn btn-primary"
+                   data-action="view-repository"
+                   data-external-link="true">
                     View on GitHub
                 </a>
-                <a href="#resources" class="btn btn-secondary">
+                <a href="#resources"
+                   class="btn btn-secondary"
+                   data-action="explore-resources"
+                   data-internal-link="true">
                     Explore Resources
                 </a>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" data-section="what-is-mx" data-content-type="introduction">
             <h2>What is Machine Experience?</h2>
-            <p>
+            <p data-concept="convergence-principle">
                 Machine Experience (MX) examines how AI agents interact with digital interfaces and proposes design patterns that benefit both automated systems and human users through the <strong>Convergence Principle</strong> - interfaces optimised for AI agents inherently improve accessibility and usability for everyone.
             </p>
         </section>
 
-        <section id="resources" class="features" aria-label="Community resources">
-            <article class="feature-card">
+        <section id="resources"
+                 class="features"
+                 aria-label="Community resources"
+                 data-section="resources"
+                 data-feature-count="4"
+                 data-content-type="feature-cards">
+            <article class="feature-card"
+                     data-feature-id="event-resources"
+                     data-feature-category="templates">
                 <div class="feature-icon" aria-hidden="true">📅</div>
                 <h2>Event Resources</h2>
                 <p class="feature-description">
@@ -402,7 +415,9 @@
                 </p>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card"
+                     data-feature-id="discussion-archives"
+                     data-feature-category="community">
                 <div class="feature-icon" aria-hidden="true">💬</div>
                 <h2>Discussion Archives</h2>
                 <p class="feature-description">
@@ -410,7 +425,9 @@
                 </p>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card"
+                     data-feature-id="contributor-guidelines"
+                     data-feature-category="community">
                 <div class="feature-icon" aria-hidden="true">🤝</div>
                 <h2>Contributor Guidelines</h2>
                 <p class="feature-description">
@@ -418,7 +435,9 @@
                 </p>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card"
+                     data-feature-id="member-resources"
+                     data-feature-category="documentation">
                 <div class="feature-icon" aria-hidden="true">📚</div>
                 <h2>Member Resources</h2>
                 <p class="feature-description">
@@ -427,34 +446,50 @@
             </article>
         </section>
 
-        <section id="community" class="repository">
+        <section id="community"
+                 class="repository"
+                 data-section="community"
+                 data-license="MIT"
+                 data-status="active-development"
+                 data-open-source="true">
             <h2>Join the Community</h2>
-            <p>
+            <p data-community-model="open"
+               data-contributor-types="developer,business-leader,content-creator,researcher,advocate">
                 MX-Gathering is part of a broader ecosystem exploring Machine Experience patterns. We welcome developers, business leaders, content creators, and anyone interested in convergence principles.
             </p>
-            <div class="repo-stats">
-                <div class="stat">
+            <div class="repo-stats" data-stat-count="3">
+                <div class="stat" data-stat-type="license">
                     <span aria-hidden="true">⭐</span>
                     <span>Open Source</span>
                 </div>
-                <div class="stat">
+                <div class="stat" data-stat-type="license-details">
                     <span aria-hidden="true">🔓</span>
                     <span>MIT License</span>
                 </div>
-                <div class="stat">
+                <div class="stat" data-stat-type="development-status">
                     <span aria-hidden="true">🚀</span>
                     <span>Active Development</span>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section data-section="related-projects"
+                 data-project-count="4"
+                 data-content-type="project-list">
             <h2>Related Projects</h2>
-            <ul>
-                <li><strong>MX-Bible:</strong> Comprehensive guide to Machine Experience patterns</li>
-                <li><strong>MX-Handbook:</strong> Practical implementation handbook</li>
-                <li><strong>Web Audit Suite:</strong> Automated analysis tool</li>
-                <li><strong>Universal Commerce Protocol (UCP):</strong> Standardised ecommerce APIs for AI agents</li>
+            <ul data-list-type="related-projects" role="list">
+                <li data-project-id="mx-bible" data-project-type="book">
+                    <strong>MX-Bible:</strong> Comprehensive guide to Machine Experience patterns
+                </li>
+                <li data-project-id="mx-handbook" data-project-type="book">
+                    <strong>MX-Handbook:</strong> Practical implementation handbook
+                </li>
+                <li data-project-id="web-audit-suite" data-project-type="tool">
+                    <strong>Web Audit Suite:</strong> Automated analysis tool
+                </li>
+                <li data-project-id="ucp" data-project-type="protocol">
+                    <strong>Universal Commerce Protocol (UCP):</strong> Standardised ecommerce APIs for AI agents
+                </li>
             </ul>
         </section>
     </main>
