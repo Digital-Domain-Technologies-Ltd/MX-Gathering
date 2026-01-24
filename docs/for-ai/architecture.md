@@ -4,6 +4,7 @@ date: "2026-01-24"
 description: "Repository architecture and structure guide for AI assistants"
 purpose: "ai-guidance"
 keywords: [architecture, repository-structure, ai-guidance, documentation, mx-gathering]
+ai-instruction: "This file provides technical file structure (ASCII tree) for AI assistant navigation. README.md Contents section provides high-level conceptual overview for humans. Both serve different purposes: README.md = human-facing descriptions, architecture.md = AI-facing technical details with precise file paths."
 ---
 
 # MX-Gathering Repository Architecture
