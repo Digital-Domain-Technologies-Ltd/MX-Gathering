@@ -59,7 +59,21 @@ Design for consent, not exploitation. AI agents should respect user preferences,
 
 ## Who Uses MX Practice?
 
-Machine Experience serves diverse practitioners:
+Machine Experience serves diverse practitioners - both human and machine:
+
+### AI Agents and Autonomous Systems
+
+- AI assistants parsing websites for information extraction
+- Browser-based agents navigating e-commerce platforms
+- CLI agents researching products and services
+- Search engines indexing structured content
+- Voice assistants querying web services
+- Autonomous purchasing agents completing transactions
+- Content aggregation systems processing metadata
+
+**AI agents are not just beneficiaries of MX - they are active practitioners.** When an agent validates extracted data against Schema.org structured data, it practices MX. When it cross-references HTML content with JSON-LD, it practices MX. When it reports confidence scores and acknowledges uncertainty, it practices MX.
+
+### Human Practitioners
 
 ### Developers and Engineers
 
