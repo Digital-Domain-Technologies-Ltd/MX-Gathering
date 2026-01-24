@@ -17,6 +17,18 @@ This community repository provides:
 - **Thought Leadership** - Position papers, analysis, and commentary on the evolving AI agent ecosystem
 - **Community Guidelines** - How to contribute, code of conduct, and recognition
 
+## Web Presence
+
+MX-Gathering is accessible through multiple domains:
+
+- **[mx-thegathering.ai](https://mx-thegathering.ai)** - Primary community hub (coming soon)
+- **[mx-thegathering.net](https://mx-thegathering.net)** - Technical documentation
+- **[mx-thegathering.info](https://mx-thegathering.info)** - Educational resources
+- **[mx-thegathering.store](https://mx-thegathering.store)** - Commerce and premium content
+- **[mx-thegathering.xyz](https://mx-thegathering.xyz)** - Experimental features
+
+See [docs/domains/DOMAIN-STRATEGY.md](docs/domains/DOMAIN-STRATEGY.md) for complete domain strategy and [docs/domains/HOSTING-SETUP.md](docs/domains/HOSTING-SETUP.md) for hosting configuration.
+
 ## Contents
 
 ### Event Resources (events/)

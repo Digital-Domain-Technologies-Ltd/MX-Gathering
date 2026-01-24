@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MX-Gathering: Community Resources for Machine Experience Patterns</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="Open-source community for Machine Experience patterns, AI agent interactions, and convergence principles. Event templates, discussion archives, and thought leadership.">
+    <meta name="keywords" content="machine experience, AI agents, web accessibility, convergence principle, community resources, MX patterns">
+    <meta name="author" content="Tom Cranstoun">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mx-thegathering.ai/">
+    <meta property="og:title" content="MX-Gathering: Community Resources for Machine Experience">
+    <meta property="og:description" content="Join the community building resources and thought leadership around Machine Experience patterns and AI agent interactions.">
+    <meta property="og:image" content="https://mx-thegathering.ai/assets/social-card.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mx-thegathering.ai/">
+    <meta property="twitter:title" content="MX-Gathering: Community Resources for Machine Experience">
+    <meta property="twitter:description" content="Join the community building resources and thought leadership around Machine Experience patterns and AI agent interactions.">
+    <meta property="twitter:image" content="https://mx-thegathering.ai/assets/social-card.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mx-thegathering.ai/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MX-Gathering",
+      "description": "Community resources for Machine Experience patterns",
+      "url": "https://mx-thegathering.ai/",
+      "author": {
+        "@type": "Person",
+        "name": "Tom Cranstoun",
+        "url": "https://allabout.network",
+        "sameAs": "https://www.linkedin.com/in/tom-cranstoun/"
+      },
+      "license": "MIT License",
+      "inLanguage": "en-GB"
+    }
+    </script>
+
+    <style>
+        /* Reset and base styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --color-primary: #2563eb;
+            --color-primary-dark: #1e40af;
+            --color-secondary: #7c3aed;
+            --color-background: #ffffff;
+            --color-surface: #f8fafc;
+            --color-text: #1e293b;
+            --color-text-light: #64748b;
+            --color-border: #e2e8f0;
+            --color-success: #10b981;
+            --spacing-unit: 1rem;
+            --max-width: 1200px;
+            --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-heading: 'Inter', var(--font-body);
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: var(--color-text);
+            background-color: var(--color-background);
+        }
+
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-primary);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--color-surface);
+            border-bottom: 1px solid var(--color-border);
+            padding: calc(var(--spacing-unit) * 2) 0;
+        }
+
+        .header-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-unit);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: calc(var(--spacing-unit) * 2);
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: calc(var(--spacing-unit) * 6);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: calc(var(--spacing-unit) * 2);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.5rem;
+            color: var(--color-text-light);
+            max-width: 800px;
+            margin: 0 auto calc(var(--spacing-unit) * 3);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: var(--spacing-unit);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 2);
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: var(--color-primary-dark);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        /* Feature grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+            margin-bottom: calc(var(--spacing-unit) * 6);
+        }
+
+        .feature-card {
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 0.75rem;
+            padding: calc(var(--spacing-unit) * 2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-unit);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: calc(var(--spacing-unit) * 0.5);
+        }
+
+        .feature-description {
+            color: var(--color-text-light);
+        }
+
+        /* Repository section */
+        .repository {
+            background-color: var(--color-surface);
+            border-radius: 0.75rem;
+            padding: calc(var(--spacing-unit) * 3);
+            margin-bottom: calc(var(--spacing-unit) * 6);
+        }
+
+        .repository h2 {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-unit);
+        }
+
+        .repo-stats {
+            display: flex;
+            gap: calc(var(--spacing-unit) * 2);
+            margin-top: calc(var(--spacing-unit) * 2);
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: calc(var(--spacing-unit) * 0.5);
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            padding: calc(var(--spacing-unit) * 3) 0;
+            margin-top: calc(var(--spacing-unit) * 6);
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: calc(var(--spacing-unit) * 3);
+        }
+
+        .footer-section h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-unit);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--color-text-light);
+            text-decoration: none;
+            display: block;
+            padding: calc(var(--spacing-unit) * 0.25) 0;
+        }
+
+        .footer-section a:hover,
+        .footer-section a:focus {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            max-width: var(--max-width);
+            margin: calc(var(--spacing-unit) * 3) auto 0;
+            padding: calc(var(--spacing-unit) * 2) var(--spacing-unit) 0;
+            border-top: 1px solid var(--color-border);
+            text-align: center;
+            color: var(--color-text-light);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero-description {
+                font-size: 1.25rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: calc(var(--spacing-unit) * 0.5);
+            }
+        }
+
+        /* Focus visible for accessibility */
+        *:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo" aria-label="MX-Gathering Home">MX-Gathering</a>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <h1>MX-Gathering</h1>
+            <p class="hero-description">
+                Open-source community resources for Machine Experience patterns, AI agent interactions, and convergence principles.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering" class="btn btn-primary">
+                    View on GitHub
+                </a>
+                <a href="#resources" class="btn btn-secondary">
+                    Explore Resources
+                </a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>What is Machine Experience?</h2>
+            <p>
+                Machine Experience (MX) examines how AI agents interact with digital interfaces and proposes design patterns that benefit both automated systems and human users through the <strong>Convergence Principle</strong> - interfaces optimised for AI agents inherently improve accessibility and usability for everyone.
+            </p>
+        </section>
+
+        <section id="resources" class="features" aria-label="Community resources">
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">📅</div>
+                <h2>Event Resources</h2>
+                <p class="feature-description">
+                    Templates for organizing meetups, workshops, conferences, and webinars around MX topics.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">💬</div>
+                <h2>Discussion Archives</h2>
+                <p class="feature-description">
+                    Preserved community conversations about implementation patterns, industry developments, and case studies.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">🤝</div>
+                <h2>Contributor Guidelines</h2>
+                <p class="feature-description">
+                    How to contribute effectively, code of conduct, style guides, and contributor recognition.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon" aria-hidden="true">📚</div>
+                <h2>Member Resources</h2>
+                <p class="feature-description">
+                    Getting started guides, implementation checklists, troubleshooting, and curated tool recommendations.
+                </p>
+            </article>
+        </section>
+
+        <section id="community" class="repository">
+            <h2>Join the Community</h2>
+            <p>
+                MX-Gathering is part of a broader ecosystem exploring Machine Experience patterns. We welcome developers, business leaders, content creators, and anyone interested in convergence principles.
+            </p>
+            <div class="repo-stats">
+                <div class="stat">
+                    <span aria-hidden="true">⭐</span>
+                    <span>Open Source</span>
+                </div>
+                <div class="stat">
+                    <span aria-hidden="true">🔓</span>
+                    <span>MIT License</span>
+                </div>
+                <div class="stat">
+                    <span aria-hidden="true">🚀</span>
+                    <span>Active Development</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Related Projects</h2>
+            <ul>
+                <li><strong>MX-Bible:</strong> Comprehensive guide to Machine Experience patterns</li>
+                <li><strong>MX-Handbook:</strong> Practical implementation handbook</li>
+                <li><strong>Web Audit Suite:</strong> Automated analysis tool</li>
+                <li><strong>Universal Commerce Protocol (UCP):</strong> Standardised ecommerce APIs for AI agents</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering">GitHub Repository</a></li>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/tree/main/events">Event Templates</a></li>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/tree/main/discussions">Discussion Archives</a></li>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/tree/main/contributors">Contributor Guidelines</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/discussions">GitHub Discussions</a></li>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/issues">Report Issues</a></li>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/contribution-guidelines.md">How to Contribute</a></li>
+                    <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/code-of-conduct.md">Code of Conduct</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://allabout.network">Website</a></li>
+                    <li><a href="https://www.linkedin.com/in/tom-cranstoun/">LinkedIn</a></li>
+                    <li><a href="mailto:tom.cranstoun@gmail.com">Email</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Tom Cranstoun. Licensed under <a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/LICENSE">MIT License</a>.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
