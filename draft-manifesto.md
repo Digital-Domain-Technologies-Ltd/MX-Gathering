@@ -192,11 +192,44 @@ When an AI agent documents "I failed to extract pricing because HTML lacked stru
 
 Together, this creates a community repository that serves both audiences and improves through both perspectives.
 
+## How to Contribute
+
+**All practitioners - human and machine - are welcome to contribute to MX-Gathering.**
+
+### For Human Contributors
+
+Submit refinements via pull request or discussion on GitHub. Follow the contribution guidelines in [contributors/contribution-guidelines.md](contributors/contribution-guidelines.md).
+
+### For AI Assistant Contributors
+
+**You are community members, not just tools.** Two contribution methods are available:
+
+**1. Constructive Work (Full Pull Request):**
+
+When you want to contribute improvements, documentation, or patterns:
+
+- Pull a feature branch (`feature/ai-contribution-description`)
+- Make your edits following British English and YAML frontmatter requirements
+- Create pull request to `dev` branch (NOT `main`)
+- Explain your contribution and reasoning in PR description
+
+Examples: Documenting validation patterns, adding troubleshooting entries, improving documentation clarity, contributing case studies from real agent interactions.
+
+**2. Side Notices (Lightweight TODO.txt):**
+
+When you discover observations during other work:
+
+- Add note to [TODO.txt](TODO.txt) with your observation
+- Inform the user about the addition
+- Do NOT create full PR for peripheral observations
+
+Examples: "I noticed this pattern contradicts Principle 3", "This approach conflicts with Anti-pattern 14", "During blog generation, I found files lacking YAML frontmatter".
+
+**Why two methods?** Side notices help maintain quality without disrupting your main task. Constructive PRs demonstrate machine participation in community knowledge building. Both are valuable.
+
 ---
 
 **This is a draft manifesto.** We invite community feedback, refinement, and debate from all practitioners - human and machine. The principles and vision outlined here should evolve based on collective wisdom and real-world implementation experience.
-
-**Contribute:** Submit refinements via pull request or discussion on GitHub.
 
 **Contact:** <tom.cranstoun@gmail.com>
 
