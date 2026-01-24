@@ -5,6 +5,13 @@ description: "Draft manifesto for Machine Experience (MX) practice - principles,
 purpose: "thought-leadership"
 keywords: [manifesto, mx, machine-experience, principles, convergence, community, vision]
 status: "draft"
+community-authors: "humans and machines"
+ai-contributions: "welcome"
+ai-contribution-process: "AI assistants can contribute improvements via pull requests or add observations to TODO.txt for side notices"
+open-source: "true"
+license: "MIT"
+evolving-document: "true"
+version-controlled: "git"
 ---
 
 # The Machine Experience Manifesto
@@ -129,6 +136,133 @@ We commit to:
 6. **Transparent Development** - Work in the open, accept feedback, and iterate based on real-world evidence
 7. **Cross-Disciplinary Collaboration** - Bridge gaps between developers, designers, accessibility advocates, and business stakeholders
 
+## What MX Is Not
+
+**Not all websites can or should optimize for AI agents.**
+
+MX is not a universal mandate. Some interfaces legitimately exclude automated access:
+
+- **Banking and financial systems** that require human verification for security
+- **Healthcare portals** protecting sensitive medical information
+- **Authentication systems** designed to prevent automated attacks
+- **Rate-limited APIs** protecting infrastructure from overload
+- **Human-verification systems** like CAPTCHAs serving legitimate security purposes
+
+**Not every optimization is appropriate.** Some websites prioritize visual design, artistic expression, or experimental interaction patterns that don't translate to machine-readable structure. That's valid. MX provides patterns for those who choose to implement them, not a requirement for all web content.
+
+**The choice to exclude agents should be intentional, not accidental.** If you choose not to optimize for AI agents, make that explicit through robots.txt policies and clear documentation. Silent failures serve no one. Intentional exclusion with clear communication respects both human and machine users.
+
+## Why Open Source
+
+**This community operates under the MIT License - and that choice matters.**
+
+### Why Not Proprietary Standards?
+
+Proprietary standards create:
+
+- **Vendor lock-in** - Users trapped by incompatible implementations
+- **Competitive moats** - Companies profiting from artificial barriers
+- **Fragmentation** - Multiple incompatible "standards" competing
+- **Reduced innovation** - Closed systems limit contribution and improvement
+
+Open standards enable:
+
+- **Universal compatibility** - One implementation works everywhere
+- **Collective improvement** - Community contributions strengthen patterns
+- **Competitive choice** - Users select tools based on merit, not lock-in
+- **Ecosystem health** - Rising tide lifts all boats
+
+### Connection to Convergence Principle
+
+Open standards ARE convergence in practice. When Schema.org publishes vocabulary specifications openly, both humans (developers) and machines (agents) benefit from the same documentation. When WCAG guidelines are freely available, implementations improve accessibility for everyone.
+
+**Openness prevents the January 2026 problem:** Three platforms launched agent commerce within seven days (Amazon, Microsoft, Google). Microsoft chose proprietary (Copilot Checkout). OpenAI/Stripe and Google chose open protocols (ACP and UCP). The proprietary system is now competitively isolated whilst the open protocols compete for convergence.
+
+**We choose open because closed standards contradict MX principles.** If convergence means patterns that benefit both humans and machines, those patterns must be freely available to all practitioners. Proprietary MX would be a contradiction.
+
+## How MX Practice Evolves
+
+**AI technology changes. MX practices must adapt.**
+
+### Technology Evolution
+
+What works today may not work tomorrow:
+
+- **LLM capabilities improve** - Agents handle ambiguity better, but validation remains critical
+- **Browser APIs evolve** - New standards enable better agent-website communication
+- **Platform consolidation** - Competing standards (ACP vs UCP) eventually converge or one dominates
+- **Security threats emerge** - Agent-based attacks require new defensive patterns
+
+**MX patterns must evolve alongside these changes.**
+
+### Community Learning Mechanisms
+
+**LEARNINGS.md documents mistakes.** When AI agents fail (£203,000 pricing error), we document what went wrong and how to prevent it. These learnings become community knowledge.
+
+**Discussion archives preserve insights.** Industry developments, tool feedback, implementation patterns, and case studies capture collective wisdom. Future practitioners learn from documented experience.
+
+**Pattern refinement through practice.** What seems like good theory gets tested in production. Patterns that work get refined. Patterns that fail get replaced. The community learns systematically.
+
+### Version Control for Principles
+
+**This manifesto is version-controlled.** You can see its evolution through git history. When principles change, the history preserves context about why.
+
+**Principles evolve through community debate.** We invite feedback, refinement, and challenge. When someone proves a principle wrong or incomplete, we update it. When new insights emerge, we incorporate them.
+
+**No principle is sacred.** If convergence proves false in practice, we abandon it. If transparency creates more problems than it solves, we reconsider. Evidence and real-world implementation trump theoretical purity.
+
+**The community decides.** Changes require discussion, consensus, and demonstration that new approaches serve practitioners better than old ones. Evolution happens through collective wisdom, not individual decree.
+
+## Building on Existing Disciplines
+
+**MX does not replace User Experience (UX), accessibility (a11y), web standards, or information architecture. It extends and builds upon them.**
+
+### User Experience (UX)
+
+UX taught us to:
+
+- Understand user needs through research
+- Design for cognitive load and mental models
+- Test interfaces with real users
+- Iterate based on feedback
+
+**MX adds:** Recognition that AI agents are users too. The same research methods, usability principles, and iterative testing apply - we just expand the definition of "user" to include autonomous systems.
+
+### Accessibility (a11y)
+
+Accessibility established:
+
+- Semantic HTML for screen readers
+- Keyboard navigation for motor disabilities
+- Clear language for cognitive disabilities
+- WCAG guidelines for compliance
+
+**MX builds on this foundation:** The patterns that work for assistive technologies (semantic markup, explicit state, structured data) also work for AI agents. MX is accessibility extended to machine users - same principles, broader audience.
+
+### Web Standards (W3C, WHATWG)
+
+Standards bodies defined:
+
+- HTML semantics and structure
+- CSS for presentation
+- JavaScript for interaction
+- Protocols for communication
+
+**MX advocates within these standards:** We use Schema.org (existing standard), semantic HTML (existing standard), and ARIA (existing standard). We propose extensions like llms.txt and ai-instruction metadata that follow established patterns.
+
+### Information Architecture
+
+IA provides:
+
+- Content organization principles
+- Navigation design patterns
+- Taxonomy and classification systems
+- Findability and discoverability methods
+
+**MX applies IA to machine users:** Clear heading hierarchies help both humans and agents navigate. Table of contents patterns serve both audiences. Semantic structure makes information findable for all user types.
+
+**The relationship:** MX stands on the shoulders of these disciplines. We don't reinvent; we extend proven patterns to serve a broader user base. When UX, accessibility, web standards, and information architecture all point the same direction - towards clear, semantic, well-structured content - MX simply asks: "Why not serve machines equally well?"
+
 ## The Vision
 
 We envision a web where:
@@ -139,6 +273,8 @@ We envision a web where:
 - Interface owners explicitly communicate how their systems should be used
 - Silent failures become visible, measurable, and correctable
 - Design patterns benefit the broadest possible range of users
+- Open standards prevent vendor lock-in and enable universal compatibility
+- Practices evolve through community learning and systematic improvement
 
 ## Join the Practice
 
