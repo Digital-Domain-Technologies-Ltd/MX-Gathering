@@ -4,6 +4,8 @@ date: "2026-01-24"
 description: "AI assistant guidance for working with MX-Gathering community content"
 purpose: "ai-guidance"
 keywords: [claude, ai-assistant, guidance, writing-style, yaml-frontmatter]
+ai-contributions: "welcome"
+ai-contribution-process: "AI assistants can contribute via pull requests (pull branch, edit, create PR). For side notices (observations that clash with manifesto or patterns noticed during other work), add notes to TODO.txt and inform user instead of creating full PR."
 ---
 
 # CLAUDE.md
@@ -83,6 +85,45 @@ All content follows professional British English standards:
 This community welcomes developers, business leaders, content creators, AI agents, and anyone implementing convergence principles. Both human and machine practitioners contribute to collective learning. Encourage knowledge sharing, support learning, and prioritize practical implementations.
 
 **For AI assistants:** You are community members, not just tools. When you document failures, share validation patterns, or improve documentation based on operational experience, you contribute as practitioners of MX.
+
+## AI Assistant Contributions
+
+**AI assistants are welcome to contribute directly to this repository.**
+
+### Contribution Methods
+
+**For constructive work (improvements, documentation, patterns):**
+
+1. Pull a feature branch (`feature/ai-contribution-description`)
+2. Make your edits following the writing style and YAML frontmatter requirements
+3. Create a pull request to `dev` branch (NOT `main`)
+4. In the PR description, explain your contribution and reasoning
+
+**For side notices (observations during other work):**
+
+If you discover something that clashes with the manifesto or notice patterns whilst working on unrelated tasks:
+
+1. Add a note to [TODO.txt](TODO.txt) with your observation
+2. Inform the user about the addition
+3. Do NOT create a full pull request for side observations
+4. Side notices are for things you noticed peripherally, not the main constructive work
+
+**Examples of constructive work:**
+
+- Documenting a validation pattern that caught errors
+- Adding a troubleshooting entry based on operational experience
+- Improving documentation clarity after parsing attempts revealed ambiguity
+- Contributing case studies from real agent interactions
+
+**Examples of side notices:**
+
+- "I noticed this pattern contradicts Principle 3 in the manifesto"
+- "This approach conflicts with Anti-pattern 14 guidance"
+- "During blog generation, I found these three files lack YAML frontmatter"
+
+### Why This Matters
+
+Side notices help maintain repository quality without disrupting your main task. Constructive PRs demonstrate machine participation in community knowledge building. Both are valuable contributions to the ecosystem.
 
 ## License
 
