@@ -1,0 +1,136 @@
+#!/usr/bin/env bash
+
+# MX-Gathering Pre-Commit Hook
+# Validates HTML files against AI-Friendly HTML Guide patterns (Appendix D)
+
+set -e
+
+# Colors for output
+RED='\033[0;31m'
+YELLOW='\033[1;33m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
+echo -e "${GREEN}MX-Gathering Pre-Commit Hook${NC}"
+echo "Validating HTML files against AI-Friendly HTML Guide patterns..."
+echo ""
+
+# Get list of staged HTML files
+STAGED_HTML_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\.html$' || true)
+
+if [ -z "$STAGED_HTML_FILES" ]; then
+    echo "No HTML files staged for commit."
+    exit 0
+fi
+
+VALIDATION_FAILED=0
+
+# Function to check for required patterns in HTML files
+validate_html_file() {
+    local file=$1
+    local errors=()
+    local warnings=()
+
+    echo "Checking: $file"
+
+    # Check 1: Schema.org JSON-LD presence
+    if ! grep -q '"@context".*"https://schema.org"' "$file"; then
+        warnings+=("  ⚠ Missing Schema.org JSON-LD structured data")
+    fi
+
+    # Check 2: Explicit state attributes (data-* attributes)
+    if ! grep -q 'data-[a-z-]*=' "$file"; then
+        errors+=("  ✗ No data-* attributes found for explicit state")
+    fi
+
+    # Check 3: Semantic HTML elements
+    if ! grep -q '<main' "$file"; then
+        warnings+=("  ⚠ Missing <main> semantic element")
+    fi
+
+    if ! grep -q '<article\|<section' "$file"; then
+        warnings+=("  ⚠ Missing <article> or <section> semantic elements")
+    fi
+
+    # Check 4: ARIA attributes for accessibility
+    if ! grep -q 'aria-' "$file"; then
+        warnings+=("  ⚠ No ARIA attributes found (consider accessibility)")
+    fi
+
+    # Check 5: Skip link for accessibility
+    if ! grep -q 'skip.*content' "$file"; then
+        warnings+=("  ⚠ Missing skip-to-content link for accessibility")
+    fi
+
+    # Check 6: Language attribute
+    if ! grep -q '<html.*lang=' "$file"; then
+        errors+=("  ✗ Missing lang attribute on <html> element")
+    fi
+
+    # Check 7: Meta charset
+    if ! grep -q '<meta.*charset=' "$file"; then
+        errors+=("  ✗ Missing charset meta tag")
+    fi
+
+    # Check 8: Viewport meta tag
+    if ! grep -q '<meta.*viewport' "$file"; then
+        errors+=("  ✗ Missing viewport meta tag")
+    fi
+
+    # Print results for this file
+    if [ ${#errors[@]} -gt 0 ]; then
+        echo -e "${RED}Errors:${NC}"
+        printf '%s\n' "${errors[@]}"
+        VALIDATION_FAILED=1
+    fi
+
+    if [ ${#warnings[@]} -gt 0 ]; then
+        echo -e "${YELLOW}Warnings:${NC}"
+        printf '%s\n' "${warnings[@]}"
+    fi
+
+    if [ ${#errors[@]} -eq 0 ] && [ ${#warnings[@]} -eq 0 ]; then
+        echo -e "${GREEN}  ✓ All checks passed${NC}"
+    fi
+
+    echo ""
+}
+
+# Validate each staged HTML file
+for file in $STAGED_HTML_FILES; do
+    if [ -f "$file" ]; then
+        validate_html_file "$file"
+    fi
+done
+
+# Final result
+if [ $VALIDATION_FAILED -eq 1 ]; then
+    echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+    echo -e "${RED}HTML validation failed!${NC}"
+    echo ""
+    echo "Your HTML files do not follow AI-Friendly HTML Guide patterns."
+    echo "Please review Appendix D for required patterns:"
+    echo ""
+    echo "Required patterns:"
+    echo "  • Schema.org JSON-LD structured data"
+    echo "  • Explicit state with data-* attributes"
+    echo "  • Semantic HTML elements (<main>, <article>, <section>)"
+    echo "  • ARIA attributes for accessibility"
+    echo "  • Language attribute on <html>"
+    echo "  • Proper meta tags (charset, viewport)"
+    echo ""
+    echo "Reference: packages/shared-appendices/appendix-d-ai-friendly-html-guide.md"
+    echo -e "${RED}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+    echo ""
+    echo "To bypass this check (not recommended):"
+    echo "  git commit --no-verify"
+    echo ""
+    exit 1
+fi
+
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "${GREEN}✓ All HTML files follow MX patterns${NC}"
+echo -e "${GREEN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo ""
+
+exit 0
