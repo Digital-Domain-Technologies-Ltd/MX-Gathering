@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Writing style guide for MX-Gathering content"
+purpose: "community-guidelines"
+keywords: ['machine-experience', 'guidelines', 'community', 'contributing', 'mx-gathering']
+---
+
 # Style Guide Summary
 
 Quick reference for writing style in MX-Gathering contributions.

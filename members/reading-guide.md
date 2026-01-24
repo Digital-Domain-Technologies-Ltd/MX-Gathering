@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Guided reading path for MX-Bible and MX-Handbook"
+purpose: "member-support"
+keywords: ['machine-experience', 'members', 'resources', 'support', 'mx-gathering']
+---
+
 # Reading Guide
 
 Your personalized path through Machine Experience (MX) content based on your role and goals.

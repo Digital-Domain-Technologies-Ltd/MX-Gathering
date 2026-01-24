@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Event organization resources and template directory"
+purpose: "documentation"
+keywords: [events, community, organization, templates, meetup, workshop, conference, webinar]
+---
+
 # Event Resources
 
 Templates for organizing community events around Machine Experience (MX) patterns.

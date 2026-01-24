@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Domain portfolio strategy for mx-thegathering domains"
+purpose: "infrastructure-documentation"
+keywords: ['hosting', 'machine-experience', 'domains', 'cloudflare', 'dns', 'mx-gathering']
+---
+
 # MX-Gathering Domain Strategy
 
 This document outlines the domain portfolio strategy for MX-Gathering community resources.

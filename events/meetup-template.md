@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Template for organizing local MX community meetups"
+purpose: "template"
+keywords: ['machine-experience', 'community', 'organization', 'template', 'mx-gathering', 'events']
+---
+
 # Meetup Template: [Event Name]
 
 ## Event Details

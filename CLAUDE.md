@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "AI assistant guidance for working with MX-Gathering community content"
+purpose: "ai-guidance"
+keywords: [claude, ai-assistant, guidance, writing-style, yaml-frontmatter]
+---
+
 # CLAUDE.md
 
 This file provides guidance to AI assistants when working with content in this repository.
@@ -16,6 +24,39 @@ This is a content-focused repository containing:
 - **members/** - Member support resources (getting started, troubleshooting, tools, learning paths)
 
 ## Content Guidelines
+
+### YAML Frontmatter Requirement
+
+**🚨 MANDATORY: All markdown files (.md) in this repository MUST include YAML frontmatter metadata.**
+
+This applies to:
+
+- All new markdown files created from this point forward
+- All existing markdown files when edited (add frontmatter during any edit)
+- All documentation, guides, templates, and content files
+
+**Minimum required fields:**
+
+- `title:` - Document title (quoted string)
+- `author:` - "Tom Cranstoun" or contributor name
+- `date:` - Creation or last update date (YYYY-MM-DD format)
+- `description:` - Brief summary of document purpose (quoted string)
+- `purpose:` - Document intent (e.g., "template", "guide", "documentation")
+
+**Example:**
+
+```yaml
+---
+title: "Meetup Organization Template"
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Template for organizing local MX community meetups"
+purpose: "template"
+keywords: [meetup, event, community, organization]
+---
+```
+
+**No exceptions.** YAML frontmatter is now a standard requirement across the entire MX-Gathering repository.
 
 ### Writing Style
 

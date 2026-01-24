@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Hosting and DNS configuration guide for MX-Gathering domains"
+purpose: "infrastructure-documentation"
+keywords: ['hosting', 'machine-experience', 'domains', 'cloudflare', 'dns', 'mx-gathering']
+---
+
 # MX-Gathering Hosting and DNS Setup Guide
 
 This guide provides step-by-step instructions for setting up hosting and DNS for all MX-Gathering domains.

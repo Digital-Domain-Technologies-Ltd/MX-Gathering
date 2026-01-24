@@ -1,3 +1,13 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Open-source community repository for Machine Experience patterns, event resources, discussion archives, and thought leadership"
+purpose: "documentation"
+keywords: [mx, machine-experience, ai-agents, community, open-source, events, discussions, metadata, thought-leadership]
+license: "MIT"
+repository: "https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering"
+---
+
 # MX-Gathering: Community Resources and Thought Leadership
 
 **An open-source collaborative space for building community, sharing resources, and advancing thought leadership around Machine Experience (MX) patterns, AI agent interactions, and the convergence of automated and human user experiences.**

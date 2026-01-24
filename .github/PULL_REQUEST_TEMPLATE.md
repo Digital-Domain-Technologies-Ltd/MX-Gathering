@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Pull request template with testing checklists"
+purpose: "github-template"
+keywords: ['pull-request', 'machine-experience', 'github', 'template', 'mx-gathering']
+---
+
 ## Description
 
 <!-- Provide a clear description of your changes -->

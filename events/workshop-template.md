@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Template for hosting MX-focused workshops"
+purpose: "template"
+keywords: ['machine-experience', 'community', 'organization', 'template', 'mx-gathering', 'events']
+---
+
 # Workshop Template: [Workshop Name]
 
 ## Workshop Details

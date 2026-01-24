@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Member support resources and getting started guide"
+purpose: "documentation"
+keywords: [members, support, resources, getting-started, implementation, troubleshooting]
+---
+
 # Member Resources
 
 Welcome to MX-Gathering! This directory provides resources to help you get started, implement MX patterns, and engage with the community.

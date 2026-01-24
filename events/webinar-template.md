@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Template for organizing online MX webinars"
+purpose: "template"
+keywords: ['machine-experience', 'community', 'organization', 'template', 'mx-gathering', 'events']
+---
+
 # Webinar Template: [Webinar Title]
 
 ## Webinar Details

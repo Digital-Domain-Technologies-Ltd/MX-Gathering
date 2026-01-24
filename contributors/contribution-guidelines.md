@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Guidelines for contributing to MX-Gathering"
+purpose: "community-guidelines"
+keywords: ['machine-experience', 'guidelines', 'community', 'contributing', 'mx-gathering']
+---
+
 # Contribution Guidelines
 
 Thank you for contributing to MX-Gathering!

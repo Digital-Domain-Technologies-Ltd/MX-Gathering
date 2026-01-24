@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Development environment strategy for MX-Gathering infrastructure"
+purpose: "development-guide"
+keywords: ['machine-experience', 'development', 'infrastructure', 'deployment', 'mx-gathering']
+---
+
 # MX-Gathering Development Environments
 
 This document outlines the development workflow and environment strategy for MX-Gathering.

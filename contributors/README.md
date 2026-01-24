@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Contributor resources and community guidelines overview"
+purpose: "documentation"
+keywords: [contributing, community, guidelines, code-of-conduct, style-guide]
+---
+
 # Contributor Resources
 
 Welcome to the MX-Gathering community! This directory contains everything you need to contribute effectively.

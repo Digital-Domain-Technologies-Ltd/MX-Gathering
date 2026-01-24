@@ -1,3 +1,11 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Curated tools and resources for MX implementation"
+purpose: "member-support"
+keywords: ['machine-experience', 'members', 'resources', 'support', 'mx-gathering']
+---
+
 # Tools and Resources
 
 Curated list of tools, frameworks, and resources for implementing Machine Experience (MX) patterns.
