@@ -124,6 +124,12 @@ We welcome:
 2. Use materials relevant to your needs
 3. Contribute your experiences back to the community
 
+### For Developers
+
+1. Read [docs/development/QUICKSTART.md](docs/development/QUICKSTART.md) for 5-minute setup
+2. Review [docs/development/ENVIRONMENTS.md](docs/development/ENVIRONMENTS.md) for complete workflow
+3. See [docs/for-ai/architecture.md](docs/for-ai/architecture.md) for technical structure
+
 ## Related Projects
 
 MX-Gathering is part of a broader ecosystem exploring Machine Experience patterns:
