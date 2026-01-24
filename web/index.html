@@ -23,9 +23,13 @@
     <meta property="twitter:title" content="MX-Gathering: Community Resources for Machine Experience">
     <meta property="twitter:description" content="Join the community building resources and thought leadership around Machine Experience patterns and AI agent interactions.">
     <meta property="twitter:image" content="https://mx-thegathering.ai/assets/social-card.png">
+    <meta property="twitter:image:alt" content="MX-Gathering logo with convergence principle tagline">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://mx-thegathering.ai/">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="shared-gathering.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -49,309 +53,6 @@
       "inLanguage": "en-GB"
     }
     </script>
-
-    <style>
-        /* Reset and base styles */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        :root {
-            --color-primary: #2563eb;
-            --color-primary-dark: #1e40af;
-            --color-secondary: #7c3aed;
-            --color-background: #ffffff;
-            --color-surface: #f8fafc;
-            --color-text: #1e293b;
-            --color-text-light: #64748b;
-            --color-border: #e2e8f0;
-            --color-success: #10b981;
-            --spacing-unit: 1rem;
-            --max-width: 1200px;
-            --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            --font-heading: 'Inter', var(--font-body);
-        }
-
-        body {
-            font-family: var(--font-body);
-            font-size: 1.125rem;
-            line-height: 1.75;
-            color: var(--color-text);
-            background-color: var(--color-background);
-        }
-
-        /* Skip link for accessibility */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--color-primary);
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 100;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-
-        /* Header */
-        header {
-            background-color: var(--color-surface);
-            border-bottom: 1px solid var(--color-border);
-            padding: calc(var(--spacing-unit) * 2) 0;
-        }
-
-        .header-content {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--spacing-unit);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: var(--spacing-unit);
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--color-primary);
-            text-decoration: none;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: calc(var(--spacing-unit) * 2);
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: var(--color-text);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        nav a:hover,
-        nav a:focus {
-            color: var(--color-primary);
-            text-decoration: underline;
-        }
-
-        /* Main content */
-        main {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
-        }
-
-        /* Hero section */
-        .hero {
-            text-align: center;
-            margin-bottom: calc(var(--spacing-unit) * 6);
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: calc(var(--spacing-unit) * 2);
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-description {
-            font-size: 1.5rem;
-            color: var(--color-text-light);
-            max-width: 800px;
-            margin: 0 auto calc(var(--spacing-unit) * 3);
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: var(--spacing-unit);
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 2);
-            border-radius: 0.5rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s;
-            border: 2px solid transparent;
-        }
-
-        .btn-primary {
-            background-color: var(--color-primary);
-            color: white;
-        }
-
-        .btn-primary:hover,
-        .btn-primary:focus {
-            background-color: var(--color-primary-dark);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--color-primary);
-            border-color: var(--color-primary);
-        }
-
-        .btn-secondary:hover,
-        .btn-secondary:focus {
-            background-color: var(--color-primary);
-            color: white;
-        }
-
-        /* Feature grid */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: calc(var(--spacing-unit) * 2);
-            margin-bottom: calc(var(--spacing-unit) * 6);
-        }
-
-        .feature-card {
-            background-color: var(--color-surface);
-            border: 1px solid var(--color-border);
-            border-radius: 0.75rem;
-            padding: calc(var(--spacing-unit) * 2);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: var(--spacing-unit);
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: calc(var(--spacing-unit) * 0.5);
-        }
-
-        .feature-description {
-            color: var(--color-text-light);
-        }
-
-        /* Repository section */
-        .repository {
-            background-color: var(--color-surface);
-            border-radius: 0.75rem;
-            padding: calc(var(--spacing-unit) * 3);
-            margin-bottom: calc(var(--spacing-unit) * 6);
-        }
-
-        .repository h2 {
-            font-size: 2rem;
-            margin-bottom: var(--spacing-unit);
-        }
-
-        .repo-stats {
-            display: flex;
-            gap: calc(var(--spacing-unit) * 2);
-            margin-top: calc(var(--spacing-unit) * 2);
-            flex-wrap: wrap;
-        }
-
-        .stat {
-            display: flex;
-            align-items: center;
-            gap: calc(var(--spacing-unit) * 0.5);
-            font-weight: 500;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--color-surface);
-            border-top: 1px solid var(--color-border);
-            padding: calc(var(--spacing-unit) * 3) 0;
-            margin-top: calc(var(--spacing-unit) * 6);
-        }
-
-        .footer-content {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--spacing-unit);
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: calc(var(--spacing-unit) * 3);
-        }
-
-        .footer-section h3 {
-            font-size: 1.125rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-unit);
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section a {
-            color: var(--color-text-light);
-            text-decoration: none;
-            display: block;
-            padding: calc(var(--spacing-unit) * 0.25) 0;
-        }
-
-        .footer-section a:hover,
-        .footer-section a:focus {
-            color: var(--color-primary);
-            text-decoration: underline;
-        }
-
-        .footer-bottom {
-            max-width: var(--max-width);
-            margin: calc(var(--spacing-unit) * 3) auto 0;
-            padding: calc(var(--spacing-unit) * 2) var(--spacing-unit) 0;
-            border-top: 1px solid var(--color-border);
-            text-align: center;
-            color: var(--color-text-light);
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .hero-description {
-                font-size: 1.25rem;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: calc(var(--spacing-unit) * 0.5);
-            }
-        }
-
-        /* Focus visible for accessibility */
-        *:focus-visible {
-            outline: 2px solid var(--color-primary);
-            outline-offset: 2px;
-        }
-    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -393,7 +94,7 @@
         </section>
 
         <section id="about" data-section="what-is-mx" data-content-type="introduction">
-            <h2>What is Machine Experience?</h2>
+            <h2 id="what-is-machine-experience">What is Machine Experience?</h2>
             <p data-concept="convergence-principle">
                 Machine Experience (MX) examines how AI agents interact with digital interfaces and proposes design patterns that benefit both automated systems and human users through the <strong>Convergence Principle</strong> - interfaces optimised for AI agents inherently improve accessibility and usability for everyone.
             </p>
@@ -409,7 +110,7 @@
                      data-feature-id="event-resources"
                      data-feature-category="templates">
                 <div class="feature-icon" aria-hidden="true">📅</div>
-                <h2>Event Resources</h2>
+                <h2 id="event-resources">Event Resources</h2>
                 <p class="feature-description">
                     Templates for organizing meetups, workshops, conferences, and webinars around MX topics.
                 </p>
@@ -419,7 +120,7 @@
                      data-feature-id="discussion-archives"
                      data-feature-category="community">
                 <div class="feature-icon" aria-hidden="true">💬</div>
-                <h2>Discussion Archives</h2>
+                <h2 id="discussion-archives">Discussion Archives</h2>
                 <p class="feature-description">
                     Preserved community conversations about implementation patterns, industry developments, and case studies.
                 </p>
@@ -429,7 +130,7 @@
                      data-feature-id="contributor-guidelines"
                      data-feature-category="community">
                 <div class="feature-icon" aria-hidden="true">🤝</div>
-                <h2>Contributor Guidelines</h2>
+                <h2 id="contributor-guidelines">Contributor Guidelines</h2>
                 <p class="feature-description">
                     How to contribute effectively, code of conduct, style guides, and contributor recognition.
                 </p>
@@ -439,7 +140,7 @@
                      data-feature-id="member-resources"
                      data-feature-category="documentation">
                 <div class="feature-icon" aria-hidden="true">📚</div>
-                <h2>Member Resources</h2>
+                <h2 id="member-resources">Member Resources</h2>
                 <p class="feature-description">
                     Getting started guides, implementation checklists, troubleshooting, and curated tool recommendations.
                 </p>
@@ -452,7 +153,7 @@
                  data-license="MIT"
                  data-status="active-development"
                  data-open-source="true">
-            <h2>Join the Community</h2>
+            <h2 id="join-the-community">Join the Community</h2>
             <p data-community-model="open"
                data-contributor-types="developer,business-leader,content-creator,researcher,advocate">
                 MX-Gathering is part of a broader ecosystem exploring Machine Experience patterns. We welcome developers, business leaders, content creators, and anyone interested in convergence principles.
@@ -476,7 +177,7 @@
         <section data-section="related-projects"
                  data-project-count="4"
                  data-content-type="project-list">
-            <h2>Related Projects</h2>
+            <h2 id="related-projects">Related Projects</h2>
             <ul data-list-type="related-projects" role="list">
                 <li data-project-id="mx-bible" data-project-type="book">
                     <strong>MX-Bible:</strong> Comprehensive guide to Machine Experience patterns
@@ -497,7 +198,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Resources</h3>
+                <h3 id="footer-resources">Resources</h3>
                 <ul>
                     <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering">GitHub Repository</a></li>
                     <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/tree/main/events">Event Templates</a></li>
@@ -507,7 +208,7 @@
             </div>
 
             <div class="footer-section">
-                <h3>Community</h3>
+                <h3 id="footer-community">Community</h3>
                 <ul>
                     <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/discussions">GitHub Discussions</a></li>
                     <li><a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/issues">Report Issues</a></li>
@@ -517,7 +218,7 @@
             </div>
 
             <div class="footer-section">
-                <h3>Connect</h3>
+                <h3 id="footer-connect">Connect</h3>
                 <ul>
                     <li><a href="https://allabout.network">Website</a></li>
                     <li><a href="https://www.linkedin.com/in/tom-cranstoun/">LinkedIn</a></li>
