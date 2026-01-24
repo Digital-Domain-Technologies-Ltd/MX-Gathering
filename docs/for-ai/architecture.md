@@ -1,0 +1,638 @@
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Repository architecture and structure guide for AI assistants"
+purpose: "ai-guidance"
+keywords: [architecture, repository-structure, ai-guidance, documentation, mx-gathering]
+---
+
+# MX-Gathering Repository Architecture
+
+This document explains the MX-Gathering repository structure, organization principles, and content patterns for AI assistants working with this codebase.
+
+## Repository Context
+
+### What is MX-Gathering?
+
+MX-Gathering is a **public, open-source community repository** for Machine Experience (MX) patterns. It serves as a collaborative space for:
+
+- Event organization (meetups, workshops, conferences, webinars)
+- Discussion archives (patterns, tools, industry developments, case studies)
+- Shared LLM prompts and AI agent workflows
+- Metadata standards and Schema.org patterns
+- Thought leadership and industry commentary
+- Community guidelines and contributor recognition
+
+### Relationship to Parent Repository
+
+MX-Gathering is a **git submodule** of the main `invisible-users` repository:
+
+- **Parent repository:** `invisible-users` (main orchestration hub)
+- **Submodule path:** `packages/mx-gathering/`
+- **Standalone repository:** `https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering`
+- **Access pattern:** Works both as a standalone repo and as part of the larger ecosystem
+
+**Key distinction:** While MX-Gathering is developed within the parent repository's context, it is **published and consumed as a standalone repository** by community contributors who may never interact with the parent repo.
+
+### Related Projects
+
+MX-Gathering is part of the broader MX ecosystem:
+
+- **MX-Bible** - Comprehensive guide to Machine Experience patterns (~78,000 words)
+- **MX-Handbook** - Practical implementation handbook (11 chapters)
+- **Web Audit Suite** - Automated analysis tool for MX pattern compliance
+- **Universal Commerce Protocol (UCP)** - Standardised ecommerce APIs for AI agents
+
+## Repository Structure
+
+```text
+MX-Gathering/
+├── README.md                          # Repository overview (standalone-friendly)
+├── CLAUDE.md                          # AI assistant guidance
+├── llms.txt                           # AI agent discovery metadata
+├── LICENSE                            # MIT License
+├── TODO.txt                           # Deployment checklist with YAML frontmatter
+├── .github/                           # GitHub configuration
+│   ├── workflows/                     # CI/CD automation
+│   │   ├── pr-checks.yml              # HTML validation, accessibility, performance
+│   │   └── deployment-notify.yml      # Deployment notifications
+│   └── PULL_REQUEST_TEMPLATE.md       # PR template with checklists
+├── web/                               # Website files (static HTML/CSS/JS)
+│   └── index.html                     # Primary landing page (WCAG 2.1 AA compliant)
+├── docs/                              # Documentation
+│   ├── for-ai/                        # AI assistant guidance
+│   │   └── architecture.md            # This file
+│   ├── development/                   # Development workflow
+│   │   ├── ENVIRONMENTS.md            # Environment strategy (prod/staging/dev)
+│   │   └── QUICKSTART.md              # 5-minute developer onboarding
+│   └── domains/                       # Domain and hosting
+│       ├── DOMAIN-STRATEGY.md         # Portfolio strategy for 5 domains
+│       └── HOSTING-SETUP.md           # DNS/Cloudflare configuration
+├── events/                            # Event organization resources
+│   ├── README.md                      # Event resources overview
+│   ├── meetup-template.md             # Local meetup planning
+│   ├── workshop-template.md           # Workshop structure
+│   ├── conference-talk-template.md    # Conference proposal format
+│   └── webinar-template.md            # Online event planning
+├── discussions/                       # Community discussion archives
+│   ├── README.md                      # Archive overview
+│   ├── implementation-patterns.md     # Pattern discussions
+│   ├── tool-feedback.md               # Web Audit Suite feedback
+│   ├── industry-developments.md       # Industry analysis
+│   └── case-studies.md                # Real-world experiences
+├── contributors/                      # Contribution guidelines
+│   ├── README.md                      # Contributor resources overview
+│   ├── contribution-guidelines.md     # How to contribute
+│   ├── code-of-conduct.md             # Community standards
+│   ├── style-guide-summary.md         # Writing style guidance
+│   └── recognition.md                 # Contributor acknowledgement
+└── members/                           # Member support resources
+    ├── README.md                      # Member resources overview
+    ├── implementation-checklist.md    # Step-by-step getting started
+    ├── reading-guide.md               # Book navigation guide
+    ├── tools-and-resources.md         # Curated tool recommendations
+    └── troubleshooting.md             # Common issues and solutions
+```
+
+## Content Organization Principles
+
+### 1. Purpose-Driven Directory Structure
+
+Each top-level directory serves a distinct audience and purpose:
+
+| Directory | Audience | Purpose | Content Type |
+|-----------|----------|---------|--------------|
+| `events/` | Event organizers | Facilitate community gatherings | Templates, guides |
+| `discussions/` | Community members | Preserve collective wisdom | Archives, commentary |
+| `contributors/` | Contributors | Enable participation | Guidelines, standards |
+| `members/` | End users | Support implementation | Guides, resources |
+| `docs/development/` | Developers | Infrastructure setup | Technical docs |
+| `docs/domains/` | Infrastructure team | Hosting configuration | DNS, deployment |
+| `docs/for-ai/` | AI assistants | Understanding structure | Architecture guides |
+| `web/` | Public visitors | Web presence | HTML, CSS, JS |
+
+### 2. File Naming Conventions
+
+**Markdown files:**
+
+- Lowercase with hyphens: `implementation-checklist.md`
+- Descriptive names indicating content: `conference-talk-template.md`
+- README.md in each directory for overview
+
+**Documentation files:**
+
+- UPPERCASE for repository-level: `README.md`, `CLAUDE.md`, `LICENSE`
+- Descriptive with context: `DOMAIN-STRATEGY.md`, `QUICKSTART.md`
+
+**Special files:**
+
+- `TODO.txt` - Deployment checklist (with YAML frontmatter despite .txt extension)
+- `llms.txt` - AI discovery metadata (markdown with .txt extension)
+
+### 3. YAML Frontmatter Requirement
+
+**🚨 CRITICAL:** ALL markdown files (.md) in this repository MUST include YAML frontmatter metadata.
+
+**Minimum required fields:**
+
+```yaml
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Brief summary of document purpose"
+purpose: "template|documentation|guide|discussion-archive"
+keywords: [relevant, tags, for, discoverability]
+---
+```
+
+**Standard purposes:**
+
+- `template` - Reusable event/content templates
+- `documentation` - Reference documentation
+- `guide` - Step-by-step instructions
+- `discussion-archive` - Community conversation records
+- `ai-guidance` - Instructions for AI assistants
+- `development-guide` - Developer documentation
+- `infrastructure-documentation` - Hosting/deployment docs
+- `community-guidelines` - Contribution standards
+
+**Why YAML frontmatter?**
+
+- Machine-readable metadata for AI agent discovery
+- Consistent across Hugo, Jekyll, Gatsby, Quarto, Pandoc
+- Enables automated processing and indexing
+- Schema.org mapping for semantic web
+
+## Content Types and Patterns
+
+### Event Templates (events/)
+
+**Purpose:** Standardized formats for organizing community events
+
+**Pattern:**
+
+```markdown
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "Template for [event type]"
+purpose: "template"
+keywords: [event-type, community, organization]
+---
+
+# [Event Type] Template
+
+## Overview
+Brief description of event format
+
+## Planning Checklist
+- [ ] Item 1
+- [ ] Item 2
+
+## Event Structure
+Timing, format, activities
+
+## Post-Event
+Sharing outcomes, lessons learned
+```
+
+**Files:**
+
+- `meetup-template.md` - Local in-person gatherings
+- `workshop-template.md` - Hands-on learning sessions
+- `conference-talk-template.md` - Conference proposal format
+- `webinar-template.md` - Online presentations
+
+### Discussion Archives (discussions/)
+
+**Purpose:** Preserve valuable community conversations and insights
+
+**Pattern:**
+
+```markdown
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "[Discussion topic] archive"
+purpose: "discussion-archive"
+keywords: [topic, patterns, analysis]
+---
+
+# [Discussion Topic]
+
+## Archive Format
+
+Each discussion entry includes:
+- Date and context
+- Summary of key points
+- Conclusions or recommendations
+- Related resources
+
+## Discussions
+
+### [Discussion Title] - [Date]
+
+Content...
+```
+
+**Files:**
+
+- `implementation-patterns.md` - Pattern discussions and debates
+- `tool-feedback.md` - Web Audit Suite and tool feedback
+- `industry-developments.md` - Analysis of AI agent ecosystem
+- `case-studies.md` - Real-world implementation experiences
+
+### Contributor Guidelines (contributors/)
+
+**Purpose:** Enable effective community participation
+
+**Pattern:**
+
+```markdown
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "[Guideline aspect]"
+purpose: "community-guidelines"
+keywords: [contributing, community, standards]
+---
+
+# [Guideline Title]
+
+Clear, actionable guidance for contributors
+```
+
+**Files:**
+
+- `contribution-guidelines.md` - How to contribute (fork, branch, PR workflow)
+- `code-of-conduct.md` - Community behavioral expectations
+- `style-guide-summary.md` - Writing standards (British English, tone, formatting)
+- `recognition.md` - Contributor acknowledgement and appreciation
+
+### Member Resources (members/)
+
+**Purpose:** Support community members implementing MX patterns
+
+**Pattern:**
+
+```markdown
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "[Resource type] for MX implementation"
+purpose: "guide"
+keywords: [members, support, implementation]
+---
+
+# [Resource Title]
+
+Practical, actionable content for members
+```
+
+**Files:**
+
+- `implementation-checklist.md` - Step-by-step getting started (audit, prioritize, implement, measure)
+- `reading-guide.md` - Curated paths through MX-Bible and MX-Handbook
+- `tools-and-resources.md` - Recommended tools for MX implementation
+- `troubleshooting.md` - Common issues and solutions
+
+### Development Documentation (docs/development/)
+
+**Purpose:** Infrastructure setup and deployment workflows
+
+**Pattern:**
+
+```markdown
+---
+author: "Tom Cranstoun"
+date: "2026-01-24"
+description: "[Infrastructure aspect]"
+purpose: "development-guide"
+keywords: [development, infrastructure, deployment]
+---
+
+# [Infrastructure Topic]
+
+Technical documentation for developers
+```
+
+**Files:**
+
+- `ENVIRONMENTS.md` - Complete environment strategy (prod/staging/dev/preview)
+- `QUICKSTART.md` - 5-minute developer onboarding
+
+### Domain Documentation (docs/domains/)
+
+**Purpose:** Domain portfolio and hosting configuration
+
+**Files:**
+
+- `DOMAIN-STRATEGY.md` - Strategy for 5 purchased domains (.ai, .net, .info, .store, .xyz)
+- `HOSTING-SETUP.md` - DNS, Cloudflare, SSL/TLS, GitHub Pages configuration
+
+## Development Workflow
+
+### Branch Strategy
+
+**Three permanent branches:**
+
+- **`main`** - Production environment (mx-thegathering.ai)
+- **`staging`** - Pre-production testing (staging.mx-thegathering.ai)
+- **`dev`** - Active development (dev.mx-thegathering.ai)
+
+**Feature branches:**
+
+- Pattern: `feature/descriptive-name`
+- Created from: `dev` branch
+- Merged to: `dev` branch
+- Automatic preview deployments on Cloudflare Pages
+
+**Workflow:**
+
+```text
+feature/xyz → dev → staging → main (production)
+     ↓         ↓       ↓         ↓
+  preview    dev.    staging.   mx-thegathering.ai
+   deploy   domain    domain
+```
+
+### CI/CD Automation
+
+**GitHub Actions workflows:**
+
+1. **PR Checks** (`.github/workflows/pr-checks.yml`):
+   - HTML validation (html-validate)
+   - Broken link checking
+   - Accessibility audits (Pa11y)
+   - Performance testing (Lighthouse)
+
+2. **Deployment Notifications** (`.github/workflows/deployment-notify.yml`):
+   - Triggers on push to main/staging/dev
+   - Creates deployment summary in Actions
+
+### Deployment Targets
+
+| Environment | Branch | Domain | Auto-Deploy | Purpose |
+|-------------|--------|--------|-------------|---------|
+| Production | `main` | mx-thegathering.ai | Yes | Live site |
+| Staging | `staging` | staging.mx-thegathering.ai | Yes | QA testing |
+| Development | `dev` | dev.mx-thegathering.ai | Yes | Development |
+| Preview | `feature/*` | Auto-generated URL | Yes | Feature testing |
+
+## AI Assistant Guidance
+
+### Key Concepts for AI Assistants
+
+**1. Standalone vs Submodule Context**
+
+This repository exists in two contexts:
+
+- **Standalone:** Community contributors interact with it as an independent repo
+- **Submodule:** Part of larger `invisible-users` workspace
+
+When creating content, assume **standalone context** - contributors don't need to know about the parent repository.
+
+**2. Open Development Philosophy**
+
+MX-Gathering follows "develop in the open" principles:
+
+- All development is public and transparent
+- Community contributions are encouraged
+- Issues and discussions are open
+- Clear separation of environments prevents accidental production changes
+
+**3. Content vs Code Repository**
+
+This is a **content-focused repository** with minimal build tooling:
+
+- Plain HTML/CSS/JS (no build process required)
+- Markdown documentation and templates
+- GitHub Actions for validation (not compilation)
+- Deployments are file copies, not builds
+
+**4. YAML Frontmatter Enforcement**
+
+All markdown files require YAML frontmatter. When creating or editing markdown:
+
+1. Always include frontmatter block at file start
+2. Use appropriate `purpose` field for content type
+3. Include descriptive `description` field
+4. Add relevant `keywords` array for discoverability
+
+**5. Writing Style Standards**
+
+- **British English:** organise, colour, whilst, recognised
+- **Professional tone:** Clear, direct, without superlatives
+- **Actionable guidance:** "Do X" not "You might want to consider X"
+- **Markdown formatting:** Blank lines before/after headings and lists
+
+### Common AI Assistant Tasks
+
+**Creating event templates:**
+
+1. Use existing templates as reference (`events/*.md`)
+2. Follow consistent structure (Overview, Planning, Structure, Post-Event)
+3. Include YAML frontmatter with `purpose: "template"`
+4. Add checklists for actionable steps
+
+**Archiving discussions:**
+
+1. Add to appropriate file in `discussions/`
+2. Include date and context
+3. Summarize key points and conclusions
+4. Link to related resources
+
+**Updating documentation:**
+
+1. Maintain YAML frontmatter when editing
+2. Update `date` field to reflect changes
+3. Keep navigation links consistent
+4. Test all relative links
+
+**Adding member resources:**
+
+1. Focus on practical, actionable content
+2. Include examples where possible
+3. Link to related MX-Bible/MX-Handbook sections
+4. Add to `members/README.md` navigation
+
+### Files AI Assistants Should Read First
+
+When working with this repository, AI assistants should read in this order:
+
+1. **[README.md](../../README.md)** - Repository overview and purpose
+2. **[CLAUDE.md](../../CLAUDE.md)** - AI assistant guidance and writing standards
+3. **[docs/for-ai/architecture.md](architecture.md)** - This file (structure and patterns)
+4. **[llms.txt](../../llms.txt)** - AI discovery metadata
+5. Relevant subdirectory README.md for specific work area
+
+## Domain and Hosting Architecture
+
+### Domain Portfolio (5 domains)
+
+**Primary domain:**
+
+- `mx-thegathering.ai` - Main community hub (£239.98/year, 2-year term)
+
+**Secondary domains:**
+
+- `mx-thegathering.net` - Technical documentation (£19.97/year)
+- `mx-thegathering.info` - Educational resources (£32.99/year)
+- `mx-thegathering.store` - Commerce and premium content (£74.97/year)
+- `mx-thegathering.xyz` - Experimental features (£17.73/year)
+
+**Redirect strategy options:**
+
+1. **All → Primary** (simplest): All secondary domains redirect to .ai
+2. **Subdirectory mapping** (recommended): .net → .ai/docs, .info → .ai/learn, etc.
+3. **Independent sites** (maximum flexibility): Each domain hosts separate content
+
+**Current implementation:** Awaiting Cloudflare configuration (see [TODO.txt](../../TODO.txt))
+
+### Hosting Strategy
+
+**Platform:** Cloudflare Pages (primary) + GitHub Pages (backup)
+
+**Advantages:**
+
+- Automatic deployments from GitHub
+- Global CDN distribution
+- Free SSL/TLS certificates
+- Branch-based preview deployments
+- Zero server management
+
+**Configuration status:** Infrastructure documented, Cloudflare connection pending
+
+## File Metadata Standards
+
+### llms.txt Format
+
+The `llms.txt` file uses YAML frontmatter despite the `.txt` extension:
+
+```yaml
+---
+title: "MX-Gathering: Community Resources and Thought Leadership"
+author: "Tom Cranstoun"
+creation-date: "24/Jan/2026"
+last-updated: "24/Jan/2026"
+description: "Brief summary"
+longdescription: "Extended context for AI agents"
+repository: "https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering"
+license: "MIT"
+ai-instruction: "Instructions for AI agents parsing this file"
+---
+
+# Content in markdown format
+```
+
+**Purpose:** AI agent discovery and context provision
+
+### TODO.txt Format
+
+The `TODO.txt` file includes YAML frontmatter for task tracking metadata:
+
+```yaml
+---
+title: "MX-Gathering: Next Steps and Deployment Tasks"
+author: "Tom Cranstoun"
+creation-date: "24/Jan/2026"
+last-updated: "24/Jan/2026"
+purpose: "Deployment checklist and configuration reminders"
+priority: "high"
+status: "pending-cloudflare-configuration"
+---
+
+# TODO content in markdown format
+```
+
+**Purpose:** Deployment checklist and infrastructure reminders
+
+## Key Relationships and References
+
+### Parent Repository Integration
+
+When changes are made to MX-Gathering:
+
+1. Commit and push changes within `packages/mx-gathering/`
+2. Update parent repo's submodule pointer
+3. Commit pointer update in parent repo
+
+**Never:**
+
+- Commit to parent repo before submodule
+- Assume submodule changes are visible to parent automatically
+- Edit submodule from outside its directory
+
+### Cross-Repository References
+
+MX-Gathering references but doesn't depend on:
+
+- **MX-Bible** - For comprehensive pattern explanations
+- **MX-Handbook** - For implementation guidance
+- **Web Audit Suite** - For analysis and validation tools
+- **Universal Commerce Protocol (UCP)** - For ecommerce AI agent patterns
+
+These references are informational only - MX-Gathering is self-contained.
+
+## Contribution Workflow
+
+### For AI Assistants Creating Content
+
+**Standard process:**
+
+1. Check existing templates in relevant directory
+2. Create new file with YAML frontmatter
+3. Follow consistent structure from templates
+4. Use British English and professional tone
+5. Add to directory README.md navigation if new resource
+6. Test all links (relative paths from file location)
+7. Verify markdown formatting (blank lines around headings/lists)
+
+**Commit message format:**
+
+```text
+<type>: <description>
+
+Examples:
+docs: add webinar organization template
+feat: add LLM prompt collection to discussions
+fix: correct broken links in member resources
+```
+
+**Types:**
+
+- `feat:` - New content or features
+- `docs:` - Documentation updates
+- `fix:` - Corrections or bug fixes
+- `refactor:` - Reorganization without content changes
+- `chore:` - Maintenance tasks
+
+### Pull Request Process
+
+1. Create feature branch from `dev`
+2. Make changes with clear commit messages
+3. Push to origin
+4. Open PR to `dev` branch (NOT `main`)
+5. Automated checks run (HTML, links, accessibility, performance)
+6. Address any failures
+7. Merge after approval and passing checks
+
+**Note:** Branch protection on `main` and `staging` requires PR approval.
+
+## Contact and Maintainership
+
+**Project Maintainer:** Tom Cranstoun
+
+- Email: <tom.cranstoun@gmail.com>
+- Website: <https://allabout.network>
+- LinkedIn: <https://www.linkedin.com/in/tom-cranstoun/>
+
+**Repository:** <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering>
+
+**License:** MIT License - Open source to encourage community participation
+
+---
+
+**Last Updated:** 24 January 2026
+
+**For AI Assistants:** This architecture document provides the foundation for working with MX-Gathering. Read [CLAUDE.md](../../CLAUDE.md) for writing style guidance and [llms.txt](../../llms.txt) for project context before making changes.
