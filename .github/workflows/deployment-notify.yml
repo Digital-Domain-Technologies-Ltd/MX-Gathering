@@ -1,0 +1,76 @@
+name: Deployment Notifications
+
+on:
+  push:
+    branches: [main, staging, dev]
+    paths:
+      - 'web/**'
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    name: Send Deployment Notification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Determine environment
+        id: env
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            echo "env_name=Production" >> $GITHUB_OUTPUT
+            echo "url=https://mx-thegathering.ai" >> $GITHUB_OUTPUT
+            echo "color=#10b981" >> $GITHUB_OUTPUT
+          elif [ "${{ github.ref }}" == "refs/heads/staging" ]; then
+            echo "env_name=Staging" >> $GITHUB_OUTPUT
+            echo "url=https://staging.mx-thegathering.ai" >> $GITHUB_OUTPUT
+            echo "color=#f59e0b" >> $GITHUB_OUTPUT
+          elif [ "${{ github.ref }}" == "refs/heads/dev" ]; then
+            echo "env_name=Development" >> $GITHUB_OUTPUT
+            echo "url=https://dev.mx-thegathering.ai" >> $GITHUB_OUTPUT
+            echo "color=#3b82f6" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create deployment summary
+        run: |
+          echo "## 🚀 Deployment to ${{ steps.env.outputs.env_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Branch:** \`${{ github.ref_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "**Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Author:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "**URL:** [${{ steps.env.outputs.url }}](${{ steps.env.outputs.url }})" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Changes" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          git log -1 --pretty=format:"%B" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+
+      - name: Deployment success
+        run: |
+          echo "✅ Successfully deployed to ${{ steps.env.outputs.env_name }}"
+          echo "View at: ${{ steps.env.outputs.url }}"
+
+      # Optional: Add Slack/Discord webhook notification
+      # - name: Notify Slack
+      #   if: success()
+      #   uses: slackapi/slack-github-action@v1
+      #   with:
+      #     payload: |
+      #       {
+      #         "text": "Deployed to ${{ steps.env.outputs.env_name }}",
+      #         "blocks": [
+      #           {
+      #             "type": "section",
+      #             "text": {
+      #               "type": "mrkdwn",
+      #               "text": "🚀 *Deployed to ${{ steps.env.outputs.env_name }}*\n<${{ steps.env.outputs.url }}|View Site>"
+      #             }
+      #           }
+      #         ]
+      #       }
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
