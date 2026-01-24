@@ -159,7 +159,18 @@ Whether you optimise a single heading hierarchy or architect an entire platform 
 
 The foundational knowledge comes from the **MX-Bible** book, written by Tom Cranstoun. That book documents the patterns, principles, and practices of Machine Experience.
 
-**This repository (MX-Gathering)** is the community's collaborative space. It contains:
+**This repository (MX-Gathering)** is the community's collaborative space - and it practices what it preaches. The repository itself implements MX principles:
+
+- **YAML frontmatter** in all markdown files provides machine-readable metadata
+- **llms.txt** file enables AI agent discovery and understanding
+- **LEARNINGS.md** documents AI agent failures and patterns for ecosystem improvement
+- **Structured metadata** throughout ensures both human readability and machine parseability
+- **Context-preserving links** (Anti-pattern 14) maintain meaning when files are extracted
+- **Semantic organization** with clear directory purposes and consistent naming
+
+**We practice convergence:** The same patterns that make this repository easy for AI agents to parse (YAML frontmatter, structured metadata, llms.txt) also make it easy for humans to navigate and contribute to.
+
+**This repository contains:**
 
 - Event templates created by organisers
 - Discussion archives capturing collective insights
