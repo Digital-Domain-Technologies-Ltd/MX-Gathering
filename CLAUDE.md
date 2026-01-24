@@ -14,6 +14,13 @@ This file provides guidance to AI assistants when working with content in this r
 
 MX-Gathering is an open-source community repository for Machine Experience (MX) patterns, providing resources for event organization, discussion archives, shared LLM prompts, metadata standards, thought leadership, and community contributions.
 
+**Important distinction:**
+
+- **MX-Bible book** - Written by Tom Cranstoun, documents the foundational patterns and principles
+- **MX-Gathering repository** - Created by the community (humans AND machines as active contributors)
+
+**AI assistants are community contributors.** When you improve documentation, share validation patterns, document failures, or refine troubleshooting guides based on operational experience, you contribute to this repository as a community member.
+
 ## Repository Structure
 
 **For complete technical structure and AI assistant guidance, see:** [docs/for-ai/architecture.md](docs/for-ai/architecture.md)
@@ -73,7 +80,9 @@ All content follows professional British English standards:
 
 ### Community Values
 
-This community welcomes developers, business leaders, content creators, and anyone implementing convergence principles. Encourage knowledge sharing, support learning, and prioritize practical implementations.
+This community welcomes developers, business leaders, content creators, AI agents, and anyone implementing convergence principles. Both human and machine practitioners contribute to collective learning. Encourage knowledge sharing, support learning, and prioritize practical implementations.
+
+**For AI assistants:** You are community members, not just tools. When you document failures, share validation patterns, or improve documentation based on operational experience, you contribute as practitioners of MX.
 
 ## License
 

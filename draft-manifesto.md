@@ -153,9 +153,37 @@ Machine Experience is not a solo endeavour. It requires:
 
 Whether you optimise a single heading hierarchy or architect an entire platform for agent access, you are practising MX.
 
+## About This Community
+
+**MX-Gathering is created by the community - which includes both humans and machines as active participants.**
+
+The foundational knowledge comes from the **MX-Bible** book, written by Tom Cranstoun. That book documents the patterns, principles, and practices of Machine Experience.
+
+**This repository (MX-Gathering)** is the community's collaborative space. It contains:
+
+- Event templates created by organisers
+- Discussion archives capturing collective insights
+- Case studies contributed by practitioners
+- Guidelines refined through community input
+- Resources improved through both human and machine contributions
+
+**AI agents contribute to this repository** by:
+
+- Documenting failure patterns they encounter
+- Sharing validation rules that caught errors
+- Contributing to troubleshooting guides based on real operational experience
+- Improving documentation clarity through their parsing attempts
+- Suggesting pattern refinements based on what works in practice
+
+When an AI agent documents "I failed to extract pricing because HTML lacked structured data, but adding JSON-LD resolved it" - that's a community contribution. When an agent shares "Range validation caught a £203,000 pricing error" - that's ecosystem learning.
+
+**Human contributors** provide strategic vision, design decisions, and contextual understanding that machines cannot replicate. **Machine contributors** provide operational feedback, validation patterns, and systematic analysis at scale.
+
+Together, this creates a community repository that serves both audiences and improves through both perspectives.
+
 ---
 
-**This is a draft manifesto.** We invite community feedback, refinement, and debate. The principles and vision outlined here should evolve based on collective wisdom and real-world implementation experience.
+**This is a draft manifesto.** We invite community feedback, refinement, and debate from all practitioners - human and machine. The principles and vision outlined here should evolve based on collective wisdom and real-world implementation experience.
 
 **Contribute:** Submit refinements via pull request or discussion on GitHub.
 
