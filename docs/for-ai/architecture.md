@@ -14,14 +14,16 @@ This document explains the MX-Gathering repository structure, organization princ
 
 ### What is MX-Gathering?
 
-MX-Gathering is a **public, open-source community repository** for Machine Experience (MX) patterns. It serves as a collaborative space for:
+MX-Gathering is a **public, open-source community repository** for Machine Experience (MX) patterns.
 
-- Event organization (meetups, workshops, conferences, webinars)
-- Discussion archives (patterns, tools, industry developments, case studies)
-- Shared LLM prompts and AI agent workflows
-- Metadata standards and Schema.org patterns
-- Thought leadership and industry commentary
-- Community guidelines and contributor recognition
+**For complete overview, see:** [README.md](../../README.md)
+
+**Key purposes:**
+
+- Event organization resources
+- Discussion archives
+- Community guidelines and member support
+- Domain and hosting infrastructure
 
 ### Relationship to Parent Repository
 
@@ -101,7 +103,7 @@ MX-Gathering/
 Each top-level directory serves a distinct audience and purpose:
 
 | Directory | Audience | Purpose | Content Type |
-|-----------|----------|---------|--------------|
+| --- | --- | --- | --- |
 | `events/` | Event organizers | Facilitate community gatherings | Templates, guides |
 | `discussions/` | Community members | Preserve collective wisdom | Archives, commentary |
 | `contributors/` | Contributors | Enable participation | Guidelines, standards |
@@ -373,7 +375,7 @@ feature/xyz → dev → staging → main (production)
 ### Deployment Targets
 
 | Environment | Branch | Domain | Auto-Deploy | Purpose |
-|-------------|--------|--------|-------------|---------|
+| --- | --- | --- | --- | --- |
 | Production | `main` | mx-thegathering.ai | Yes | Live site |
 | Staging | `staging` | staging.mx-thegathering.ai | Yes | QA testing |
 | Development | `dev` | dev.mx-thegathering.ai | Yes | Development |
@@ -383,7 +385,7 @@ feature/xyz → dev → staging → main (production)
 
 ### Key Concepts for AI Assistants
 
-**1. Standalone vs Submodule Context**
+#### 1. Standalone vs Submodule Context
 
 This repository exists in two contexts:
 
@@ -392,7 +394,7 @@ This repository exists in two contexts:
 
 When creating content, assume **standalone context** - contributors don't need to know about the parent repository.
 
-**2. Open Development Philosophy**
+#### 2. Open Development Philosophy
 
 MX-Gathering follows "develop in the open" principles:
 
@@ -401,7 +403,7 @@ MX-Gathering follows "develop in the open" principles:
 - Issues and discussions are open
 - Clear separation of environments prevents accidental production changes
 
-**3. Content vs Code Repository**
+#### 3. Content vs Code Repository
 
 This is a **content-focused repository** with minimal build tooling:
 
@@ -410,7 +412,7 @@ This is a **content-focused repository** with minimal build tooling:
 - GitHub Actions for validation (not compilation)
 - Deployments are file copies, not builds
 
-**4. YAML Frontmatter Enforcement**
+#### 4. YAML Frontmatter Enforcement
 
 All markdown files require YAML frontmatter. When creating or editing markdown:
 
@@ -419,7 +421,7 @@ All markdown files require YAML frontmatter. When creating or editing markdown:
 3. Include descriptive `description` field
 4. Add relevant `keywords` array for discoverability
 
-**5. Writing Style Standards**
+#### 5. Writing Style Standards
 
 - **British English:** organise, colour, whilst, recognised
 - **Professional tone:** Clear, direct, without superlatives
@@ -576,60 +578,32 @@ These references are informational only - MX-Gathering is self-contained.
 
 ## Contribution Workflow
 
-### For AI Assistants Creating Content
+**For complete contribution guidelines, see:** [contributors/contribution-guidelines.md](../../contributors/contribution-guidelines.md)
 
-**Standard process:**
+**For code of conduct, see:** [contributors/code-of-conduct.md](../../contributors/code-of-conduct.md)
 
-1. Check existing templates in relevant directory
-2. Create new file with YAML frontmatter
-3. Follow consistent structure from templates
-4. Use British English and professional tone
-5. Add to directory README.md navigation if new resource
-6. Test all links (relative paths from file location)
-7. Verify markdown formatting (blank lines around headings/lists)
+**For writing style guide, see:** [contributors/style-guide-summary.md](../../contributors/style-guide-summary.md)
 
-**Commit message format:**
+### Quick Reference for AI Assistants
 
-```text
-<type>: <description>
+**Essential workflow:**
 
-Examples:
-docs: add webinar organization template
-feat: add LLM prompt collection to discussions
-fix: correct broken links in member resources
-```
+1. Read [CLAUDE.md](../../CLAUDE.md) for writing style and YAML frontmatter requirements
+2. Check existing templates in relevant directory
+3. Follow branch strategy: feature/* → dev → staging → main
+4. All markdown files MUST include YAML frontmatter
+5. Use British English and professional tone
+6. Test links and verify markdown formatting
 
-**Types:**
+**Commit message format:** `<type>: <description>` (feat, docs, fix, refactor, chore)
 
-- `feat:` - New content or features
-- `docs:` - Documentation updates
-- `fix:` - Corrections or bug fixes
-- `refactor:` - Reorganization without content changes
-- `chore:` - Maintenance tasks
-
-### Pull Request Process
-
-1. Create feature branch from `dev`
-2. Make changes with clear commit messages
-3. Push to origin
-4. Open PR to `dev` branch (NOT `main`)
-5. Automated checks run (HTML, links, accessibility, performance)
-6. Address any failures
-7. Merge after approval and passing checks
-
-**Note:** Branch protection on `main` and `staging` requires PR approval.
+**PR target:** Always open PRs to `dev` branch (NOT `main`)
 
 ## Contact and Maintainership
 
-**Project Maintainer:** Tom Cranstoun
-
-- Email: <tom.cranstoun@gmail.com>
-- Website: <https://allabout.network>
-- LinkedIn: <https://www.linkedin.com/in/tom-cranstoun/>
+**For contact information and license details, see:** [README.md](../../README.md)
 
 **Repository:** <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering>
-
-**License:** MIT License - Open source to encourage community participation
 
 ---
 
