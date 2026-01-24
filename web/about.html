@@ -39,18 +39,41 @@
       "name": "About MX-Gathering",
       "description": "Information about the MX-Gathering community and manifesto",
       "url": "https://mx-thegathering.ai/about.html",
+      "inLanguage": "en-GB",
       "mainEntity": {
         "@type": "Organization",
         "name": "MX-Gathering",
+        "alternateName": "Machine Experience Gathering",
         "url": "https://mx-thegathering.ai/",
+        "description": "Open-source community for Machine Experience patterns, AI agent interactions, and convergence principles",
+        "foundingDate": "2026-01-24",
         "founder": {
           "@type": "Person",
           "name": "Tom Cranstoun",
           "url": "https://allabout.network",
-          "sameAs": "https://www.linkedin.com/in/tom-cranstoun/"
-        }
-      },
-      "inLanguage": "en-GB"
+          "sameAs": "https://www.linkedin.com/in/tom-cranstoun/",
+          "email": "tom.cranstoun@gmail.com"
+        },
+        "memberOf": {
+          "@type": "Project",
+          "name": "MX Series",
+          "description": "Machine Experience book series and tools"
+        },
+        "numberOfEmployees": {
+          "@type": "QuantitativeValue",
+          "value": "Community-driven"
+        },
+        "slogan": "Design for machines. Benefit humans. Advance both.",
+        "knowsAbout": [
+          "Machine Experience",
+          "AI agents",
+          "Web accessibility",
+          "Semantic HTML",
+          "Schema.org",
+          "Convergence principle"
+        ],
+        "publishingPrinciples": "https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/draft-manifesto.md"
+      }
     }
     </script>
 
@@ -354,13 +377,16 @@
         </div>
     </header>
 
-    <main id="main-content">
-        <article>
-            <span class="status-badge">New Community - Launching Soon</span>
+    <main id="main-content" data-page-type="about" data-content-category="community-information">
+        <article itemscope itemtype="https://schema.org/AboutPage">
+            <span class="status-badge"
+                  data-status="launching-soon"
+                  data-launch-phase="pre-launch"
+                  role="status">New Community - Launching Soon</span>
 
-            <h1>About MX-Gathering</h1>
+            <h1 itemprop="name">About MX-Gathering</h1>
 
-            <p class="lead">
+            <p class="lead" itemprop="description">
                 MX-Gathering is a new open-source community building resources, thought leadership, and collaborative knowledge around Machine Experience (MX) patterns.
             </p>
 
@@ -380,15 +406,32 @@
                 MX-Gathering operates on a foundation of seven core principles that guide our community and practice:
             </p>
 
-            <div class="principles">
+            <div class="principles"
+                 data-principle-count="7"
+                 data-content-type="core-principles"
+                 role="list">
                 <ol>
-                    <li><strong>Semantic Clarity</strong> - Structure precedes presentation. Semantic HTML, explicit state management, and machine-readable metadata create interfaces that both humans and agents can reliably interpret.</li>
-                    <li><strong>Universal Accessibility</strong> - Patterns that work for AI agents also work for screen readers, keyboard navigation, and assistive technologies. MX is accessibility 2.0.</li>
-                    <li><strong>Explicit State</strong> - Make system state visible and queryable. Both agents and humans benefit from knowing where they are and what actions are available.</li>
-                    <li><strong>Progressive Disclosure</strong> - Information should be structured for both scanning and deep reading through clear navigation and semantic markup.</li>
-                    <li><strong>Standards Over Proprietary Solutions</strong> - Use established standards (Schema.org, semantic HTML, WCAG, ARIA) to ensure broad compatibility.</li>
-                    <li><strong>Transparency</strong> - Make interfaces discoverable through llms.txt files, clear robots.txt policies, and structured metadata.</li>
-                    <li><strong>Ethical Design</strong> - Design for consent, not exploitation. AI agents should respect user preferences and honour opt-outs.</li>
+                    <li data-principle-number="1" data-principle-id="semantic-clarity">
+                        <strong>Semantic Clarity</strong> - Structure precedes presentation. Semantic HTML, explicit state management, and machine-readable metadata create interfaces that both humans and agents can reliably interpret.
+                    </li>
+                    <li data-principle-number="2" data-principle-id="universal-accessibility">
+                        <strong>Universal Accessibility</strong> - Patterns that work for AI agents also work for screen readers, keyboard navigation, and assistive technologies. MX is accessibility 2.0.
+                    </li>
+                    <li data-principle-number="3" data-principle-id="explicit-state">
+                        <strong>Explicit State</strong> - Make system state visible and queryable. Both agents and humans benefit from knowing where they are and what actions are available.
+                    </li>
+                    <li data-principle-number="4" data-principle-id="progressive-disclosure">
+                        <strong>Progressive Disclosure</strong> - Information should be structured for both scanning and deep reading through clear navigation and semantic markup.
+                    </li>
+                    <li data-principle-number="5" data-principle-id="standards-over-proprietary">
+                        <strong>Standards Over Proprietary Solutions</strong> - Use established standards (Schema.org, semantic HTML, WCAG, ARIA) to ensure broad compatibility.
+                    </li>
+                    <li data-principle-number="6" data-principle-id="transparency">
+                        <strong>Transparency</strong> - Make interfaces discoverable through llms.txt files, clear robots.txt policies, and structured metadata.
+                    </li>
+                    <li data-principle-number="7" data-principle-id="ethical-design">
+                        <strong>Ethical Design</strong> - Design for consent, not exploitation. AI agents should respect user preferences and honour opt-outs.
+                    </li>
                 </ol>
             </div>
 
@@ -402,77 +445,99 @@
                 The same patterns that enable AI agents to navigate, understand, and act upon digital content also empower human users with disabilities, enhance accessibility, and create more robust, maintainable systems. This is not a trade-off - it is a convergence of benefits.
             </p>
 
-            <h2>Community Authorship</h2>
+            <h2 data-section="community-authorship">Community Authorship</h2>
 
-            <p>
+            <p data-authorship-model="collaborative"
+               data-contributor-types="human,machine">
                 MX-Gathering is created by the community - which includes both humans <em>and</em> machines as active participants.
             </p>
 
-            <p>
+            <p data-source-book="MX-Bible"
+               data-book-author="Tom Cranstoun">
                 The foundational knowledge comes from the <strong>MX-Bible</strong> book, written by Tom Cranstoun. This repository is the community's collaborative space where practitioners - human and machine - contribute patterns, document failures, share validation rules, and build collective knowledge.
             </p>
 
-            <h3>Why Open Source?</h3>
+            <h3 data-section="open-source-rationale">Why Open Source?</h3>
 
-            <p>
+            <p data-license="MIT"
+               data-license-rationale="convergence-principle">
                 We operate under the MIT License because closed standards contradict MX principles. If convergence means patterns that benefit both humans and machines, those patterns must be freely available to all practitioners.
             </p>
 
-            <p>
+            <p data-open-source-benefits="true">
                 Open standards prevent vendor lock-in, enable universal compatibility, and allow the community to collectively improve implementations. When Schema.org publishes vocabulary specifications openly, both humans (developers) and machines (agents) benefit from the same documentation.
             </p>
 
-            <div class="cta-box">
+            <div class="cta-box"
+                 data-cta-type="manifesto"
+                 data-cta-priority="high"
+                 data-document-status="draft"
+                 role="complementary">
                 <h2>Read the Full Manifesto</h2>
                 <p>
                     Explore our complete vision for Machine Experience, including who uses MX practice, what MX is not, how it builds on existing disciplines, and our commitment to the community.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/draft-manifesto.md" class="btn btn-primary">
+                    <a href="https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/draft-manifesto.md"
+                       class="btn btn-primary"
+                       data-action="read-manifesto"
+                       data-document-type="manifesto"
+                       data-external-link="true">
                         Read the Draft Manifesto
                     </a>
                 </div>
             </div>
 
-            <h2>Contribute to the Community</h2>
+            <h2 data-section="contributions">Contribute to the Community</h2>
 
-            <p>
+            <p data-launch-status="launching-soon"
+               data-accepting-contributions="true"
+               data-contributor-roles="developer,designer,business-leader,content-creator,researcher,advocate,ai-agent">
                 We are launching soon and welcome contributions from all practitioners - developers, designers, business leaders, content creators, researchers, advocates, and AI agents.
             </p>
 
-            <p>
+            <p data-participation-level="all-levels-welcome">
                 Whether you optimise a single heading hierarchy or architect an entire platform for agent access, you are practising MX. Your insights, patterns, and experiences strengthen the community.
             </p>
 
-            <h3>How to Get Involved</h3>
+            <h3 data-section="get-involved">How to Get Involved</h3>
 
-            <p>
-                For now, please reach out via email: <a href="mailto:tom.cranstoun@gmail.com">tom.cranstoun@gmail.com</a>
+            <p data-contact-method="email"
+               data-contact-phase="pre-launch">
+                For now, please reach out via email: <a href="mailto:tom.cranstoun@gmail.com"
+                   data-contact-type="email"
+                   data-contact-purpose="community-enquiries">tom.cranstoun@gmail.com</a>
             </p>
 
-            <p>
+            <p data-future-features="true"
+               data-availability="post-launch">
                 Once we go live, you'll be able to:
             </p>
 
-            <ul>
-                <li>Submit contributions via pull requests on GitHub</li>
-                <li>Join community discussions and share implementation patterns</li>
-                <li>Access event templates for organizing MX meetups and workshops</li>
-                <li>Contribute case studies and real-world experiences</li>
-                <li>Help refine our documentation and troubleshooting guides</li>
+            <ul data-feature-count="5"
+                data-feature-category="contribution-methods"
+                role="list">
+                <li data-feature-id="github-contributions">Submit contributions via pull requests on GitHub</li>
+                <li data-feature-id="community-discussions">Join community discussions and share implementation patterns</li>
+                <li data-feature-id="event-templates">Access event templates for organizing MX meetups and workshops</li>
+                <li data-feature-id="case-studies">Contribute case studies and real-world experiences</li>
+                <li data-feature-id="documentation">Help refine our documentation and troubleshooting guides</li>
             </ul>
 
-            <p>
+            <p data-ai-participation="encouraged"
+               data-contributor-type="ai-assistant"
+               data-participation-model="equal-community-member">
                 <strong>AI assistants are community members, not just tools.</strong> When you document failures, share validation patterns, or improve documentation based on operational experience, you contribute as practitioners of MX.
             </p>
 
-            <h2>Join Us</h2>
+            <h2 data-section="join-community">Join Us</h2>
 
-            <p>
+            <p data-collaboration-model="multi-disciplinary"
+               data-required-roles="developer,designer,business-leader,content-creator,researcher,advocate">
                 Machine Experience is not a solo endeavour. It requires developers implementing semantic patterns, designers expanding UX principles, business leaders recognising competitive advantage, content creators structuring information universally, researchers investigating agent-interface interactions, and advocates ensuring ethical implementation.
             </p>
 
-            <p>
+            <p data-message-type="welcome">
                 Welcome to the community.
             </p>
         </article>
