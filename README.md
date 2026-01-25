@@ -77,6 +77,15 @@ Support for community members:
 - Tool recommendations
 - Learning paths
 
+### Profiles (profiles/)
+
+Author and contributor profiles:
+
+- Author professional biographies
+- Contributor profiles
+- Social media content templates
+- Professional messaging
+
 ## Community Values
 
 ### Open Collaboration
