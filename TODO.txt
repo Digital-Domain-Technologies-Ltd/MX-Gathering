@@ -2,10 +2,22 @@
 title: "MX-Gathering: Next Steps and Deployment Tasks"
 author: "Tom Cranstoun"
 creation-date: "24/Jan/2026"
-last-updated: "24/Jan/2026"
+last-updated: "25/Jan/2026"
 purpose: "Deployment checklist and configuration reminders for MX-Gathering infrastructure"
+visibility: "public"
+audience: "community-contributors"
 priority: "high"
 status: "pending-cloudflare-configuration"
+---
+
+📋 **STRATEGIC PLAN REFERENCE:** See ../../packages/bible/update plan.md for comprehensive MX-Bible 2026 roadmap covering:
+   - Core manuscript finalization
+   - Appendix K completion (MX Page Patterns)
+   - Agent Information Architecture chapter
+   - Metadata canon development
+   - Case studies & failure analyses
+   - Publication package preparation
+
 ---
 
 # MX-Gathering Deployment TODO

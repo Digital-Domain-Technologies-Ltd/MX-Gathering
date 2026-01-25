@@ -108,6 +108,8 @@ If you discover something that clashes with the manifesto or notice patterns whi
 3. Do NOT create a full pull request for side observations
 4. Side notices are for things you noticed peripherally, not the main constructive work
 
+**Important:** [TODO.txt](TODO.txt) is **public-facing** (committed to version control, visible to community). This differs from the main repository's private todo.txt file which is internal development tracking.
+
 **Examples of constructive work:**
 
 - Documenting a validation pattern that caught errors
