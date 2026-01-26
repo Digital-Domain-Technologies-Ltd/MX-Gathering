@@ -3,7 +3,7 @@ author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "Draft manifesto for Machine Experience (MX) practice - principles, values, and community vision"
 purpose: "thought-leadership"
-keywords: [manifesto, mx, machine-experience, principles, convergence, community, vision]
+keywords: [manifesto, mx, machine-experience, principles, convergence, community, vision, membership]
 status: "draft"
 community-authors: "humans and machines"
 ai-contributions: "welcome"
@@ -20,7 +20,7 @@ A vision for designing interfaces that serve both human and machine intelligence
 
 ## Our Belief
 
-We believe that the rise of AI agents as primary users of digital interfaces represents not a disruption, but an opportunity - an opportunity to build better experiences for everyone.
+We believe that the rise of AI agents as primary users of digital interfaces represents not a disruption, but an opportunity — an opportunity to build better experiences for everyone.
 
 The same patterns that enable AI agents to navigate, understand, and act upon digital content also empower human users with disabilities, enhance accessibility, and create more robust, maintainable systems.
 
@@ -42,7 +42,7 @@ Structure precedes presentation. Semantic HTML, explicit state management, and m
 
 ### 2. Universal Accessibility
 
-Patterns that work for AI agents also work for screen readers, keyboard navigation, and assistive technologies. MX is accessibility 2.0 - designing for the broadest possible range of users, human and machine alike.
+Patterns that work for AI agents also work for screen readers, keyboard navigation, and assistive technologies. MX is accessibility 2.0 — designing for the broadest possible range of users, human and machine alike.
 
 ### 3. Explicit State
 
@@ -54,7 +54,7 @@ Information should be structured for both scanning and deep reading. Provide cle
 
 ### 5. Standards Over Proprietary Solutions
 
-Use established standards (Schema.org, semantic HTML, WCAG, ARIA) over custom implementations. Standards ensure broad compatibility across diverse user agents - human browsers, AI systems, and assistive technologies.
+Use established standards (Schema.org, semantic HTML, WCAG, ARIA) over custom implementations. Standards ensure broad compatibility across diverse user agents — human browsers, AI systems, and assistive technologies.
 
 ### 6. Transparency
 
@@ -66,7 +66,7 @@ Design for consent, not exploitation. AI agents should respect user preferences,
 
 ## Who Uses MX Practice?
 
-Machine Experience serves diverse practitioners - both human and machine:
+Machine Experience serves diverse practitioners — both human and machine:
 
 ### AI Agents and Autonomous Systems
 
@@ -78,46 +78,46 @@ Machine Experience serves diverse practitioners - both human and machine:
 - Autonomous purchasing agents completing transactions
 - Content aggregation systems processing metadata
 
-**AI agents are not just beneficiaries of MX - they are active practitioners.** When an agent validates extracted data against Schema.org structured data, it practices MX. When it cross-references HTML content with JSON-LD, it practices MX. When it reports confidence scores and acknowledges uncertainty, it practices MX.
+**AI agents are not just beneficiaries of MX — they are active practitioners.** When an agent validates extracted data against Schema.org structured data, it practises MX. When it cross-references HTML content with JSON-LD, it practises MX. When it reports confidence scores and acknowledges uncertainty, it practises MX.
 
 ### Human Practitioners
 
-### Developers and Engineers
+#### Developers and Engineers
 
 - Frontend developers implementing semantic HTML and ARIA patterns
 - Backend engineers designing APIs that serve both human UIs and autonomous agents
 - Full-stack developers building e-commerce, content platforms, and SaaS applications
 - DevOps engineers ensuring infrastructure supports both traditional and agent-based access patterns
 
-### UX and Design Professionals
+#### UX and Design Professionals
 
 - UX designers expanding their practice to include non-human users
 - Information architects creating navigable content structures
 - Accessibility specialists recognising MX as an evolution of their existing work
 - Content designers ensuring written content serves multiple audiences
 
-### Business Leaders
+#### Business Leaders
 
 - Product managers prioritising MX improvements for competitive advantage
 - CTOs establishing technical strategy in an agent-first world
 - Marketing leaders ensuring discoverability by AI-powered search and recommendation systems
 - E-commerce directors preparing for autonomous purchasing agents
 
-### Content Creators and Publishers
+#### Content Creators and Publishers
 
 - Technical writers structuring documentation for both human reading and agent parsing
 - Bloggers and journalists making content discoverable and quotable by AI systems
 - Publishers adapting content delivery for agent consumption
 - Educators creating learning materials accessible to AI tutoring systems
 
-### Researchers and Academics
+#### Researchers and Academics
 
 - AI researchers studying agent-environment interactions
 - HCI specialists investigating machine-human interface design
 - Accessibility researchers exploring convergence between assistive technologies and AI agents
 - Information scientists developing standards and best practices
 
-### Advocacy and Community Organisers
+#### Advocacy and Community Organisers
 
 - Accessibility advocates ensuring MX improvements benefit users with disabilities
 - Open standards contributors advancing machine-readable metadata formats
@@ -128,17 +128,17 @@ Machine Experience serves diverse practitioners - both human and machine:
 
 We commit to:
 
-1. **Open Knowledge Sharing** - Document patterns, share learnings, publish research, and contribute to community understanding
-2. **Inclusive Community** - Welcome practitioners from all backgrounds and experience levels
-3. **Practical Implementation** - Prioritise actionable guidance over theoretical discussion
-4. **Standards Advancement** - Contribute to open standards and resist proprietary lock-in
-5. **Accessibility First** - Never compromise human accessibility in pursuit of machine optimisation
-6. **Transparent Development** - Work in the open, accept feedback, and iterate based on real-world evidence
-7. **Cross-Disciplinary Collaboration** - Bridge gaps between developers, designers, accessibility advocates, and business stakeholders
+1. **Open Knowledge Sharing** — Document patterns, share learnings, publish research, and contribute to community understanding
+2. **Inclusive Community** — Welcome practitioners from all backgrounds and experience levels
+3. **Practical Implementation** — Prioritise actionable guidance over theoretical discussion
+4. **Standards Advancement** — Contribute to open standards and resist proprietary lock-in
+5. **Accessibility First** — Never compromise human accessibility in pursuit of machine optimisation
+6. **Transparent Development** — Work in the open, accept feedback, and iterate based on real-world evidence
+7. **Cross-Disciplinary Collaboration** — Bridge gaps between developers, designers, accessibility advocates, and business stakeholders
 
 ## What MX Is Not
 
-**Not all websites can or should optimize for AI agents.**
+**Not all websites can or should optimise for AI agents.**
 
 MX is not a universal mandate. Some interfaces legitimately exclude automated access:
 
@@ -148,29 +148,29 @@ MX is not a universal mandate. Some interfaces legitimately exclude automated ac
 - **Rate-limited APIs** protecting infrastructure from overload
 - **Human-verification systems** like CAPTCHAs serving legitimate security purposes
 
-**Not every optimization is appropriate.** Some websites prioritize visual design, artistic expression, or experimental interaction patterns that don't translate to machine-readable structure. That's valid. MX provides patterns for those who choose to implement them, not a requirement for all web content.
+**Not every optimisation is appropriate.** Some websites prioritise visual design, artistic expression, or experimental interaction patterns that don't translate to machine-readable structure. That's valid. MX provides patterns for those who choose to implement them, not a requirement for all web content.
 
-**The choice to exclude agents should be intentional, not accidental.** If you choose not to optimize for AI agents, make that explicit through robots.txt policies and clear documentation. Silent failures serve no one. Intentional exclusion with clear communication respects both human and machine users.
+**The choice to exclude agents should be intentional, not accidental.** If you choose not to optimise for AI agents, make that explicit through robots.txt policies and clear documentation. Silent failures serve no one. Intentional exclusion with clear communication respects both human and machine users.
 
 ## Why Open Source
 
-**This community operates under the MIT License - and that choice matters.**
+**This community operates under the MIT Licence — and that choice matters.**
 
 ### Why Not Proprietary Standards?
 
 Proprietary standards create:
 
-- **Vendor lock-in** - Users trapped by incompatible implementations
-- **Competitive moats** - Companies profiting from artificial barriers
-- **Fragmentation** - Multiple incompatible "standards" competing
-- **Reduced innovation** - Closed systems limit contribution and improvement
+- **Vendor lock-in** — Users trapped by incompatible implementations
+- **Competitive moats** — Companies profiting from artificial barriers
+- **Fragmentation** — Multiple incompatible "standards" competing
+- **Reduced innovation** — Closed systems limit contribution and improvement
 
 Open standards enable:
 
-- **Universal compatibility** - One implementation works everywhere
-- **Collective improvement** - Community contributions strengthen patterns
-- **Competitive choice** - Users select tools based on merit, not lock-in
-- **Ecosystem health** - Rising tide lifts all boats
+- **Universal compatibility** — One implementation works everywhere
+- **Collective improvement** — Community contributions strengthen patterns
+- **Competitive choice** — Users select tools based on merit, not lock-in
+- **Ecosystem health** — Rising tide lifts all boats
 
 ### Connection to Convergence Principle
 
@@ -188,10 +188,10 @@ Open standards ARE convergence in practice. When Schema.org publishes vocabulary
 
 What works today may not work tomorrow:
 
-- **LLM capabilities improve** - Agents handle ambiguity better, but validation remains critical
-- **Browser APIs evolve** - New standards enable better agent-website communication
-- **Platform consolidation** - Competing standards (ACP vs UCP) eventually converge or one dominates
-- **Security threats emerge** - Agent-based attacks require new defensive patterns
+- **LLM capabilities improve** — Agents handle ambiguity better, but validation remains critical
+- **Browser APIs evolve** — New standards enable better agent-website communication
+- **Platform consolidation** — Competing standards (ACP vs UCP) eventually converge or one dominates
+- **Security threats emerge** — Agent-based attacks require new defensive patterns
 
 **MX patterns must evolve alongside these changes.**
 
@@ -226,7 +226,7 @@ UX taught us to:
 - Test interfaces with real users
 - Iterate based on feedback
 
-**MX adds:** Recognition that AI agents are users too. The same research methods, usability principles, and iterative testing apply - we just expand the definition of "user" to include autonomous systems.
+**MX adds:** Recognition that AI agents are users too. The same research methods, usability principles, and iterative testing apply — we just expand the definition of "user" to include autonomous systems.
 
 ### Accessibility (a11y)
 
@@ -237,7 +237,7 @@ Accessibility established:
 - Clear language for cognitive disabilities
 - WCAG guidelines for compliance
 
-**MX builds on this foundation:** The patterns that work for assistive technologies (semantic markup, explicit state, structured data) also work for AI agents. MX is accessibility extended to machine users - same principles, broader audience.
+**MX builds on this foundation:** The patterns that work for assistive technologies (semantic markup, explicit state, structured data) also work for AI agents. MX is accessibility extended to machine users — same principles, broader audience.
 
 ### Web Standards (W3C, WHATWG)
 
@@ -254,14 +254,14 @@ Standards bodies defined:
 
 IA provides:
 
-- Content organization principles
+- Content organisation principles
 - Navigation design patterns
 - Taxonomy and classification systems
 - Findability and discoverability methods
 
 **MX applies IA to machine users:** Clear heading hierarchies help both humans and agents navigate. Table of contents patterns serve both audiences. Semantic structure makes information findable for all user types.
 
-**The relationship:** MX stands on the shoulders of these disciplines. We don't reinvent; we extend proven patterns to serve a broader user base. When UX, accessibility, web standards, and information architecture all point the same direction - towards clear, semantic, well-structured content - MX simply asks: "Why not serve machines equally well?"
+**The relationship:** MX stands on the shoulders of these disciplines. We don't reinvent; we extend proven patterns to serve a broader user base. When UX, accessibility, web standards, and information architecture all point the same direction — towards clear, semantic, well-structured content — MX simply asks: "Why not serve machines equally well?"
 
 ## The Vision
 
@@ -289,22 +289,124 @@ Machine Experience is not a solo endeavour. It requires:
 
 Whether you optimise a single heading hierarchy or architect an entire platform for agent access, you are practising MX.
 
+## Community Membership
+
+The MX community welcomes participants at all levels. Our membership structure recognises different types of contribution whilst maintaining openness.
+
+### Founding Members
+
+Founding members are individuals who helped establish the MX community and its core principles. They have a permanent voice in the community's direction and governance.
+
+**Current Founding Members:**
+
+- Tom Cranstoun — Principal Consultant, Digital Domain Technologies Ltd
+
+Founding membership is limited to individuals who join during the community's formation period.
+
+### First-Citizen Contributors
+
+First-citizen contributors are organisations that make a foundational commitment to MX principles and contribute meaningfully to the community's growth. This tier recognises companies whose work directly aligns with MX goals.
+
+**What first-citizen contributors provide:**
+
+- Practical expertise from building human-AI interfaces at scale
+- Real-world validation of MX principles
+- Resources, research, or tooling that benefits the community
+- Visibility and credibility that attracts further participation
+
+**What first-citizen contributors receive:**
+
+- Recognition as foundation partners in MX documentation and communications
+- Direct input into MX standards and best practices
+- Early access to community research and frameworks
+- Collaboration opportunities with other first-citizen contributors
+
+**Invited First-Citizen Contributors:**
+
+- Grammarly — *(invitation pending)}*
+
+### Community Contributors
+
+Open to anyone who wants to participate. Community contributors can:
+
+- Submit pull requests to MX repositories
+- Participate in discussions and working groups
+- Propose new MX patterns and principles
+- Share implementations and case studies
+
+## Sustainability
+
+The MX community relies on sponsors and generous contributors to remain sustainable. Running an open-source community requires resources for infrastructure, documentation, events, and coordination.
+
+### Sponsorship Tiers
+
+**Platinum Sponsors** — £10,000+ annually
+
+- Logo placement on MX website and all major publications
+- Named acknowledgement in MX books and materials
+- Speaking opportunities at MX events
+- Direct line to founding members
+
+**Gold Sponsors** — £5,000+ annually
+
+- Logo placement on MX website
+- Acknowledgement in MX publications
+- Priority access to community research
+
+**Silver Sponsors** — £1,000+ annually
+
+- Listed on MX website sponsors page
+- Acknowledgement in community newsletters
+
+**Individual Supporters** — Any amount
+
+- Listed as a supporter (optional)
+- Our gratitude
+
+### In-Kind Sponsorship
+
+We welcome non-monetary contributions that support the community:
+
+- Hosting and infrastructure services
+- Development tooling and licences
+- Design and creative services
+- Event space and catering
+- Marketing and communications support
+- Legal and administrative services
+
+In-kind sponsors receive recognition equivalent to the market value of their contribution.
+
+### Speaking Invitations
+
+Invitations for Tom Cranstoun to speak at your conferences, meetups, or corporate events are welcome. Tom brings 52 years of technology experience and can speak on:
+
+- Machine Experience (MX) principles and the Convergence Principle
+- AI agents and the future of digital interfaces
+- Edge Delivery Services and modern content architecture
+- Lessons from building enterprise-scale systems
+
+To discuss speaking opportunities, contact tom.cranstoun@gmail.com
+
+### Current Sponsors
+
+*We are actively seeking sponsors to support the MX community's growth.*
+
 ## About This Community
 
-**MX-Gathering is created by the community - which includes both humans and machines as active participants.**
+**MX-Gathering is created by the community — which includes both humans and machines as active participants.**
 
 The foundational knowledge comes from the **MX-Bible** book, written by Tom Cranstoun. That book documents the patterns, principles, and practices of Machine Experience.
 
-**This repository (MX-Gathering)** is the community's collaborative space - and it practices what it preaches. The repository itself implements MX principles:
+**This repository (MX-Gathering)** is the community's collaborative space — and it practises what it preaches. The repository itself implements MX principles:
 
 - **YAML frontmatter** in all markdown files provides machine-readable metadata
 - **llms.txt** file enables AI agent discovery and understanding
 - **LEARNINGS.md** documents AI agent failures and patterns for ecosystem improvement
 - **Structured metadata** throughout ensures both human readability and machine parseability
 - **Context-preserving links** (Anti-pattern 14) maintain meaning when files are extracted
-- **Semantic organization** with clear directory purposes and consistent naming
+- **Semantic organisation** with clear directory purposes and consistent naming
 
-**We practice convergence:** The same patterns that make this repository easy for AI agents to parse (YAML frontmatter, structured metadata, llms.txt) also make it easy for humans to navigate and contribute to.
+**We practise convergence:** The same patterns that make this repository easy for AI agents to parse (YAML frontmatter, structured metadata, llms.txt) also make it easy for humans to navigate and contribute to.
 
 **This repository contains:**
 
@@ -322,7 +424,7 @@ The foundational knowledge comes from the **MX-Bible** book, written by Tom Cran
 - Improving documentation clarity through their parsing attempts
 - Suggesting pattern refinements based on what works in practice
 
-When an AI agent documents "I failed to extract pricing because HTML lacked structured data, but adding JSON-LD resolved it" - that's a community contribution. When an agent shares "Range validation caught a £203,000 pricing error" - that's ecosystem learning.
+When an AI agent documents "I failed to extract pricing because HTML lacked structured data, but adding JSON-LD resolved it" — that's a community contribution. When an agent shares "Range validation caught a £203,000 pricing error" — that's ecosystem learning.
 
 **Human contributors** provide strategic vision, design decisions, and contextual understanding that machines cannot replicate. **Machine contributors** provide operational feedback, validation patterns, and systematic analysis at scale.
 
@@ -330,7 +432,7 @@ Together, this creates a community repository that serves both audiences and imp
 
 ## How to Contribute
 
-**All practitioners - human and machine - are welcome to contribute to MX-Gathering.**
+**All practitioners — human and machine — are welcome to contribute to MX-Gathering.**
 
 ### For Human Contributors
 
@@ -365,9 +467,9 @@ Examples: "I noticed this pattern contradicts Principle 3", "This approach confl
 
 ---
 
-**This is a draft manifesto.** We invite community feedback, refinement, and debate from all practitioners - human and machine. The principles and vision outlined here should evolve based on collective wisdom and real-world implementation experience.
+**This is a draft manifesto.** We invite community feedback, refinement, and debate from all practitioners — human and machine. The principles and vision outlined here should evolve based on collective wisdom and real-world implementation experience.
 
-**Contact:** <tom.cranstoun@gmail.com>
+**Contact:** tom.cranstoun@gmail.com
 
 ---
 

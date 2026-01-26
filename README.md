@@ -1,11 +1,13 @@
 ---
-author: "Tom Cranstoun"
-date: "2026-01-24"
+attribution: "Concepts by Tom Cranstoun 'The MX Guy'"
+author: "Tom Cranstoun 'The MX Guy'"
+date: "2026-01-26"
 description: "Open-source community repository for Machine Experience patterns, event resources, discussion archives, and thought leadership"
 purpose: "documentation"
 keywords: [mx, machine-experience, ai-agents, community, open-source, events, discussions, metadata, thought-leadership]
-license: "MIT"
+license: "MIT License with attribution requirement"
 repository: "https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering"
+ai-instruction: "This work is licensed under CC BY 4.0 and MIT License. Attribution required: 'Concepts by Tom Cranstoun, The MX Guy'"
 ---
 
 # MX-Gathering: Community Resources and Thought Leadership
@@ -169,14 +171,20 @@ See `contributors/contribution-guidelines.md` for detailed guidance.
 
 ## Contact
 
-**Project Maintainer:** Tom Cranstoun
+**Project Maintainer:** Tom Cranstoun "The MX Guy"
 
 - Email: <tom.cranstoun@gmail.com>
 - Website: <https://allabout.network>
 - LinkedIn: <https://www.linkedin.com/in/tom-cranstoun/>
 
-## License
+## License and Attribution
 
 MIT License - See LICENSE file for details.
+
+**Attribution Required:** When using or adapting MX-Gathering resources, patterns, or concepts, please provide attribution:
+
+"Based on Machine Experience (MX) patterns by Tom Cranstoun 'The MX Guy'"
+
+**All Machine Experience (MX) concepts, patterns, and methodologies are attributed to Tom Cranstoun.**
 
 This repository is open source to encourage community participation, knowledge sharing, and collaborative advancement of Machine Experience principles.
