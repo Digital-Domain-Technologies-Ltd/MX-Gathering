@@ -1,9 +1,15 @@
 ---
+title: "Contribution Guidelines"
 author: "Tom Cranstoun"
-date: "2026-01-24"
+date: "2026-01-27"
+blog-state: "published"
+blog-filename: "mx-contribution-guidelines"
+blog-url: "https://allabout.network/blogs/mx/mx-contribution-guidelines.html"
+publication-date: "2026-01-27"
 description: "Guidelines for contributing to MX-Gathering"
 purpose: "community-guidelines"
-keywords: ['machine-experience', 'guidelines', 'community', 'contributing', 'mx-gathering']
+keywords: [machine-experience, guidelines, community, contributing, mx-gathering]
+ai-instruction: "This document provides guidelines for contributing to the Machine Experience (MX) community and MX-Gathering repository"
 ---
 
 # Contribution Guidelines

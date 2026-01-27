@@ -1,6 +1,11 @@
 ---
+title: "The Machine Experience Manifesto"
 author: "Tom Cranstoun"
-date: "2026-01-24"
+date: "2026-01-27"
+blog-state: "published"
+blog-filename: "mx-manifesto"
+blog-url: "https://allabout.network/blogs/mx/mx-manifesto.html"
+publication-date: "2026-01-27"
 description: "Draft manifesto for Machine Experience (MX) practice - principles, values, and community vision"
 purpose: "thought-leadership"
 keywords: [manifesto, mx, machine-experience, principles, convergence, community, vision, membership]
@@ -12,6 +17,7 @@ open-source: "true"
 license: "MIT"
 evolving-document: "true"
 version-controlled: "git"
+ai-instruction: "This manifesto establishes the foundational principles and values of Machine Experience (MX) practice and community"
 ---
 
 # The Machine Experience Manifesto
