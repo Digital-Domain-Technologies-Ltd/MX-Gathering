@@ -9,7 +9,7 @@ organization: "Digital Domain Technologies"
 site_name: "AllAbout.Network"
 website: "https://allabout.network"
 email: "tom.cranstoun@gmail.com"
-linkedin: "https://www.linkedin.com/in/tomcranstoun/"
+linkedin: "https://www.linkedin.com/in/tom-cranstoun/"
 image: "https://allabout.network/media_126e99d56f06caf788bee715aff92281d2e31a206.png"
 ai-content-policy: "extract-with-attribution"
 ai-preferred-access: "html"
@@ -32,7 +32,7 @@ I've been building content systems since 1977 - starting with assembler code, lo
 
 Working with EDS taught me something unexpected: the structure that makes content work for AI agents is mostly what everyone needs. The patterns that break for AI agents—hidden state, ephemeral notifications, incomplete information—also break for humans with disabilities, cognitive load, or non-ideal conditions. That insight became Machine Experience (MX).
 
-I help organisations make better strategic decisions about Adobe Experience Manager and Edge Delivery Services in this new reality. After architecting agent-ready delivery infrastructure for BBC, Twitter, Nissan-Renault (200+ websites), Ford, MediaMonks, and others, I've learned that successful implementations come from asking the right questions before building anything—particularly now, as AI agents fundamentally change how web experiences are consumed.
+I help organisations make better strategic decisions about Adobe Experience Manager and Edge Delivery Services in this new reality. After architecting content delivery infrastructure for BBC, Twitter, Nissan-Renault (200+ websites), Ford, MediaMonks, and others, I've learned that successful implementations come from asking the right questions before building anything—particularly now, as AI agents fundamentally change how web experiences are consumed.
 
 Recent Adobe Experience Manager implementations demonstrate this approach: the Generate Variations feature reduced banner creation from 75 days to 5 days whilst maintaining human strategic oversight, delivering 60+ variations with 30% higher click-through rates. Success came from agent-ready foundations - semantic structure, explicit state, machine-readable metadata - that let AI handle pattern generation whilst humans controlled messaging and brand alignment.
 
