@@ -221,8 +221,7 @@ bash -x .githooks/pre-commit
 
 ## Reference
 
-- [AI-Friendly HTML Guide](../packages/shared-appendices/appendix-d-ai-friendly-html-guide.md) - Complete pattern documentation
-- [Appendix L](../packages/shared-appendices/appendix-l-proposed-ai-metadata-patterns.md) - Metadata specifications
+**Note:** Cross-repository documentation references removed per repository-scoped principle. See MX-Gathering's own documentation for patterns and specifications.
 - [Git Hooks Documentation](https://git-scm.com/docs/githooks) - Official git hooks reference
 
 ---

@@ -127,6 +127,6 @@ Languages: `javascript`, `html`, `css`, `bash`, `text`, `markdown`, `json`
 
 ## Questions?
 
-See full writing style guide in parent repository: [docs/for-ai/writing-style.md](../../docs/for-ai/writing-style.md)
+For complete writing style guidance, consult the main MX documentation or contact the project maintainer.
 
-Or contact: <tom.cranstoun@gmail.com>
+Contact: <tom.cranstoun@gmail.com>

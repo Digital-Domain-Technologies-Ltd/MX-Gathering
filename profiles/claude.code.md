@@ -132,7 +132,7 @@ Human subject matter expertise combined with AI writing capabilities produces co
 
 - Speculation presented as fact
 - Unverified claims or statistics
-- Generic AI-writing patterns (see [humanizer skill](../../.claude/skills/humanizer/skill.md))
+- Generic AI-writing patterns (avoid clichés, vary sentence structure, use authentic voice)
 - Promotional language or superlatives
 - Future predictions without qualification
 - Content that duplicates existing documentation without adding value
