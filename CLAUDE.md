@@ -25,7 +25,7 @@ MX-Gathering is an open-source community repository for Machine Experience (MX) 
 
 ## Repository Structure
 
-**For complete technical structure and AI assistant guidance, see:** [docs/for-ai/architecture.md](docs/for-ai/architecture.md)
+**For complete technical structure and AI assistant guidance, see:** [docs/for-ai/architecture.md](docs/for-ai/architecture.md) ("MX-Gathering Architecture Documentation" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/for-ai/architecture.md>)
 
 **Quick overview** - This is a content-focused repository containing:
 
