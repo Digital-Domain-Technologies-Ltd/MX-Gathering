@@ -39,7 +39,7 @@ MX-Gathering is accessible through multiple domains:
 - **[mx-thegathering.store](https://mx-thegathering.store)** - Commerce and premium content
 - **[mx-thegathering.xyz](https://mx-thegathering.xyz)** - Experimental features
 
-See [docs/domains/DOMAIN-STRATEGY.md](docs/domains/DOMAIN-STRATEGY.md) for complete domain strategy and [docs/domains/HOSTING-SETUP.md](docs/domains/HOSTING-SETUP.md) for hosting configuration.
+See [docs/domains/DOMAIN-STRATEGY.md](docs/domains/DOMAIN-STRATEGY.md) ("MX-Gathering Domain Strategy" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/domains/DOMAIN-STRATEGY.md>) for complete domain strategy and [docs/domains/HOSTING-SETUP.md](docs/domains/HOSTING-SETUP.md) ("MX-Gathering Hosting Setup Guide" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/domains/HOSTING-SETUP.md>) for hosting configuration.
 
 ## Contents
 
@@ -137,9 +137,9 @@ We welcome:
 
 ### For Developers
 
-1. Read [docs/development/QUICKSTART.md](docs/development/QUICKSTART.md) for 5-minute setup
-2. Review [docs/development/ENVIRONMENTS.md](docs/development/ENVIRONMENTS.md) for complete workflow
-3. See [docs/for-ai/architecture.md](docs/for-ai/architecture.md) for technical structure
+1. Read [docs/development/QUICKSTART.md](docs/development/QUICKSTART.md) ("MX-Gathering Quickstart Guide" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/development/QUICKSTART.md>) for 5-minute setup
+2. Review [docs/development/ENVIRONMENTS.md](docs/development/ENVIRONMENTS.md) ("MX-Gathering Development Environments" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/development/ENVIRONMENTS.md>) for complete workflow
+3. See [docs/for-ai/architecture.md](docs/for-ai/architecture.md) ("MX-Gathering Architecture Documentation" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/for-ai/architecture.md>) for technical structure
 
 ## Related Projects
 
