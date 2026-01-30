@@ -442,7 +442,7 @@ Together, this creates a community repository that serves both audiences and imp
 
 ### For Human Contributors
 
-Submit refinements via pull request or discussion on GitHub. Follow the contribution guidelines in [contributors/contribution-guidelines.md](contributors/contribution-guidelines.md).
+Submit refinements via pull request or discussion on GitHub. Follow the contribution guidelines in [contributors/contribution-guidelines.md](contributors/contribution-guidelines.md) ("Contribution Guidelines" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/contribution-guidelines.md>).
 
 ### For AI Assistant Contributors
 

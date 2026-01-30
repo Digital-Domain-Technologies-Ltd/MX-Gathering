@@ -12,11 +12,11 @@ Templates for organizing community events around Machine Experience (MX) pattern
 
 ## Available Templates
 
-- [meetup-template.md](meetup-template.md) - Local meetups
-- [workshop-template.md](workshop-template.md) - Hands-on workshops
-- [conference-talk-template.md](conference-talk-template.md) - Conference proposals
-- [webinar-template.md](webinar-template.md) - Online events
+- [meetup-template.md](meetup-template.md) ("Meetup Organization Template" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/events/meetup-template.md>) - Local meetups
+- [workshop-template.md](workshop-template.md) ("Workshop Organization Template" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/events/workshop-template.md>) - Hands-on workshops
+- [conference-talk-template.md](conference-talk-template.md) ("Conference Talk Template" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/events/conference-talk-template.md>) - Conference proposals
+- [webinar-template.md](webinar-template.md) ("Webinar Organization Template" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/events/webinar-template.md>) - Online events
 
 ## After Your Event
 
-Share outcomes in [discussions/case-studies.md](../discussions/case-studies.md)
+Share outcomes in [discussions/case-studies.md](../discussions/case-studies.md) ("Case Studies Archive" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/discussions/case-studies.md>)

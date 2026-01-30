@@ -12,14 +12,14 @@ Welcome to MX-Gathering! This directory provides resources to help you get start
 
 ## Quick Start
 
-1. **New to MX?** Start with [reading-guide.md](reading-guide.md)
-2. **Ready to implement?** Follow [implementation-checklist.md](implementation-checklist.md)
-3. **Having issues?** Check [troubleshooting.md](troubleshooting.md)
-4. **Need tools?** Browse [tools-and-resources.md](tools-and-resources.md)
+1. **New to MX?** Start with [reading-guide.md](reading-guide.md) ("Reading Guide" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/members/reading-guide.md>)
+2. **Ready to implement?** Follow [implementation-checklist.md](implementation-checklist.md) ("Implementation Checklist" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/members/implementation-checklist.md>)
+3. **Having issues?** Check [troubleshooting.md](troubleshooting.md) ("Troubleshooting Guide" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/members/troubleshooting.md>)
+4. **Need tools?** Browse [tools-and-resources.md](tools-and-resources.md) ("Tools and Resources" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/members/tools-and-resources.md>)
 
 ## What You'll Find Here
 
-### [Reading Guide](reading-guide.md)
+### [Reading Guide](reading-guide.md) ("Reading Guide" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/members/reading-guide.md>)
 
 Curated paths through MX content based on your role and goals.
 
@@ -30,7 +30,7 @@ Curated paths through MX content based on your role and goals.
 - Content creators optimizing workflows
 - Anyone new to Machine Experience
 
-### [Implementation Checklist](implementation-checklist.md)
+### [Implementation Checklist](implementation-checklist.md) ("Implementation Checklist" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/members/implementation-checklist.md>)
 
 Step-by-step guide to implementing MX patterns.
 
@@ -41,7 +41,7 @@ Step-by-step guide to implementing MX patterns.
 - Implement patterns
 - Measure results
 
-### [Troubleshooting](troubleshooting.md)
+### [Troubleshooting](troubleshooting.md) ("Troubleshooting Guide" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/members/troubleshooting.md>)
 
 Common issues and solutions.
 
@@ -52,7 +52,7 @@ Common issues and solutions.
 - Pattern application questions
 - Integration challenges
 
-### [Tools and Resources](tools-and-resources.md)
+### [Tools and Resources](tools-and-resources.md) ("Tools and Resources" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/members/tools-and-resources.md>)
 
 Curated list of helpful tools and resources.
 
@@ -76,7 +76,7 @@ Curated list of helpful tools and resources.
 
 Once you've implemented MX patterns:
 
-- Share your experience in [discussions/case-studies.md](../discussions/case-studies.md)
+- Share your experience in [discussions/case-studies.md](../discussions/case-studies.md) ("Case Studies Archive" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/discussions/case-studies.md>)
 - Contribute improvements to these resources
 - Help others in community discussions
 - Organize local events

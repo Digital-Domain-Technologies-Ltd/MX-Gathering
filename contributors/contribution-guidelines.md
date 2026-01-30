@@ -36,7 +36,7 @@ Thank you for contributing to MX-Gathering!
 - Professional tone
 - Clear markdown formatting
 
-See [style-guide-summary.md](style-guide-summary.md) for details.
+See [style-guide-summary.md](style-guide-summary.md) ("Style Guide Summary" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/style-guide-summary.md>) for details.
 
 ## License
 

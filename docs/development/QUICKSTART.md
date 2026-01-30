@@ -318,8 +318,8 @@ git merge origin/dev
 ### Resources
 
 - **Documentation:** [docs/](docs/)
-- **Environments Guide:** [docs/development/ENVIRONMENTS.md](ENVIRONMENTS.md)
-- **Domain Strategy:** [docs/domains/DOMAIN-STRATEGY.md](../domains/DOMAIN-STRATEGY.md)
+- **Environments Guide:** [docs/development/ENVIRONMENTS.md](ENVIRONMENTS.md) ("MX-Gathering Development Environments" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/development/ENVIRONMENTS.md>)
+- **Domain Strategy:** [docs/domains/DOMAIN-STRATEGY.md](../domains/DOMAIN-STRATEGY.md) ("MX-Gathering Domain Strategy" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/domains/DOMAIN-STRATEGY.md>)
 
 ### Ask Questions
 
@@ -332,9 +332,9 @@ git merge origin/dev
 1. ✅ Clone repository
 2. ✅ Run locally
 3. ✅ Make first change
-4. Read [ENVIRONMENTS.md](ENVIRONMENTS.md) for full development guide
-5. Check [Contributor Guidelines](../../contributors/contribution-guidelines.md)
-6. Review [Code of Conduct](../../contributors/code-of-conduct.md)
+4. Read [ENVIRONMENTS.md](ENVIRONMENTS.md) ("MX-Gathering Development Environments" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/docs/development/ENVIRONMENTS.md>) for full development guide
+5. Check [Contributor Guidelines](../../contributors/contribution-guidelines.md) ("Contribution Guidelines" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/contribution-guidelines.md>)
+6. Review [Code of Conduct](../../contributors/code-of-conduct.md) ("Code of Conduct" at <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/blob/main/contributors/code-of-conduct.md>)
 7. Join [GitHub Discussions](https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/discussions)
 
 ---
