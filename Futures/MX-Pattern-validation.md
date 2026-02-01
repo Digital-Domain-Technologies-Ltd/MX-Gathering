@@ -58,6 +58,7 @@ Without validation, MX patterns would drift, fork, and degrade.
 MX validation checks several layers of a pattern:
 
 ### **2.1 Metadata Validation**
+
 Ensures:
 
 - required fields exist  
@@ -69,6 +70,7 @@ Ensures:
 Machines rely on metadata to reason about patterns.
 
 ### **2.2 Boundary Validation**
+
 Ensures the pattern’s declared boundary is:
 
 - explicit  
@@ -82,6 +84,7 @@ Examples:
 - `public-web` patterns must define access controls  
 
 ### **2.3 Structural Validation**
+
 Ensures the pattern includes:
 
 - intent  
@@ -95,6 +98,7 @@ Ensures the pattern includes:
 This makes patterns predictable and machine‑navigable.
 
 ### **2.4 Dependency Validation**
+
 Ensures:
 
 - composed patterns exist  
@@ -103,6 +107,7 @@ Ensures:
 - no boundary violations  
 
 ### **2.5 Risk Validation**
+
 Ensures:
 
 - risks are declared  
@@ -118,6 +123,7 @@ Machines can flag missing or inconsistent risk declarations.
 MX validation happens at three levels:
 
 ### **3.1 Human Validation**
+
 Humans validate:
 
 - clarity  
@@ -129,6 +135,7 @@ Humans validate:
 This ensures patterns remain grounded in human needs.
 
 ### **3.2 Machine Validation**
+
 Machines validate:
 
 - metadata  
@@ -141,6 +148,7 @@ Machines validate:
 This ensures patterns remain predictable and interoperable.
 
 ### **3.3 Community Validation**
+
 The MX community validates:
 
 - adoption  
@@ -157,6 +165,7 @@ This ensures patterns remain living artefacts, not static documents.
 MX governance is built on five principles:
 
 ### **4.1 Transparency**
+
 Patterns must be explicit about:
 
 - intent  
@@ -165,6 +174,7 @@ Patterns must be explicit about:
 - provenance  
 
 ### **4.2 Reproducibility**
+
 A pattern must produce the same result on:
 
 - different machines  
@@ -172,6 +182,7 @@ A pattern must produce the same result on:
 - different versions  
 
 ### **4.3 Accountability**
+
 Patterns must declare:
 
 - authors  
@@ -180,6 +191,7 @@ Patterns must declare:
 - lineage  
 
 ### **4.4 Safety**
+
 Patterns must not:
 
 - violate boundaries  
@@ -187,6 +199,7 @@ Patterns must not:
 - create unsafe agent behaviours  
 
 ### **4.5 Co‑authorship**
+
 Governance applies equally to:
 
 - human authors  
@@ -201,6 +214,7 @@ Machines can propose changes, but humans remain accountable.
 MX uses several mechanisms to enforce governance:
 
 ### **5.1 Pattern Registries**
+
 A registry stores:
 
 - patterns  
@@ -216,6 +230,7 @@ Machines can query the registry to:
 - propose updates  
 
 ### **5.2 Pattern Linters**
+
 Linters check:
 
 - metadata correctness  
@@ -226,6 +241,7 @@ Linters check:
 They act as the first line of defence.
 
 ### **5.3 Boundary Checkers**
+
 Boundary checkers ensure:
 
 - local patterns stay local  
@@ -233,6 +249,7 @@ Boundary checkers ensure:
 - hybrid patterns define access controls  
 
 ### **5.4 Provenance Trackers**
+
 Track:
 
 - who authored a pattern  
@@ -243,6 +260,7 @@ Track:
 This creates a transparent lineage.
 
 ### **5.5 Governance Reviews**
+
 Human–machine review cycles ensure:
 
 - ethical alignment  

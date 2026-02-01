@@ -21,6 +21,7 @@ It is a proposal intended to spark discussion, experimentation, and co‑creatio
 ## **1. Why MX Needs Multi‑Agent Models**
 
 ### **1.1 Single agents are powerful, but limited**
+
 A single agent can:
 
 - reason  
@@ -31,6 +32,7 @@ A single agent can:
 But no single agent can excel at everything.
 
 ### **1.2 Multi‑agent systems unlock specialisation**
+
 Different agents can specialise in:
 
 - research  
@@ -44,6 +46,7 @@ Different agents can specialise in:
 Patterns allow these specialisations to be explicit and machine‑readable.
 
 ### **1.3 Humans need clarity and control**
+
 Multi‑agent systems can become complex quickly.  
 Patterns provide:
 
@@ -62,6 +65,7 @@ This keeps complexity understandable.
 This proposal introduces three new pattern types:
 
 ### **2.1 Agent Role Patterns**
+
 Define:
 
 - purpose  
@@ -77,6 +81,7 @@ Examples:
 - `mx.pattern.agent.executor`  
 
 ### **2.2 Agent Interaction Patterns**
+
 Define:
 
 - communication protocols  
@@ -92,6 +97,7 @@ Examples:
 - `mx.pattern.interaction.consensus`  
 
 ### **2.3 System Orchestration Patterns**
+
 Define:
 
 - how agents coordinate  
@@ -114,6 +120,7 @@ These patterns can be composed to form complete multi‑agent systems.
 Multi‑agent systems introduce new boundary types:
 
 ### **3.1 Inter‑Agent Boundaries**
+
 Define:
 
 - what agents may share  
@@ -122,6 +129,7 @@ Define:
 - what data is private  
 
 ### **3.2 System‑Level Boundaries**
+
 Define:
 
 - local-only vs hybrid vs cloud  
@@ -129,6 +137,7 @@ Define:
 - shared vs isolated memory  
 
 ### **3.3 Escalation Boundaries**
+
 Define:
 
 - when an agent may escalate to another  
@@ -142,6 +151,7 @@ Machines can enforce these boundaries automatically.
 ## **4. Proposal: Pattern‑Driven Orchestration**
 
 ### **4.1 Orchestration as a pattern graph**
+
 A multi‑agent system can be described as:
 
 - a graph of agent role patterns  
@@ -151,6 +161,7 @@ A multi‑agent system can be described as:
 Machines can read this graph and execute it.
 
 ### **4.2 Declarative orchestration**
+
 Instead of writing orchestration code, humans declare:
 
 - roles  
@@ -162,6 +173,7 @@ Instead of writing orchestration code, humans declare:
 Machines generate the orchestration logic.
 
 ### **4.3 Dynamic orchestration**
+
 Machines can:
 
 - reassign tasks  
@@ -179,24 +191,29 @@ Machines can:
 A system might include:
 
 ### **5.1 Research Agent**
+
 Pattern: `mx.pattern.agent.researcher`  
 Capabilities: search, summarise, analyse  
 Boundary: cloud‑restricted  
 
 ### **5.2 Planning Agent**
+
 Pattern: `mx.pattern.agent.planner`  
 Capabilities: reasoning, decomposition  
 Boundary: local-only  
 
 ### **5.3 Execution Agent**
+
 Pattern: `mx.pattern.agent.executor`  
 Capabilities: tool use, file operations  
 Boundary: local-only  
 
 ### **Interaction Pattern**
+
 `mx.pattern.interaction.request-response`
 
 ### **Orchestration Pattern**
+
 `mx.pattern.orchestration.pipeline`
 
 Machines can assemble this system automatically.
@@ -206,6 +223,7 @@ Machines can assemble this system automatically.
 ## **6. Risk and Governance in Multi‑Agent Systems**
 
 ### **6.1 Risk Propagation**
+
 Risks propagate:
 
 - across agents  
@@ -215,6 +233,7 @@ Risks propagate:
 Machines can calculate cumulative risk.
 
 ### **6.2 Governance Hooks**
+
 Patterns can declare:
 
 - audit points  
@@ -225,6 +244,7 @@ Patterns can declare:
 Machines can enforce these at runtime.
 
 ### **6.3 Safety Constraints**
+
 Examples:
 
 - a cloud‑enabled agent cannot send raw data to a local‑only agent  

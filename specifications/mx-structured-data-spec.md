@@ -1448,9 +1448,9 @@ Once migration is underway:
 npx schema-validator content/**/*.md
 ```
 
-2. **Review warnings** — unrecognised types or properties may indicate errors or opportunities to extend
-3. **Test rich results** — use Google's tool to verify search appearance
-4. **Monitor agent behaviour** — if AI tools misinterpret content, adjust `mx:` properties
+1. **Review warnings** — unrecognised types or properties may indicate errors or opportunities to extend
+2. **Test rich results** — use Google's tool to verify search appearance
+3. **Monitor agent behaviour** — if AI tools misinterpret content, adjust `mx:` properties
 
 ### Handling Legacy Content
 
@@ -1525,6 +1525,7 @@ ld:
 ### Common Patterns
 
 **Blog post:**
+
 ```yaml
 ld:
   "@type": BlogPosting
@@ -1532,6 +1533,7 @@ ld:
 ```
 
 **Technical documentation:**
+
 ```yaml
 ld:
   "@type": TechArticle
@@ -1539,6 +1541,7 @@ ld:
 ```
 
 **Illustrative content:**
+
 ```yaml
 ld:
   "@type": BlogPosting
@@ -1548,6 +1551,7 @@ ld:
 ```
 
 **Series member:**
+
 ```yaml
 ld:
   "@type": Article
@@ -1558,6 +1562,7 @@ ld:
 ```
 
 **Glossary term:**
+
 ```yaml
 ld:
   "@type": DefinedTerm

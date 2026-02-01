@@ -27,6 +27,7 @@ This is a proposal intended to spark community discussion and experimentation.
 ## **1. Why MX Needs Execution Models**
 
 ### **1.1 Patterns must map to reality**
+
 A pattern may declare:
 
 - a boundary  
@@ -39,6 +40,7 @@ A pattern may declare:
 But unless these declarations map cleanly to execution, the pattern becomes aspirational rather than operational.
 
 ### **1.2 Machines need alignment signals**
+
 Machines must be able to verify:
 
 - whether a runtime matches the pattern  
@@ -47,6 +49,7 @@ Machines must be able to verify:
 - whether risks are mitigated  
 
 ### **1.3 Humans need trust**
+
 Humans need confidence that:
 
 - the agent behaves as described  
@@ -82,6 +85,7 @@ An **Execution Model** is a machine‑readable description of how a pattern maps
   (ensuring required components exist)
 
 ### **2.2 Execution Model as a companion to the pattern**
+
 Patterns describe *intent*.  
 Execution models describe *behaviour*.
 
@@ -92,6 +96,7 @@ Together, they form a complete specification.
 ## **3. Proposed Execution Model Structure**
 
 ### **3.1 Runtime Section**
+
 Declares:
 
 - agent runtime  
@@ -100,6 +105,7 @@ Declares:
 - version constraints  
 
 ### **3.2 Boundary Section**
+
 Declares:
 
 - what the runtime must enforce  
@@ -107,6 +113,7 @@ Declares:
 - what it must log  
 
 ### **3.3 Capability Section**
+
 Declares:
 
 - available tools  
@@ -115,6 +122,7 @@ Declares:
 - available memory systems  
 
 ### **3.4 Execution Graph**
+
 A machine‑readable graph describing:
 
 - data flow  
@@ -123,6 +131,7 @@ A machine‑readable graph describing:
 - model invocation paths  
 
 ### **3.5 Risk Enforcement**
+
 Declares:
 
 - runtime checks  
@@ -137,6 +146,7 @@ Machines can validate these automatically.
 ## **4. Runtime Alignment**
 
 ### **4.1 What alignment means**
+
 Alignment ensures that:
 
 - the runtime matches the pattern  
@@ -146,6 +156,7 @@ Alignment ensures that:
 - risks are mitigated  
 
 ### **4.2 Alignment Checks**
+
 Machines could verify:
 
 - runtime version compatibility  
@@ -155,6 +166,7 @@ Machines could verify:
 - dependency satisfaction  
 
 ### **4.3 Alignment Failures**
+
 If alignment fails, machines could:
 
 - warn the user  

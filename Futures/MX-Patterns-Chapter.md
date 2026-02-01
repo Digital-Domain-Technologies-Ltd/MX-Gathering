@@ -27,14 +27,17 @@ This chapter explains where MX patterns come from, why they matter, and how they
 MX patterns draw inspiration from three traditions:
 
 ### **1.1 Software Design Patterns**
+
 The Gang of Four patterns gave developers a shared vocabulary for recurring solutions.  
 MX inherits their clarity and reusability, but extends them beyond code.
 
 ### **1.2 Architectural Decision Records (ADRs)**
+
 ADRs capture the “why” behind decisions.  
 MX patterns adopt this transparency and traceability.
 
 ### **1.3 Metadata‑first Publishing**
+
 MX treats metadata as infrastructure, not decoration.  
 Patterns are metadata‑rich by design, enabling machines to read, reason, and act.
 
@@ -54,6 +57,7 @@ MX is a discipline defined by:
 Patterns are the mechanism that makes this possible.
 
 ### **2.1 Patterns create shared understanding**
+
 Humans and machines both need to understand:
 
 - what a system does  
@@ -64,6 +68,7 @@ Humans and machines both need to understand:
 Patterns encode this understanding in a form both can parse.
 
 ### **2.2 Patterns make agent systems reproducible**
+
 Without patterns, agent setups become:
 
 - ad‑hoc  
@@ -74,6 +79,7 @@ Without patterns, agent setups become:
 Patterns ensure that an agent can be rebuilt, audited, or extended by any human or machine.
 
 ### **2.3 Patterns enable governance**
+
 MX is a governance‑aware discipline.  
 Patterns provide:
 
@@ -131,6 +137,7 @@ MX patterns emerged from your work, Tom, as you formalised MX as a discipline.
 Several forces converged:
 
 ### **4.1 The need for explicit boundaries**
+
 Agents must declare:
 
 - where they run  
@@ -141,10 +148,12 @@ Agents must declare:
 Patterns make these boundaries explicit.
 
 ### **4.2 The need for reproducibility**
+
 You recognised that agent systems are only trustworthy if they can be rebuilt exactly.  
 Patterns encode the steps, metadata, and architecture required to reproduce an agent.
 
 ### **4.3 The need for machine participation**
+
 MX is built on co‑authorship.  
 Patterns give machines a structured artefact they can:
 
@@ -155,6 +164,7 @@ Patterns give machines a structured artefact they can:
 - reason about  
 
 ### **4.4 The need for a shared language**
+
 Humans and machines need a common grammar.  
 Patterns are that grammar.
 

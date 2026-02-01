@@ -37,6 +37,7 @@ GitHub Pages will deploy the site to: `https://digital-domain-technologies-ltd.g
 ### Cloudflare Setup (Recommended)
 
 **Why Cloudflare?**
+
 - Free SSL/TLS certificates
 - Global CDN
 - DDoS protection
@@ -61,6 +62,7 @@ tim.ns.cloudflare.com
 ```
 
 **Where to update:**
+
 - Log in to your domain registrar (GoDaddy, Namecheap, etc.)
 - Find DNS/Nameserver settings
 - Replace existing nameservers with Cloudflare's
@@ -114,6 +116,7 @@ Configure redirects for secondary domains:
 ### 1. mx-thegathering.net → mx-thegathering.ai/docs
 
 **Page Rule:**
+
 ```text
 URL: mx-thegathering.net/*
 Forwarding URL: 301 - Permanent Redirect
@@ -123,6 +126,7 @@ Destination: https://mx-thegathering.ai/docs/$1
 ### 2. mx-thegathering.info → mx-thegathering.ai/learn
 
 **Page Rule:**
+
 ```text
 URL: mx-thegathering.info/*
 Forwarding URL: 301 - Permanent Redirect
@@ -132,6 +136,7 @@ Destination: https://mx-thegathering.ai/learn/$1
 ### 3. mx-thegathering.store → mx-thegathering.ai/store
 
 **Page Rule:**
+
 ```text
 URL: mx-thegathering.store/*
 Forwarding URL: 301 - Permanent Redirect
@@ -141,6 +146,7 @@ Destination: https://mx-thegathering.ai/store/$1
 ### 4. mx-thegathering.xyz → mx-thegathering.ai/labs
 
 **Page Rule:**
+
 ```text
 URL: mx-thegathering.xyz/*
 Forwarding URL: 301 - Permanent Redirect
@@ -203,6 +209,7 @@ curl -I https://mx-thegathering.ai
 ### Option 2: Cloudflare Pages
 
 **Advantages:**
+
 - Faster deployment than GitHub Pages
 - Better integration with Cloudflare
 - More concurrent builds
@@ -219,6 +226,7 @@ curl -I https://mx-thegathering.ai
 ### Option 3: Netlify
 
 **Advantages:**
+
 - Easy custom domains
 - Built-in form handling
 - Serverless functions
@@ -238,6 +246,7 @@ curl -I https://mx-thegathering.ai
 ### Option 4: Vercel
 
 **Advantages:**
+
 - Excellent performance
 - Edge functions
 - Preview deployments
@@ -293,6 +302,7 @@ curl -I https://mx-thegathering.ai
 ```
 
 Expected headers:
+
 - `Strict-Transport-Security`
 - `X-Content-Type-Options: nosniff`
 - `X-Frame-Options: DENY` or `SAMEORIGIN`
@@ -305,6 +315,7 @@ Expected headers:
 - **WebPageTest:** <https://www.webpagetest.org/>
 
 Target metrics:
+
 - First Contentful Paint: < 1.5s
 - Largest Contentful Paint: < 2.5s
 - Time to Interactive: < 3.5s
@@ -328,12 +339,14 @@ Target metrics:
 Cloudflare auto-renews SSL certificates. No action needed.
 
 For Let's Encrypt (if not using Cloudflare):
+
 - Certificates renew automatically every 60 days
 - Set up email alerts for renewal failures
 
 ### DNS Monitoring
 
 Monitor DNS changes:
+
 - Enable Cloudflare email notifications
 - Use DNS monitoring service (e.g., DNS Spy)
 
@@ -346,6 +359,7 @@ Monitor DNS changes:
 **Cause:** DNS records not propagated or misconfigured
 
 **Solution:**
+
 1. Verify DNS records in Cloudflare
 2. Check nameservers are pointing to Cloudflare
 3. Wait for DNS propagation (up to 48 hours)
@@ -356,6 +370,7 @@ Monitor DNS changes:
 **Cause:** SSL certificate doesn't match domain
 
 **Solution:**
+
 1. Verify custom domain in GitHub Pages settings
 2. Ensure CNAME file exists with correct domain
 3. Wait for certificate provisioning (up to 24 hours)
@@ -366,6 +381,7 @@ Monitor DNS changes:
 **Cause:** Content not deployed or wrong directory
 
 **Solution:**
+
 1. Check GitHub Pages build status
 2. Verify `/web` directory contains `index.html`
 3. Check GitHub Actions logs for errors
@@ -376,6 +392,7 @@ Monitor DNS changes:
 **Cause:** Conflicting redirect rules
 
 **Solution:**
+
 1. Check Cloudflare Page Rules
 2. Disable "Always Use HTTPS" temporarily
 3. Review .htaccess or other redirect configs
@@ -386,10 +403,12 @@ Monitor DNS changes:
 ## Contact and Support
 
 **Technical Issues:**
+
 - Open issue: <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/issues>
 - Email: <tom.cranstoun@gmail.com>
 
 **Domain Management:**
+
 - Registrar: [Your registrar name]
 - DNS Provider: Cloudflare
 - Hosting: GitHub Pages / Cloudflare Pages

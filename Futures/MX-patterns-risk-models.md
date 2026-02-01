@@ -21,6 +21,7 @@ It is a proposal intended to spark discussion, experimentation, and refinement.
 ## **1. Why MX Needs a Risk Model**
 
 ### **1.1 Patterns encode behaviour**
+
 Every pattern defines:
 
 - what an agent can do  
@@ -31,6 +32,7 @@ Every pattern defines:
 These behaviours carry inherent risks.
 
 ### **1.2 Machines need explicit risk signals**
+
 For automated reasoning to be safe, machines must understand:
 
 - what risks a pattern introduces  
@@ -39,6 +41,7 @@ For automated reasoning to be safe, machines must understand:
 - what mitigations exist  
 
 ### **1.3 Humans need clarity and trust**
+
 Humans need to know:
 
 - whether a pattern is safe  
@@ -135,6 +138,7 @@ Machines can enforce these constraints.
 ## **4. Risk Propagation in MX Patterns**
 
 ### **4.1 Through Composition**
+
 If Pattern A composes Pattern B:
 
 - A inherits all risks from B  
@@ -144,6 +148,7 @@ If Pattern A composes Pattern B:
 Machines can calculate this automatically.
 
 ### **4.2 Through Inheritance**
+
 If Pattern C inherits from Pattern A:
 
 - C inherits A’s risks  
@@ -151,6 +156,7 @@ If Pattern C inherits from Pattern A:
 - C must declare any new risks  
 
 ### **4.3 Through Dependencies**
+
 If Pattern D depends on Pattern E:
 
 - D inherits E’s risks  
@@ -165,9 +171,11 @@ This creates a **risk graph** that machines can traverse.
 Machines could:
 
 ### **5.1 Detect missing risk declarations**
+
 If a pattern introduces a boundary change but declares no risks, machines can flag it.
 
 ### **5.2 Infer risks from metadata**
+
 If a pattern uses:
 
 - cloud APIs  
@@ -178,6 +186,7 @@ If a pattern uses:
 Machines can infer associated risks.
 
 ### **5.3 Propagate risks through the pattern graph**
+
 Machines can calculate:
 
 - cumulative risk  
@@ -186,6 +195,7 @@ Machines can calculate:
 - unresolved risk  
 
 ### **5.4 Suggest mitigations**
+
 Machines can propose:
 
 - boundary clarifications  
@@ -194,6 +204,7 @@ Machines can propose:
 - documentation improvements  
 
 ### **5.5 Generate risk summaries**
+
 Machines can produce:
 
 - human‑readable summaries  

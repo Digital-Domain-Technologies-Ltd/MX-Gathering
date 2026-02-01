@@ -30,11 +30,13 @@ keywords: ['machine-experience', 'community', 'organization', 'template', 'mx-ga
 ## Agenda
 
 ### Module 1: [Topic]
+
 - Theory
 - Demo
 - Hands-on
 
 ### Module 2: [Topic]
+
 - Theory
 - Demo
 - Hands-on

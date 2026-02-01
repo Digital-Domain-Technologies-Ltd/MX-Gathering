@@ -242,7 +242,7 @@ file:
   dependencies:
     internal:
       - ./crypto
-      - ../config/auth
+      - ../mx-config/auth
     external:
       - jsonwebtoken
       
@@ -429,6 +429,7 @@ ai:
 Consider including:
 
 **Performance context:**
+
 ```yaml
 ai:
   context: |
@@ -438,6 +439,7 @@ ai:
 ```
 
 **Business context:**
+
 ```yaml
 ai:
   context: |
@@ -447,6 +449,7 @@ ai:
 ```
 
 **Historical context:**
+
 ```yaml
 ai:
   context: |
@@ -456,6 +459,7 @@ ai:
 ```
 
 **Architectural context:**
+
 ```yaml
 ai:
   context: |
@@ -706,6 +710,7 @@ Code metadata cascades from repository to directory to file to function.
 ### Example Cascade
 
 Repository default:
+
 ```yaml
 # /.mx.yaml
 repository:
@@ -716,6 +721,7 @@ repository:
 ```
 
 Directory override:
+
 ```yaml
 # /src/api/.mx.yaml
 directory:
@@ -725,6 +731,7 @@ directory:
 ```
 
 File override:
+
 ```yaml
 # /src/api/internal.mx.yaml
 file:
@@ -733,6 +740,7 @@ file:
 ```
 
 Function override:
+
 ```typescript
 /**
  * @mx:ai.edit false  // But this function is still protected
@@ -792,6 +800,7 @@ AI coding assistants use metadata to:
 Here's a complete example showing all three levels working together:
 
 **Repository level** (`.mx.yaml`):
+
 ```yaml
 mx:
   version: "1.0"
@@ -813,6 +822,7 @@ repository:
 ```
 
 **File level** (`src/cart/totals.mx.yaml`):
+
 ```yaml
 file:
   path: totals.ts
@@ -835,6 +845,7 @@ file:
 ```
 
 **Inline level** (in `totals.ts`):
+
 ```typescript
 /**
  * Calculate cart total including tax and discounts.

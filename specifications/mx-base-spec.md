@@ -99,6 +99,7 @@ mx:confidence: 0.9
 When output as JSON-LD, MX properties use either:
 
 **additionalProperty approach:**
+
 ```json
 {
   "@context": "https://schema.org",
@@ -113,6 +114,7 @@ When output as JSON-LD, MX properties use either:
 ```
 
 **Custom context approach:**
+
 ```json
 {
   "@context": [
@@ -315,12 +317,14 @@ mx:inherit_except:
 Arrays can be extended or modified during inheritance:
 
 **Replace (default):**
+
 ```yaml
 # Child replaces parent array
 mx:tags: [new, tags]
 ```
 
 **Extend:**
+
 ```yaml
 # Child extends parent array
 mx:tags:
@@ -329,6 +333,7 @@ mx:tags:
 ```
 
 **Remove:**
+
 ```yaml
 # Child removes from parent array
 mx:tags:
@@ -398,21 +403,25 @@ ai:
 Different specifications define additional AI properties appropriate to their domain:
 
 **Code:**
+
 - `ai.editable` — Edit permission
 - `ai.context_required` — Files to read before editing
 - `ai.safe_to_call` — API call permission
 
 **Media:**
+
 - `ai.alt_text` — Alternative text
 - `ai.description_confidence` — Confidence in description
 - `ai.reproduction` — Reproduction permission
 
 **Database:**
+
 - `ai.query_allowed` — Query execution permission
 - `ai.schema_visible` — Schema visibility
 - `ai.mask_in_responses` — Value masking
 
 **Content Fragments:**
+
 - `ai.rag.enabled` — RAG indexing
 - `ai.rag.chunking` — Chunking strategy
 - `ai.rag.hints` — Retrieval hints

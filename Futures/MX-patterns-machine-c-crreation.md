@@ -49,15 +49,19 @@ Humans alone cannot:
 Machines excel at this.
 
 ### **1.1 Machines bring scale**
+
 They can analyse thousands of patterns instantly.
 
 ### **1.2 Machines bring consistency**
+
 They never forget a rule, boundary, or dependency.
 
 ### **1.3 Machines bring creativity**
+
 They can propose new combinations humans may not consider.
 
 ### **1.4 Machines bring governance**
+
 They enforce boundaries and detect violations automatically.
 
 MX is a discipline built for this partnership.
@@ -71,6 +75,7 @@ MX patterns are intentionally structured so machines can parse them without ambi
 Machines read:
 
 ### **2.1 Metadata**
+
 To understand:
 
 - pattern name  
@@ -81,18 +86,23 @@ To understand:
 - maturity  
 
 ### **2.2 Intent**
+
 To understand what the pattern is *for*.
 
 ### **2.3 Context**
+
 To understand where the pattern *applies*.
 
 ### **2.4 Forces and consequences**
+
 To understand trade‑offs and risks.
 
 ### **2.5 Steps and architecture**
+
 To understand how the system is *constructed*.
 
 ### **2.6 Diagrams and cards**
+
 To understand the system visually.
 
 Machines treat patterns as structured knowledge graphs, not prose.
@@ -104,6 +114,7 @@ Machines treat patterns as structured knowledge graphs, not prose.
 Machines can perform several forms of reasoning over patterns.
 
 ### **3.1 Structural Reasoning**
+
 Checking:
 
 - completeness  
@@ -112,6 +123,7 @@ Checking:
 - malformed metadata  
 
 ### **3.2 Boundary Reasoning**
+
 Ensuring:
 
 - local patterns don’t call cloud services  
@@ -119,6 +131,7 @@ Ensuring:
 - hybrid patterns define access controls  
 
 ### **3.3 Dependency Reasoning**
+
 Understanding:
 
 - what patterns depend on  
@@ -126,6 +139,7 @@ Understanding:
 - whether dependencies conflict  
 
 ### **3.4 Semantic Reasoning**
+
 Interpreting:
 
 - intent  
@@ -136,6 +150,7 @@ Interpreting:
 Machines can detect contradictions or unclear logic.
 
 ### **3.5 Evolutionary Reasoning**
+
 Machines can propose:
 
 - updates  
@@ -153,6 +168,7 @@ MX patterns are not just written by humans.
 Machines can:
 
 ### **4.1 Generate new patterns**
+
 Given:
 
 - a goal  
@@ -163,6 +179,7 @@ Given:
 Machines can produce a first draft of a pattern.
 
 ### **4.2 Extend existing patterns**
+
 Machines can:
 
 - add missing metadata  
@@ -172,6 +189,7 @@ Machines can:
 - add risk sections  
 
 ### **4.3 Specialise patterns**
+
 Machines can derive:
 
 - platform variants  
@@ -180,6 +198,7 @@ Machines can derive:
 - architecture variants  
 
 ### **4.4 Compose patterns**
+
 Machines can assemble:
 
 - multi‑agent systems  
@@ -187,6 +206,7 @@ Machines can assemble:
 - layered governance models  
 
 ### **4.5 Validate their own output**
+
 Machines can run validation on the patterns they generate.
 
 This is the beginning of **self‑documenting systems**.
@@ -199,6 +219,7 @@ MX is not automation.
 It is collaboration.
 
 ### **5.1 Humans provide:**
+
 - intent  
 - ethics  
 - context  
@@ -206,6 +227,7 @@ It is collaboration.
 - governance  
 
 ### **5.2 Machines provide:**
+
 - structure  
 - consistency  
 - scale  
@@ -215,6 +237,7 @@ It is collaboration.
 Together, they produce patterns that neither could create alone.
 
 ### **5.3 Co‑creation workflow**
+
 1. Human defines intent  
 2. Machine drafts pattern  
 3. Human reviews and adjusts  
@@ -259,18 +282,23 @@ This is inheritance + co‑creation in action.
 MX patterns will evolve into:
 
 ### **7.1 Self‑maintaining artefacts**
+
 Patterns that update themselves when dependencies change.
 
 ### **7.2 Self‑validating systems**
+
 Patterns that continuously check their own boundaries.
 
 ### **7.3 Self‑composing architectures**
+
 Machines that assemble systems from patterns automatically.
 
 ### **7.4 Self‑documenting agents**
+
 Agents that generate their own patterns as part of their lifecycle.
 
 ### **7.5 Pattern‑aware agents**
+
 Agents that:
 
 - understand the patterns they run on  

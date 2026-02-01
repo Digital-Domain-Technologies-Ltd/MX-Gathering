@@ -20,6 +20,7 @@ This document outlines the domain portfolio strategy for MX-Gathering community 
 **Annual Renewal:** £239.98
 
 **Primary Uses:**
+
 - Community landing page and portal
 - Event calendar and registration
 - Discussion forum integration
@@ -28,6 +29,7 @@ This document outlines the domain portfolio strategy for MX-Gathering community 
 - Newsletter signup
 
 **Technical Setup:**
+
 - Full domain protection enabled (£0.67/month)
 - HTTPS required (SSL/TLS certificate)
 - CDN recommended for global performance
@@ -37,11 +39,13 @@ This document outlines the domain portfolio strategy for MX-Gathering community 
 ### Secondary Domains
 
 #### mx-thegathering.net
+
 **Purpose:** Technical resources and developer documentation
 
 **Annual Renewal:** £19.97
 
 **Content:**
+
 - API documentation
 - Code examples and patterns
 - Developer guides
@@ -53,11 +57,13 @@ This document outlines the domain portfolio strategy for MX-Gathering community 
 ---
 
 #### mx-thegathering.info
+
 **Purpose:** Educational resources and knowledge base
 
 **Annual Renewal:** £32.99
 
 **Content:**
+
 - Getting started guides
 - Implementation checklists
 - FAQs and help center
@@ -70,11 +76,13 @@ This document outlines the domain portfolio strategy for MX-Gathering community 
 ---
 
 #### mx-thegathering.store
+
 **Purpose:** Commerce and premium content
 
 **Annual Renewal:** £74.97
 
 **Content:**
+
 - Book sales (MX-Bible, MX-Handbook)
 - Premium resources and templates
 - Training materials
@@ -86,11 +94,13 @@ This document outlines the domain portfolio strategy for MX-Gathering community 
 ---
 
 #### mx-thegathering.xyz
+
 **Purpose:** Experimental features and sandbox
 
 **Annual Renewal:** £17.73
 
 **Content:**
+
 - Beta feature testing
 - Developer playground
 - Experimental tools
@@ -104,6 +114,7 @@ This document outlines the domain portfolio strategy for MX-Gathering community 
 ## DNS Configuration
 
 ### Recommended DNS Provider
+
 - Cloudflare (recommended for MX-Gathering)
 - AWS Route 53
 - Google Cloud DNS
@@ -124,11 +135,13 @@ www       CNAME  <domain>
 ### SSL/TLS Certificates
 
 **Options:**
+
 1. **Let's Encrypt** (free, automated renewal)
 2. **Cloudflare Universal SSL** (free with Cloudflare)
 3. **Commercial Certificate** (if required for compliance)
 
 **Implementation:**
+
 - Enable HTTPS redirect (HTTP → HTTPS)
 - Enable HSTS (HTTP Strict Transport Security)
 - Use TLS 1.2+ only
@@ -140,12 +153,14 @@ www       CNAME  <domain>
 ### Option 1: Static Site Hosting (Recommended for Launch)
 
 **Providers:**
+
 - **GitHub Pages** (free, integrates with MX-Gathering repo)
 - **Cloudflare Pages** (free, fast global CDN)
 - **Netlify** (free tier, easy deployment)
 - **Vercel** (free tier, excellent performance)
 
 **Advantages:**
+
 - Zero server management
 - Automatic HTTPS
 - Global CDN distribution
@@ -159,12 +174,14 @@ www       CNAME  <domain>
 ### Option 2: Dynamic Site Hosting
 
 **For future features requiring:**
+
 - User authentication
 - Dynamic content
 - Database integration
 - Server-side processing
 
 **Providers:**
+
 - **Cloudflare Workers** (serverless, edge computing)
 - **AWS Lambda + API Gateway** (serverless functions)
 - **DigitalOcean App Platform** (managed hosting)
@@ -175,6 +192,7 @@ www       CNAME  <domain>
 ## Implementation Roadmap
 
 ### Phase 1: Foundation (Week 1-2)
+
 - [ ] Configure DNS for all domains
 - [ ] Deploy primary landing page to mx-thegathering.ai
 - [ ] Set up SSL/TLS certificates
@@ -182,12 +200,14 @@ www       CNAME  <domain>
 - [ ] Test all domain configurations
 
 ### Phase 2: Content Population (Week 3-4)
+
 - [ ] Launch main community portal (mx-thegathering.ai)
 - [ ] Deploy technical documentation (mx-thegathering.net)
 - [ ] Deploy educational resources (mx-thegathering.info)
 - [ ] Set up placeholder pages for .store and .xyz
 
 ### Phase 3: Feature Expansion (Month 2+)
+
 - [ ] Integrate event calendar
 - [ ] Set up discussion forum (Discourse/GitHub Discussions)
 - [ ] Launch blog/thought leadership section
@@ -209,11 +229,13 @@ server {
 ```
 
 **Advantages:**
+
 - Simplest to maintain
 - Consolidated SEO authority
 - Single source of content
 
 **Disadvantages:**
+
 - Loses potential for specialized content
 - Wastes premium domain purchases
 
@@ -230,6 +252,7 @@ mx-thegathering.xyz     → mx-thegathering.ai/labs/
 ```
 
 **Advantages:**
+
 - Dedicated content areas
 - Memorable URLs for specific purposes
 - Flexible future migration
@@ -239,6 +262,7 @@ mx-thegathering.xyz     → mx-thegathering.ai/labs/
 ### Approach 3: Independent Sites (Maximum Flexibility)
 
 Each domain hosts independent content:
+
 - mx-thegathering.ai - Community hub
 - mx-thegathering.net - Technical docs (separate site)
 - mx-thegathering.info - Knowledge base (separate site)
@@ -246,11 +270,13 @@ Each domain hosts independent content:
 - mx-thegathering.xyz - Experimental features (separate site)
 
 **Advantages:**
+
 - Maximum flexibility
 - Specialized platforms for each purpose
 - Independent scaling
 
 **Disadvantages:**
+
 - Higher maintenance overhead
 - Fragmented user experience
 - More complex authentication
@@ -262,15 +288,18 @@ Each domain hosts independent content:
 ### Recommended Tools
 
 **Privacy-Focused Analytics:**
+
 - Plausible Analytics (recommended)
 - Fathom Analytics
 - Simple Analytics
 
 **Traditional Analytics:**
+
 - Google Analytics 4 (if needed)
 - Matomo (self-hosted option)
 
 **Uptime Monitoring:**
+
 - UptimeRobot (free tier available)
 - Pingdom
 - StatusCake

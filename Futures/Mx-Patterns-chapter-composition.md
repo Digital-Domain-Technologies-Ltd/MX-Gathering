@@ -147,6 +147,7 @@ Machines can understand that:
 MX patterns form a **graph**, not a hierarchy.
 
 ### **4.1 Nodes**
+
 Each pattern is a node with:
 
 - metadata  
@@ -156,6 +157,7 @@ Each pattern is a node with:
 - provenance  
 
 ### **4.2 Edges**
+
 Edges represent:
 
 - composition  

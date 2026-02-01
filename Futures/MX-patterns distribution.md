@@ -34,6 +34,7 @@ It is a proposal for the MX community to explore and evolve.
 ## **1. Why MX Needs Distribution and Deployment Models**
 
 ### **1.1 Patterns must travel**
+
 Patterns will be used across:
 
 - developer machines  
@@ -45,6 +46,7 @@ Patterns will be used across:
 They need a consistent way to move between these contexts.
 
 ### **1.2 Machines need deployment metadata**
+
 Machines must know:
 
 - how to install dependencies  
@@ -53,6 +55,7 @@ Machines must know:
 - how to validate environments  
 
 ### **1.3 Humans need trust and reproducibility**
+
 Humans need confidence that:
 
 - a deployed agent matches the pattern  
@@ -67,6 +70,7 @@ Deployment models provide this trust.
 ## **2. Proposal: MX Pattern Packages**
 
 ### **2.1 What a Pattern Package could be**
+
 A **Pattern Package** is a bundle containing:
 
 - the pattern  
@@ -78,6 +82,7 @@ A **Pattern Package** is a bundle containing:
 - optional machine‑generated scaffolding  
 
 ### **2.2 Packaging Format**
+
 Possible formats:
 
 - `.mxp` (Machine Experience Package)  
@@ -104,6 +109,7 @@ Machines can parse these instantly.
 ## **3. Proposal: MX Pattern Distribution Models**
 
 ### **3.1 Local Distribution**
+
 Patterns can be shared:
 
 - via files  
@@ -117,6 +123,7 @@ Useful for:
 - offline environments  
 
 ### **3.2 Team Distribution**
+
 Patterns can be shared:
 
 - within organisations  
@@ -130,6 +137,7 @@ Useful for:
 - compliance  
 
 ### **3.3 Global Distribution**
+
 Patterns can be published to:
 
 - public registries  
@@ -147,6 +155,7 @@ Useful for:
 ## **4. Proposal: MX Deployment Models**
 
 ### **4.1 Declarative Deployment**
+
 A deployment engine reads:
 
 - the pattern  
@@ -156,6 +165,7 @@ A deployment engine reads:
 …and constructs the agent environment automatically.
 
 ### **4.2 Imperative Deployment**
+
 Humans or machines execute:
 
 - installation steps  
@@ -168,6 +178,7 @@ Useful for:
 - experimental systems  
 
 ### **4.3 Hybrid Deployment**
+
 A combination of:
 
 - declarative scaffolding  
@@ -185,27 +196,32 @@ Useful for:
 Machines could validate:
 
 ### **5.1 Environment Compatibility**
+
 - OS  
 - runtime versions  
 - model availability  
 - tool presence  
 
 ### **5.2 Boundary Enforcement**
+
 - local‑only  
 - cloud‑restricted  
 - hybrid‑controlled  
 
 ### **5.3 Dependency Satisfaction**
+
 - required runtimes  
 - required models  
 - required tools  
 
 ### **5.4 Risk Mitigation**
+
 - declared risks  
 - runtime checks  
 - audit logging  
 
 ### **5.5 Pattern Alignment**
+
 Ensuring the deployed system matches the pattern.
 
 ---
@@ -213,6 +229,7 @@ Ensuring the deployed system matches the pattern.
 ## **6. Update and Rollback Models**
 
 ### **6.1 Pattern Updates**
+
 Machines could:
 
 - detect new versions  
@@ -221,6 +238,7 @@ Machines could:
 - apply changes safely  
 
 ### **6.2 Rollbacks**
+
 Machines could:
 
 - revert to previous versions  
@@ -228,6 +246,7 @@ Machines could:
 - re‑enforce boundaries  
 
 ### **6.3 Migration Guides**
+
 Patterns could include:
 
 - upgrade notes  

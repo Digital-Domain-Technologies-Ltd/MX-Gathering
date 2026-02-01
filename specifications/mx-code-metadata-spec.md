@@ -149,7 +149,7 @@ mx:
       review_required: true
     sensitive_paths:
       - "src/auth/**"
-      - "config/secrets/**"
+      - "mx-config/secrets/**"
 ```
 
 ### Project Properties
@@ -409,7 +409,7 @@ def calculate_total(items: list[CartItem], discount_code: str | None = None) -> 
  * ai:
  *   sensitive: true
  *   reason: "Handles authentication tokens"
- *   context_required: ["src/types/auth.ts", "src/config/oauth.ts"]
+ *   context_required: ["src/types/auth.ts", "src/mx-config/oauth.ts"]
  */
 class AuthManager {
   // ...
@@ -834,6 +834,7 @@ A directory without any of these files inherits directly from its nearest ancest
 ```
 
 In this example:
+
 - `src/utils/helpers.ts` inherits from `/src/mx.yaml`
 - `src/payments/stripe.ts` inherits from `/src/payments/mx.yaml`
 - `scripts/deploy.sh` inherits from `/mx.yaml`
@@ -1011,7 +1012,7 @@ mx:
  * # owner: payments-team (inherited)
  * ai:
  *   context_required:  # extends inherited value
- *     - src/config/stripe.ts
+ *     - src/mx-config/stripe.ts
  */
 ```
 
@@ -1107,6 +1108,7 @@ When resolving properties, build systems MUST apply this precedence (highest to 
 Array properties can be inherited in three ways:
 
 **Replace (default):**
+
 ```yaml
 # Parent
 ai:
@@ -1119,6 +1121,7 @@ ai:
 ```
 
 **Extend:**
+
 ```yaml
 # Child - extends parent
 ai:
@@ -1129,6 +1132,7 @@ ai:
 ```
 
 **Remove:**
+
 ```yaml
 # Child - removes from parent
 ai:
@@ -1231,7 +1235,7 @@ mx inspect src/payments/stripe.ts
 # Shows fully resolved metadata with inheritance
 ```
 
-3. Warn when inheritance creates unexpected combinations
+1. Warn when inheritance creates unexpected combinations
 
 ### Inheritance Visualisation
 
@@ -1250,7 +1254,7 @@ mx:
     context_required:
       - src/types/payment.ts
         # inherited from: /src/payments/mx.yaml
-      - src/config/stripe.ts
+      - src/mx-config/stripe.ts
         # declared in: /src/payments/stripe.ts
 ```
 
@@ -1607,11 +1611,13 @@ Before working with any code, agents SHOULD:
 5. Resolve inheritance chain for current file location
 
 When `ai.assistance: prohibited`:
+
 - Do not offer code suggestions
 - Do not analyse code for improvements
 - Limit interaction to explaining existing code if asked
 
 When `ai.generation.review_required: true`:
+
 - Mark all generated code clearly
 - Remind user that review is required
 - Do not present generated code as production-ready
@@ -1647,6 +1653,7 @@ acme:compliance:
 ```
 
 The agent SHOULD:
+
 - Note the extension exists
 - Not fail or warn excessively
 - Consider the property name for hints (e.g., `compliance`, `pci_dss` suggest security sensitivity)
@@ -1685,6 +1692,7 @@ Resolved for function:
 ```
 
 When `mx:inherit: false` is set:
+
 - Do not apply parent properties
 - Only use explicitly declared properties
 - Treat missing properties as unspecified (use defaults)
@@ -1699,15 +1707,18 @@ Before editing a file, agents SHOULD:
 4. Understand file's `purpose` and `stability`
 
 When `ai.editable: false`:
+
 - Do not suggest edits
 - Explain restrictions if asked
 
 When `ai.editable: cautious`:
+
 - Explain proposed changes before making them
 - Highlight potential impact
 - Suggest human review
 
 When `stability: frozen`:
+
 - Do not suggest changes
 - This API is locked for backward compatibility
 
@@ -1721,14 +1732,17 @@ When working with functions, agents SHOULD:
 4. Check `ai.confidence` before suggesting changes
 
 When `ai.do_not_modify: true`:
+
 - Do not suggest changes to this function
 - Explain why if asked
 
 When `ai.test_coverage: false`:
+
 - Suggest adding tests before modifying
 - Be cautious about changes
 
 When `ai.edge_cases` are documented:
+
 - Ensure any changes handle all listed cases
 - Do not remove edge case handling
 
@@ -1758,6 +1772,7 @@ When suggesting dependency changes, agents SHOULD:
 4. Note `critical` dependencies that need extra care
 
 When `ai.replacement_permitted: false`:
+
 - Do not suggest replacing this dependency
 - Explain why if asked
 
@@ -1766,11 +1781,13 @@ When `ai.replacement_permitted: false`:
 Agents MUST respect environment restrictions:
 
 When `ai.access: prohibited`:
+
 - Do not request or display environment variables
 - Do not include environment values in responses
 - Note that production environments are restricted
 
 When variables are in `sensitive`:
+
 - Never include values in responses
 - Never log or expose
 - Use placeholder notation: `[REDACTED]`
@@ -1785,6 +1802,7 @@ When working with APIs, agents SHOULD:
 4. Note `ai.side_effects` before calling non-idempotent endpoints
 
 When `ai.safe_to_call: false`:
+
 - Do not call this endpoint
 - Explain what the endpoint does without calling it
 - Suggest user make the call manually
@@ -1988,7 +2006,7 @@ mx:
     sensitive_paths:
       - "src/payments/**"
       - "src/auth/**"
-      - "config/secrets/**"
+      - "mx-config/secrets/**"
       - "*.pem"
       - "*.key"
 ```
@@ -2011,7 +2029,7 @@ mx:
  *   reason: "Handles payment credentials and financial transactions"
  *   context_required:
  *     - src/types/payment.ts
- *     - src/config/stripe.ts
+ *     - src/mx-config/stripe.ts
  *   do_not_log:
  *     - cardNumber
  *     - cvv
@@ -2020,7 +2038,7 @@ mx:
 
 import Stripe from 'stripe';
 import { PaymentRequest, PaymentResult } from './types/payment';
-import { stripeConfig } from './config/stripe';
+import { stripeConfig } from './mx-config/stripe';
 
 // @mx:begin security-critical
 // Payment credentials initialisation. Do not modify without security review.

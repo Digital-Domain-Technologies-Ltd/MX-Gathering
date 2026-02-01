@@ -31,6 +31,7 @@ This chapter proposes a lifecycle model for MX patterns — a shared understandi
 ## **1. Why Patterns Need a Lifecycle**
 
 ### **1.1 Patterns are not static**
+
 Agent runtimes change.  
 Model runtimes change.  
 Boundaries change.  
@@ -39,6 +40,7 @@ Governance changes.
 Patterns must adapt.
 
 ### **1.2 Machines need lifecycle signals**
+
 Machines must know:
 
 - which patterns are stable  
@@ -50,6 +52,7 @@ Machines must know:
 Lifecycle metadata enables automated reasoning.
 
 ### **1.3 Humans need clarity**
+
 Humans need to understand:
 
 - when a pattern is trustworthy  
@@ -79,6 +82,7 @@ Each stage reflects a different level of stability, community acceptance, and ma
 ## **3. Lifecycle Stages (Proposed)**
 
 ### **3.1 Draft**
+
 A pattern in early development.
 
 Characteristics:
@@ -92,6 +96,7 @@ Characteristics:
 Machines treat Draft patterns cautiously.
 
 ### **3.2 Proposed**
+
 A pattern ready for community review.
 
 Characteristics:
@@ -105,6 +110,7 @@ Characteristics:
 Machines can reason about Proposed patterns but should not rely on them for composition without human approval.
 
 ### **3.3 Adopted**
+
 A pattern accepted by the MX community.
 
 Characteristics:
@@ -118,6 +124,7 @@ Characteristics:
 Machines can use Adopted patterns confidently.
 
 ### **3.4 Mature**
+
 A pattern with proven stability.
 
 Characteristics:
@@ -130,6 +137,7 @@ Characteristics:
 Machines may prioritise Mature patterns when generating new systems.
 
 ### **3.5 Deprecated**
+
 A pattern that should no longer be used.
 
 Characteristics:
@@ -142,6 +150,7 @@ Characteristics:
 Machines should warn when encountering Deprecated patterns.
 
 ### **3.6 Archived**
+
 A pattern preserved for historical or lineage purposes.
 
 Characteristics:
@@ -166,6 +175,7 @@ Patterns evolve through a combination of:
 This proposal introduces the concept of **evolutionary stewardship** — a shared responsibility between humans and machines.
 
 ### **4.1 Human responsibilities**
+
 Humans provide:
 
 - intent  
@@ -175,6 +185,7 @@ Humans provide:
 - approval  
 
 ### **4.2 Machine responsibilities**
+
 Machines provide:
 
 - validation  
@@ -184,6 +195,7 @@ Machines provide:
 - improvement proposals  
 
 ### **4.3 Community responsibilities**
+
 The MX community provides:
 
 - consensus  
@@ -198,6 +210,7 @@ Together, they maintain the health of the pattern ecosystem.
 ## **5. Proposed Mechanisms for Evolution**
 
 ### **5.1 Versioning**
+
 Patterns should use semantic versioning:
 
 - MAJOR: boundary changes  
@@ -207,6 +220,7 @@ Patterns should use semantic versioning:
 Machines can interpret version changes automatically.
 
 ### **5.2 Change Logs**
+
 Patterns should include:
 
 - what changed  
@@ -217,6 +231,7 @@ Patterns should include:
 Machines can use this to track lineage.
 
 ### **5.3 Deprecation Notices**
+
 Patterns should declare:
 
 - why they are deprecated  
@@ -226,6 +241,7 @@ Patterns should declare:
 Machines can warn users accordingly.
 
 ### **5.4 Machine‑Generated Updates**
+
 Machines may propose:
 
 - metadata fixes  

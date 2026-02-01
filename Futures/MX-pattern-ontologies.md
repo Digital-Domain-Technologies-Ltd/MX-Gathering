@@ -18,6 +18,7 @@ It is a proposal intended to spark discussion, experimentation, and refinement w
 ## **1. Why MX Needs an Ontology**
 
 ### **1.1 Patterns need shared meaning**
+
 Patterns already have structure, metadata, and boundaries.  
 But without shared semantics, machines cannot reliably:
 
@@ -30,6 +31,7 @@ But without shared semantics, machines cannot reliably:
 An ontology gives patterns a shared conceptual backbone.
 
 ### **1.2 Machines need semantic grounding**
+
 For automated reasoning to work, machines must understand:
 
 - what a “boundary” is  
@@ -41,6 +43,7 @@ For automated reasoning to work, machines must understand:
 An ontology provides this grounding.
 
 ### **1.3 Humans need clarity across tools**
+
 As MX expands, different tools will:
 
 - generate patterns  
@@ -55,6 +58,7 @@ A shared ontology ensures they all speak the same conceptual language.
 ## **2. Proposal: The MX Pattern Ontology**
 
 ### **2.1 Purpose**
+
 The ontology would define:
 
 - core MX concepts  
@@ -64,6 +68,7 @@ The ontology would define:
 - machine‑readable semantics  
 
 ### **2.2 Scope**
+
 The ontology could cover:
 
 - **Pattern identity**  
@@ -88,6 +93,7 @@ The ontology could cover:
   (diagrams, quick-start cards, metadata blocks)
 
 ### **2.3 Format**
+
 The ontology could be expressed in:
 
 - YAML  
@@ -103,6 +109,7 @@ The goal is machine readability without sacrificing human clarity.
 ## **3. Semantic Interoperability**
 
 ### **3.1 What it means**
+
 Semantic interoperability means:
 
 - patterns can be understood across tools  
@@ -111,6 +118,7 @@ Semantic interoperability means:
 - agents can compose patterns safely  
 
 ### **3.2 Why it matters**
+
 Without semantic interoperability:
 
 - patterns become siloed  
@@ -119,6 +127,7 @@ Without semantic interoperability:
 - machine reasoning becomes unreliable  
 
 ### **3.3 What it enables**
+
 With a shared ontology, machines can:
 
 - detect duplicate patterns  
@@ -135,6 +144,7 @@ This is the foundation for a truly intelligent MX ecosystem.
 ## **4. Proposed Ontology Components**
 
 ### **4.1 Core Classes**
+
 - `Pattern`  
 - `Boundary`  
 - `Runtime`  
@@ -149,6 +159,7 @@ This is the foundation for a truly intelligent MX ecosystem.
 - `Inheritance`
 
 ### **4.2 Core Relationships**
+
 - `inheritsFrom`  
 - `composesWith`  
 - `dependsOn`  
@@ -160,6 +171,7 @@ This is the foundation for a truly intelligent MX ecosystem.
 - `specialises`  
 
 ### **4.3 Constraints**
+
 Examples:
 
 - A `local-only` pattern cannot depend on a cloud runtime.  

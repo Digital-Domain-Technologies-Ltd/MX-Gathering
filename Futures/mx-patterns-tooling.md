@@ -22,6 +22,7 @@ It is a proposal meant to inspire experimentation and collective design.
 ## **1. Why MX Needs Dedicated Tooling**
 
 ### **1.1 Patterns are complex, structured artefacts**
+
 They contain:
 
 - metadata  
@@ -36,6 +37,7 @@ They contain:
 General‑purpose editors are not enough.
 
 ### **1.2 Machines need structured interfaces**
+
 For machines to:
 
 - validate  
@@ -46,6 +48,7 @@ For machines to:
 …they need environments that expose pattern structure explicitly.
 
 ### **1.3 Humans need clarity and ergonomics**
+
 Humans need:
 
 - visual editors  
@@ -61,6 +64,7 @@ Tooling makes MX accessible.
 ## **2. Proposal: MX Pattern Editors**
 
 ### **2.1 The MX Pattern Editor (Concept)**
+
 A dedicated editor for creating and maintaining MX patterns.
 
 Features could include:
@@ -77,18 +81,21 @@ Features could include:
 ### **2.2 Modes of Interaction**
 
 #### **Human‑first mode**
+
 - Rich text  
 - Drag‑and‑drop diagrams  
 - Guided forms  
 - Pattern templates  
 
 #### **Machine‑first mode**
+
 - Structured metadata editing  
 - Ontology‑aware autocompletion  
 - Automated reasoning  
 - Pattern linting  
 
 #### **Co‑creation mode**
+
 - Human writes intent  
 - Machine drafts structure  
 - Human refines  
@@ -101,6 +108,7 @@ This mirrors the MX publishing loop.
 ## **3. Proposal: Machine‑Assisted Authoring**
 
 ### **3.1 Machine‑generated pattern scaffolds**
+
 Given:
 
 - a goal  
@@ -118,6 +126,7 @@ Machines could generate:
 - quick‑start cards  
 
 ### **3.2 Machine‑generated diagrams**
+
 Machines could produce:
 
 - architecture diagrams  
@@ -126,6 +135,7 @@ Machines could produce:
 - risk propagation diagrams  
 
 ### **3.3 Machine‑generated variants**
+
 Machines could derive:
 
 - platform variants  
@@ -134,6 +144,7 @@ Machines could derive:
 - model variants  
 
 ### **3.4 Machine‑generated improvements**
+
 Machines could propose:
 
 - clearer boundaries  
@@ -149,6 +160,7 @@ Humans approve or reject.
 ## **4. Proposal: MX Pattern Validation Tools**
 
 ### **4.1 Pattern Linters**
+
 Check:
 
 - metadata completeness  
@@ -157,6 +169,7 @@ Check:
 - structural integrity  
 
 ### **4.2 Boundary Checkers**
+
 Ensure:
 
 - local patterns stay local  
@@ -164,6 +177,7 @@ Ensure:
 - hybrid patterns define access controls  
 
 ### **4.3 Risk Analyzers**
+
 Evaluate:
 
 - declared risks  
@@ -172,6 +186,7 @@ Evaluate:
 - missing mitigations  
 
 ### **4.4 Dependency Graph Tools**
+
 Visualise:
 
 - composition  
@@ -186,6 +201,7 @@ Machines can detect issues instantly.
 ## **5. Proposal: MX Pattern Workspaces**
 
 ### **5.1 Local Workspaces**
+
 Developers can:
 
 - draft patterns  
@@ -194,6 +210,7 @@ Developers can:
 - generate diagrams  
 
 ### **5.2 Cloud Workspaces**
+
 Teams can:
 
 - collaborate  
@@ -202,6 +219,7 @@ Teams can:
 - publish  
 
 ### **5.3 Agent Workspaces**
+
 Agents can:
 
 - propose changes  
@@ -216,6 +234,7 @@ This is where machine co‑creation becomes real.
 ## **6. Proposal: MX Pattern Visualisation Tools**
 
 ### **6.1 Pattern Maps**
+
 Visualise:
 
 - pattern families  
@@ -223,6 +242,7 @@ Visualise:
 - pattern clusters  
 
 ### **6.2 Boundary Maps**
+
 Show:
 
 - local  
@@ -231,6 +251,7 @@ Show:
 - external dependencies  
 
 ### **6.3 Risk Maps**
+
 Highlight:
 
 - high‑risk nodes  
@@ -238,6 +259,7 @@ Highlight:
 - mitigation coverage  
 
 ### **6.4 Composition Graphs**
+
 Show how patterns assemble into systems.
 
 Machines can generate these automatically.

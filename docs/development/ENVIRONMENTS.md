@@ -15,6 +15,7 @@ This document outlines the development workflow and environment strategy for MX-
 MX-Gathering follows an "open development" model where all development happens transparently in public repositories with clear separation between production, staging, and test environments.
 
 **Benefits:**
+
 - Community can see development progress
 - Early feedback on features
 - Transparent decision-making
@@ -38,9 +39,11 @@ MX-Gathering follows an "open development" model where all development happens t
 ### Main Branches
 
 #### `main` - Production Branch
+
 **Purpose:** Stable, production-ready code
 
 **Rules:**
+
 - Protected branch
 - Requires pull request review
 - All tests must pass
@@ -48,6 +51,7 @@ MX-Gathering follows an "open development" model where all development happens t
 - Tagged releases (v1.0.0, v1.1.0, etc.)
 
 **Deployment:**
+
 - Automatic to mx-thegathering.ai on merge
 - Creates GitHub release with tag
 - Rollback supported
@@ -55,20 +59,24 @@ MX-Gathering follows an "open development" model where all development happens t
 ---
 
 #### `staging` - Staging Branch
+
 **Purpose:** Pre-production testing and QA
 
 **Rules:**
+
 - Semi-protected (fewer restrictions than main)
 - Merge from dev or feature branches
 - Extended testing period (24-48 hours minimum)
 - Stakeholder review and approval
 
 **Deployment:**
+
 - Automatic to staging.mx-thegathering.ai on push
 - Mirror of production configuration
 - Test with real-world scenarios
 
 **Testing Checklist:**
+
 - [ ] All features work as expected
 - [ ] No console errors
 - [ ] Mobile responsiveness verified
@@ -80,15 +88,18 @@ MX-Gathering follows an "open development" model where all development happens t
 ---
 
 #### `dev` - Development Branch
+
 **Purpose:** Active development and integration
 
 **Rules:**
+
 - Fewest restrictions
 - Merge feature branches here first
 - Can be unstable
 - Regular resets from staging acceptable
 
 **Deployment:**
+
 - Automatic to dev.mx-thegathering.ai on push
 - May have experimental features
 - Breaking changes acceptable
@@ -107,6 +118,7 @@ refactor/component-name
 ```
 
 **Examples:**
+
 ```text
 feature/event-calendar
 fix/mobile-navigation
@@ -117,6 +129,7 @@ refactor/landing-page
 #### Workflow
 
 1. **Create feature branch from `dev`:**
+
    ```bash
    git checkout dev
    git pull origin dev
@@ -124,6 +137,7 @@ refactor/landing-page
    ```
 
 2. **Develop and commit:**
+
    ```bash
    git add .
    git commit -m "Add event calendar component"
@@ -141,6 +155,7 @@ refactor/landing-page
    - Delete feature branch after merge
 
 5. **Promote to staging:**
+
    ```bash
    git checkout staging
    git merge dev
@@ -148,6 +163,7 @@ refactor/landing-page
    ```
 
 6. **Deploy to production:**
+
    ```bash
    git checkout main
    git merge staging
@@ -160,6 +176,7 @@ refactor/landing-page
 ## Deployment Platform: Cloudflare Pages
 
 **Why Cloudflare Pages?**
+
 - Free unlimited bandwidth
 - Automatic branch deployments
 - Preview URLs for every commit
@@ -183,6 +200,7 @@ refactor/landing-page
 **Framework preset:** None (static HTML)
 
 **Build configuration:**
+
 ```yaml
 Build command: (leave empty)
 Build output directory: /web
@@ -197,6 +215,7 @@ Root directory: /
 **Preview branches:** All branches
 
 **Branch deployment patterns:**
+
 ```text
 main         → mx-thegathering.ai
 staging      → staging.mx-thegathering.ai  (custom domain)
@@ -209,13 +228,16 @@ feature/*    → <branch-name>.mx-gathering.pages.dev
 Add custom domains in Cloudflare Pages:
 
 **Production:**
+
 - Primary: `mx-thegathering.ai`
 - Alias: `www.mx-thegathering.ai`
 
 **Staging:**
+
 - `staging.mx-thegathering.ai`
 
 **Development:**
+
 - `dev.mx-thegathering.ai`
 
 #### 5. DNS Configuration
@@ -373,6 +395,7 @@ Add to `web/index.html` in `<head>`:
 ### Local Testing
 
 **Requirements:**
+
 - Modern web browser
 - Simple HTTP server
 
@@ -396,21 +419,25 @@ Access at: <http://localhost:8000>
 ### Automated Testing
 
 **HTML Validation:**
+
 ```bash
 npx html-validate web/index.html
 ```
 
 **Accessibility Testing:**
+
 ```bash
 npx pa11y http://localhost:8000
 ```
 
 **Link Checking:**
+
 ```bash
 npx broken-link-checker http://localhost:8000
 ```
 
 **Lighthouse Audit:**
+
 ```bash
 npx lighthouse http://localhost:8000 --output=html --output-path=./report.html
 ```
@@ -497,17 +524,20 @@ git push origin main --force
 ### Production Monitoring
 
 **Uptime:**
+
 - UptimeRobot: <https://uptimerobot.com/>
 - Monitor: `https://mx-thegathering.ai`
 - Check interval: 5 minutes
 - Alert: `tom.cranstoun@gmail.com`
 
 **Analytics:**
+
 - Plausible Analytics (privacy-focused)
 - Track: pageviews, bounce rate, top pages
 - Dashboard: <https://plausible.io/mx-thegathering.ai>
 
 **Performance:**
+
 - Cloudflare Web Analytics (free, built-in)
 - Google Lighthouse CI
 - WebPageTest weekly audits
@@ -515,6 +545,7 @@ git push origin main --force
 ### Error Tracking
 
 **Sentry (optional):**
+
 ```javascript
 // Add to web/index.html
 <script src="https://browser.sentry-cdn.com/7.x.x/bundle.min.js"></script>
@@ -536,12 +567,14 @@ git push origin main --force
 ### Environment Secrets
 
 **Never commit:**
+
 - API keys
 - Passwords
 - Private certificates
 - Database credentials
 
 **Use:**
+
 - GitHub Secrets for CI/CD
 - Cloudflare environment variables
 - Environment-specific config files (gitignored)
@@ -617,6 +650,7 @@ Create `.github/PULL_REQUEST_TEMPLATE.md`:
 ### Code Review Guidelines
 
 **Reviewers should check:**
+
 - Code quality and readability
 - Accessibility compliance
 - Performance implications
@@ -631,6 +665,7 @@ Create `.github/PULL_REQUEST_TEMPLATE.md`:
 ### Issue: Deployment Failed
 
 **Check:**
+
 1. Cloudflare Pages build logs
 2. Syntax errors in HTML/CSS/JS
 3. Missing files or directories
@@ -639,6 +674,7 @@ Create `.github/PULL_REQUEST_TEMPLATE.md`:
 ### Issue: Environment Not Updating
 
 **Solutions:**
+
 1. Force clear Cloudflare cache
 2. Check DNS propagation
 3. Verify branch is correctly configured
@@ -647,6 +683,7 @@ Create `.github/PULL_REQUEST_TEMPLATE.md`:
 ### Issue: Preview URL Not Working
 
 **Solutions:**
+
 1. Wait 2-3 minutes for deployment
 2. Check GitHub Actions status
 3. Verify Cloudflare Pages integration
@@ -657,13 +694,16 @@ Create `.github/PULL_REQUEST_TEMPLATE.md`:
 ## Contact and Support
 
 **Development Questions:**
+
 - GitHub Discussions: <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/discussions>
 - Issues: <https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering/issues>
 
 **Technical Support:**
+
 - Email: <tom.cranstoun@gmail.com>
 
 **Deployment Issues:**
+
 - Cloudflare Support: <https://dash.cloudflare.com/support>
 
 ---

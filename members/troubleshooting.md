@@ -44,7 +44,7 @@ location ~ \.txt$ {
 }
 ```
 
-3. Check file permissions: `chmod 644 llms.txt`
+1. Check file permissions: `chmod 644 llms.txt`
 
 #### Issue: YAML frontmatter not parsing
 
@@ -70,8 +70,8 @@ author: "Name"
 ---
 ```
 
-2. Use YAML validator: <https://www.yamllint.com/>
-3. Check for tabs (use spaces only)
+1. Use YAML validator: <https://www.yamllint.com/>
+2. Check for tabs (use spaces only)
 
 ### Schema.org Issues
 

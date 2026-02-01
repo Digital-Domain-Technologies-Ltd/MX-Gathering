@@ -8,17 +8,21 @@ Let me unpack it in a way that fits how you think, Tom.
 ---
 
 ## **1. MX patterns are inspired by two traditions**
+
 ### **a) Software design patterns**  
+
 Like the Gang of Four patterns, they describe reusable solutions to recurring problems.  
 But MX patterns go further — they’re not just for humans.
 
 ### **b) Architectural decision records (ADRs)**  
+
 They capture the “why” behind a system’s structure.  
 MX patterns inherit this clarity and traceability.
 
 ---
 
 ## **2. MX extends these ideas for a world where machines are co-authors**
+
 This is the key difference.
 
 MX patterns are:
@@ -41,6 +45,7 @@ This is why MX patterns have structured metadata, YAML, JSON-LD, and clear namin
 ---
 
 ## **3. Why MX needs patterns**
+
 Because MX treats machines as first-class citizens in publishing and governance, we need a shared language that:
 
 - describes how an agent is set up  
@@ -65,6 +70,7 @@ Without patterns, MX would be ad‑hoc and opaque.
 ---
 
 ## **4. Where the idea *specifically* came from**
+
 The MX pattern concept emerged from:
 
 - your work defining MX as a discipline  
@@ -86,6 +92,7 @@ and
 ---
 
 ## **5. Why the Clawdbot pattern fits perfectly**
+
 Clawdbot is a great example because:
 
 - it has a runtime  

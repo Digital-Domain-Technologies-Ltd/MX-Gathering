@@ -20,6 +20,7 @@ The goal is not to prescribe a final design, but to outline a direction for the 
 ## **1. Motivation for a Registry‑Based MX Ecosystem**
 
 ### **1.1 Patterns are becoming foundational**
+
 As MX expands, patterns are no longer optional documentation. They are:
 
 - governance artefacts  
@@ -30,6 +31,7 @@ As MX expands, patterns are no longer optional documentation. They are:
 A registry gives these artefacts a home.
 
 ### **1.2 Machines need a place to reason**
+
 For automated pattern reasoning to flourish, machines need:
 
 - a structured index  
@@ -40,6 +42,7 @@ For automated pattern reasoning to flourish, machines need:
 A registry provides this substrate.
 
 ### **1.3 Humans need clarity and discoverability**
+
 As patterns multiply, humans need:
 
 - search  
@@ -55,6 +58,7 @@ A registry makes MX navigable.
 ## **2. Proposal: MX Pattern Registries**
 
 ### **2.1 What a registry could be**
+
 An MX Pattern Registry would be a structured repository that stores:
 
 - pattern metadata  
@@ -75,6 +79,7 @@ It could be:
 - human‑friendly  
 
 ### **2.2 What a registry would enable**
+
 A registry would allow:
 
 - automated validation  
@@ -85,6 +90,7 @@ A registry would allow:
 - machine‑generated insights  
 
 ### **2.3 Governance considerations**
+
 A registry would need:
 
 - versioning rules  
@@ -100,6 +106,7 @@ These could be defined collaboratively by the MX community.
 ## **3. Proposal: The Global Pattern Graph**
 
 ### **3.1 Concept**
+
 The Global Pattern Graph is a machine‑navigable network of:
 
 - patterns  
@@ -114,6 +121,7 @@ It is not a single database.
 It is a **graph of graphs**, distributed across registries.
 
 ### **3.2 Why a graph?**
+
 Patterns are not hierarchical.  
 They form:
 
@@ -125,6 +133,7 @@ They form:
 A graph reflects this reality.
 
 ### **3.3 What machines could do with the graph**
+
 Machines could:
 
 - traverse pattern relationships  
@@ -142,6 +151,7 @@ This is the beginning of **machine‑assisted MX architecture**.
 ## **4. Proposed Features of the Registry + Graph System**
 
 ### **4.1 Pattern identity**
+
 Each pattern would have a stable identifier:
 
 ```
@@ -149,6 +159,7 @@ mx.pattern.<domain>.<purpose>.<platform>@<version>
 ```
 
 ### **4.2 Pattern metadata schema**
+
 A shared schema would allow machines to:
 
 - validate  
@@ -157,6 +168,7 @@ A shared schema would allow machines to:
 - reason  
 
 ### **4.3 Pattern lineage tracking**
+
 Registries would track:
 
 - inheritance  
@@ -165,6 +177,7 @@ Registries would track:
 - deprecation  
 
 ### **4.4 Boundary enforcement**
+
 Machines could automatically detect:
 
 - cloud dependencies in local‑only patterns  
@@ -172,6 +185,7 @@ Machines could automatically detect:
 - inconsistent boundaries  
 
 ### **4.5 Machine‑generated insights**
+
 Machines could propose:
 
 - pattern improvements  
@@ -181,6 +195,7 @@ Machines could propose:
 - dependency updates  
 
 ### **4.6 Human–machine co‑governance**
+
 Registries would support:
 
 - human review  

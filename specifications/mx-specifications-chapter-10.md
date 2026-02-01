@@ -328,7 +328,7 @@ export default defineConfig({
 **Strapi:**
 
 ```javascript
-// config/plugins.js
+// mx-config/plugins.js
 module.exports = {
   mx: {
     enabled: true,
