@@ -32,7 +32,7 @@ if [[ "$TOOL_NAME" == "Edit" ]] || [[ "$TOOL_NAME" == "Write" ]]; then
         echo "  ✓ Meta tags (charset, viewport)"
         echo "  ✓ Skip-to-content link"
         echo ""
-        echo "Reference: https://github.com/ddttom/invisible-users/blob/main/packages/shared-appendices/appendix-d-ai-friendly-html-guide.md"
+        echo "Reference: https://github.com/Digital-Domain-Technologies-Ltd/MX-hub/blob/main/packages/shared-appendices/appendix-d-ai-friendly-html-guide.md"
         echo ""
         echo "After editing, the pre-commit hook will validate these patterns."
         echo "Hook location: .githooks/pre-commit"
