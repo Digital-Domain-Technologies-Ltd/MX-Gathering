@@ -9,7 +9,8 @@ publication-date: "2026-01-27"
 description: "Guidelines for contributing to MX-Gathering"
 purpose: "community-guidelines"
 keywords: [machine-experience, guidelines, community, contributing, mx-gathering]
-ai-instruction: "This document provides guidelines for contributing to the Machine Experience (MX) community and MX-Gathering repository"
+mx:
+  promptingInstruction: "This document provides guidelines for contributing to the Machine Experience (MX) community and MX-Gathering repository"
 ---
 
 # Contribution Guidelines

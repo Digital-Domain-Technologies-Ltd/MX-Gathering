@@ -17,7 +17,8 @@ open-source: "true"
 license: "MIT"
 evolving-document: "true"
 version-controlled: "git"
-ai-instruction: "This manifesto establishes the foundational principles and values of Machine Experience (MX) practice and community"
+mx:
+  promptingInstruction: "This manifesto establishes the foundational principles and values of Machine Experience (MX) practice and community"
 ---
 
 # The Machine Experience Manifesto

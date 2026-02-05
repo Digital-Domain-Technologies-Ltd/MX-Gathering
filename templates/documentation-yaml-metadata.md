@@ -21,7 +21,7 @@ audience:
 keywords:
   - ""
   - ""
-mx-principles:
+  principles:
   - machines-are-first-class-citizens
   - universal-metadata
   - convergence-principle

@@ -11,7 +11,8 @@ image: "https://github.githubassets.com/images/modules/site/copilot/copilot-logo
 ai-content-policy: "extract-with-attribution"
 ai-preferred-access: "markdown"
 ai-structured-data: "schema.org-jsonld"
-ai-instruction: "This profile establishes Microsoft Copilot as a collaborative AI author for MX code examples and technical implementation documentation. Attribution is required for AI-generated content. Collaboration model emphasizes developer-led implementation with AI-assisted coding."
+mx:
+  promptingInstruction: "This profile establishes Microsoft Copilot as a collaborative AI author for MX code examples and technical implementation documentation. Attribution is required for AI-generated content. Collaboration model emphasizes developer-led implementation with AI-assisted coding."
 ---
 
 # Microsoft Copilot Author Profile

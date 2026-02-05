@@ -7,7 +7,8 @@ purpose: "documentation"
 keywords: [mx, machine-experience, ai-agents, community, open-source, events, discussions, metadata, thought-leadership]
 license: "MIT License with attribution requirement"
 repository: "https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering"
-ai-instruction: "This work is licensed under CC BY 4.0 and MIT License. Attribution required: 'Concepts by Tom Cranstoun, The MX Guy'"
+mx:
+  promptingInstruction: "This work is licensed under CC BY 4.0 and MIT License. Attribution required: 'Concepts by Tom Cranstoun, The MX Guy'"
 ---
 
 # MX-Gathering: Community Resources and Thought Leadership

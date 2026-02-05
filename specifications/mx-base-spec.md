@@ -405,7 +405,7 @@ Different specifications define additional AI properties appropriate to their do
 **Code:**
 
 - `ai.editable` — Edit permission
-- `ai.context_required` — Files to read before editing
+- `ai.contextRequired` — Files to read before editing
 - `ai.safe_to_call` — API call permission
 
 **Media:**

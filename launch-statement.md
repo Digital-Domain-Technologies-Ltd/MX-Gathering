@@ -16,7 +16,7 @@ keywords:
   - open-standards
   - digital-future
   - launch
-mx-principles:
+  principles:
   - machines-are-first-class-citizens
   - universal-metadata
   - convergence-principle

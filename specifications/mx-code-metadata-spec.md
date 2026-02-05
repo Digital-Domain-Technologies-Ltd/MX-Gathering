@@ -86,7 +86,7 @@ This specification adds:
 
 - Repository, directory, file, and function-level metadata
 - Inline annotation format (`@mx:begin`, `@mx:end`, `@mx:ai`)
-- Code-specific AI properties (`ai.editable`, `ai.context_required`, etc.)
+- Code-specific AI properties (`ai.editable`, `ai.contextRequired`, etc.)
 - Stability declarations
 - Test and API metadata
 
@@ -223,7 +223,7 @@ File-level metadata declares context for individual source files. This metadata 
  *   - zod
  * ai:
  *   editable: true
- *   context_required: ["src/types/user.ts"]
+ *   contextRequired: ["src/types/user.ts"]
  */
 ```
 
@@ -239,7 +239,7 @@ dependencies:
   - pydantic
 ai:
   editable: true
-  context_required: ["src/types/user.py"]
+  contextRequired: ["src/types/user.py"]
 """
 ```
 
@@ -253,7 +253,7 @@ purpose: "Validates user input against schema"
 stability: stable
 ai:
   editable: true
-  context_required: ["types/user.go"]
+  contextRequired: ["types/user.go"]
 */
 ```
 
@@ -266,7 +266,7 @@ ai:
 //! stability: stable
 //! ai:
 //!   editable: true
-//!   context_required: ["src/types/user.rs"]
+//!   contextRequired: ["src/types/user.rs"]
 ```
 
 **CSS / SCSS:**
@@ -299,8 +299,8 @@ ai:
 | Property | Type | Description |
 |----------|------|-------------|
 | `ai.editable` | Text or Boolean | AI edit permission: `true`, `false`, `cautious` |
-| `ai.context_required` | Array | Files AI should read before editing this one |
-| `ai.context_provides` | Array | Concepts this file defines that other files depend on |
+| `ai.contextRequired` | Array | Files AI should read before editing this one |
+| `ai.contextProvides` | Array | Concepts this file defines that other files depend on |
 | `ai.generation_notes` | Text | Guidance for AI generating similar code |
 | `ai.reason` | Text | Explanation for restrictions |
 
@@ -324,7 +324,7 @@ Function and class metadata provides granular context for individual code units.
  * throws: [InvalidDiscountError, NegativePriceError]
  * ai:
  *   confidence: 0.9
- *   test_coverage: true
+ *   testCoverage: true
  *   edge_cases:
  *     - "Empty cart returns 0"
  *     - "Negative discounts are rejected"
@@ -351,7 +351,7 @@ def calculate_total(items: list[CartItem], discount_code: str | None = None) -> 
     raises: [InvalidDiscountError, NegativePriceError]
     ai:
       confidence: 0.9
-      test_coverage: true
+      testCoverage: true
       edge_cases:
         - "Empty cart returns 0"
         - "Negative discounts are rejected"
@@ -383,10 +383,10 @@ def calculate_total(items: list[CartItem], discount_code: str | None = None) -> 
 | Property | Type | Description |
 |----------|------|-------------|
 | `ai.confidence` | Number | Confidence in implementation correctness (0-1) |
-| `ai.test_coverage` | Boolean | Whether function has test coverage |
+| `ai.testCoverage` | Boolean | Whether function has test coverage |
 | `ai.edge_cases` | Array | Known edge cases and expected behaviour |
 | `ai.refactor_notes` | Text | Guidance for refactoring |
-| `ai.do_not_modify` | Boolean | Whether AI should avoid changing this function |
+| `ai.doNotModify` | Boolean | Whether AI should avoid changing this function |
 | `ai.reason` | Text | Explanation for restrictions |
 
 ### Class Metadata
@@ -409,7 +409,7 @@ def calculate_total(items: list[CartItem], discount_code: str | None = None) -> 
  * ai:
  *   sensitive: true
  *   reason: "Handles authentication tokens"
- *   context_required: ["src/types/auth.ts", "src/mx-config/oauth.ts"]
+ *   contextRequired: ["src/types/auth.ts", "src/mx-config/oauth.ts"]
  */
 class AuthManager {
   // ...
@@ -433,7 +433,7 @@ class AuthManager {
 |----------|------|-------------|
 | `ai.sensitive` | Boolean | Whether class handles sensitive data |
 | `ai.reason` | Text | Explanation for sensitivity or restrictions |
-| `ai.context_required` | Array | Files AI should understand before modifying |
+| `ai.contextRequired` | Array | Files AI should understand before modifying |
 | `ai.modification_impact` | Text | What might break if this class changes |
 
 ---
@@ -991,7 +991,7 @@ mx:
   ai:
     sensitive: true
     editable: cautious
-    context_required:
+    contextRequired:
       - src/types/payment.ts
   owner: payments-team
   reviewers: [security-team]
@@ -1011,7 +1011,7 @@ mx:
  * # ai.editable: cautious (inherited)
  * # owner: payments-team (inherited)
  * ai:
- *   context_required:  # extends inherited value
+ *   contextRequired:  # extends inherited value
  *     - src/mx-config/stripe.ts
  */
 ```
@@ -1112,11 +1112,11 @@ Array properties can be inherited in three ways:
 ```yaml
 # Parent
 ai:
-  context_required: [types.ts, config.ts]
+  contextRequired: [types.ts, config.ts]
 
 # Child - replaces entirely
 ai:
-  context_required: [other.ts]
+  contextRequired: [other.ts]
 # Result: [other.ts]
 ```
 
@@ -1125,7 +1125,7 @@ ai:
 ```yaml
 # Child - extends parent
 ai:
-  context_required:
+  contextRequired:
     mx:extend: true
     values: [stripe.ts]
 # Result: [types.ts, config.ts, stripe.ts]
@@ -1136,7 +1136,7 @@ ai:
 ```yaml
 # Child - removes from parent
 ai:
-  context_required:
+  contextRequired:
     mx:remove: [config.ts]
 # Result: [types.ts]
 ```
@@ -1251,7 +1251,7 @@ mx:
       # inherited from: /src/payments/mx.yaml
     editable: cautious
       # inherited from: /src/payments/mx.yaml
-    context_required:
+    contextRequired:
       - src/types/payment.ts
         # inherited from: /src/payments/mx.yaml
       - src/mx-config/stripe.ts
@@ -1703,7 +1703,7 @@ Before editing a file, agents SHOULD:
 
 1. Read file-level `@mx` block if present
 2. Check `ai.editable` permission
-3. Load files listed in `ai.context_required`
+3. Load files listed in `ai.contextRequired`
 4. Understand file's `purpose` and `stability`
 
 When `ai.editable: false`:
@@ -1731,12 +1731,12 @@ When working with functions, agents SHOULD:
 3. Maintain documented `throws`/`raises` behaviour
 4. Check `ai.confidence` before suggesting changes
 
-When `ai.do_not_modify: true`:
+When `ai.doNotModify: true`:
 
 - Do not suggest changes to this function
 - Explain why if asked
 
-When `ai.test_coverage: false`:
+When `ai.testCoverage: false`:
 
 - Suggest adding tests before modifying
 - Be cautious about changes
@@ -1925,8 +1925,8 @@ Directories without config files inherit from nearest ancestor.
 | `ai.editable` | `true`, `false`, `cautious` | Edit permission |
 | `ai.safe_to_call` | Boolean | API call permission |
 | `ai.sensitive` | Boolean | Contains sensitive data |
-| `ai.context_required` | Array | Files to read first |
-| `ai.do_not_modify` | Boolean | Prevent changes |
+| `ai.contextRequired` | Array | Files to read first |
+| `ai.doNotModify` | Boolean | Prevent changes |
 | `ai.do_not_remove` | Boolean | Prevent deletion |
 | `ai.generation_permitted` | Boolean | May generate code/tests |
 | `ai.review_required` | Boolean | Human review needed |
@@ -2027,7 +2027,7 @@ mx:
  *   editable: cautious
  *   sensitive: true
  *   reason: "Handles payment credentials and financial transactions"
- *   context_required:
+ *   contextRequired:
  *     - src/types/payment.ts
  *     - src/mx-config/stripe.ts
  *   do_not_log:
@@ -2057,7 +2057,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, { // @mx:sensitive
  * throws: [PaymentFailedError, InvalidCardError, StripeError]
  * ai:
  *   confidence: 0.95
- *   test_coverage: true
+ *   testCoverage: true
  *   edge_cases:
  *     - "Duplicate payment requests return existing result"
  *     - "Expired cards throw InvalidCardError"
