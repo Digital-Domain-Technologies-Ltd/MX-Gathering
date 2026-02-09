@@ -63,6 +63,8 @@ Information should be structured for both scanning and deep reading. Provide cle
 
 Use established standards (Schema.org, semantic HTML, WCAG, ARIA) over custom implementations. Standards ensure broad compatibility across diverse user agents — human browsers, AI systems, and assistive technologies.
 
+The MX metadata standard — **cogs** — is governed by **The Gathering**, an independent, open standards body focused on metadata that helps machines understand documents. Cogs are markdown files with YAML frontmatter: machine-readable metadata at the top, human-readable documentation below. The Gathering governs the standard; implementers build products on it.
+
 ### 6. Transparency
 
 Make your interfaces discoverable. Use llms.txt files, clear robots.txt policies, and structured metadata to communicate what your system offers and how agents should interact with it.
@@ -138,7 +140,7 @@ We commit to:
 1. **Open Knowledge Sharing** — Document patterns, share learnings, publish research, and contribute to community understanding
 2. **Inclusive Community** — Welcome practitioners from all backgrounds and experience levels
 3. **Practical Implementation** — Prioritise actionable guidance over theoretical discussion
-4. **Standards Advancement** — Contribute to open standards and resist proprietary lock-in
+4. **Standards Advancement** — Contribute to open standards through The Gathering and resist proprietary lock-in
 5. **Accessibility First** — Never compromise human accessibility in pursuit of machine optimisation
 6. **Transparent Development** — Work in the open, accept feedback, and iterate based on real-world evidence
 7. **Cross-Disciplinary Collaboration** — Bridge gaps between developers, designers, accessibility advocates, and business stakeholders
@@ -402,11 +404,13 @@ To discuss speaking opportunities, contact tom.cranstoun@gmail.com
 
 **MX-Gathering is created by the community — which includes both humans and machines as active participants.**
 
-The foundational knowledge comes from the **MX-Bible** book, written by Tom Cranstoun. That book documents the patterns, principles, and practices of Machine Experience.
+The foundational knowledge comes from **MX: The Codex**, written by Tom Cranstoun. That book documents the patterns, principles, and practices of Machine Experience.
 
-**This repository (MX-Gathering)** is the community's collaborative space — and it practises what it preaches. The repository itself implements MX principles:
+**The Gathering** is the independent standards body that governs the cog metadata specification — the format that makes documents readable by any AI agent. MX-Gathering (this repository) is the broader MX community's collaborative space. They are complementary: The Gathering governs the metadata standard; this community applies it in practice.
 
-- **YAML frontmatter** in all markdown files provides machine-readable metadata
+**This repository (MX-Gathering)** practises what it preaches. The repository itself implements MX principles:
+
+- **YAML frontmatter** in all markdown files provides machine-readable metadata, following the cog format governed by The Gathering
 - **llms.txt** file enables AI agent discovery and understanding
 - **LEARNINGS.md** documents AI agent failures and patterns for ecosystem improvement
 - **Structured metadata** throughout ensures both human readability and machine parseability
