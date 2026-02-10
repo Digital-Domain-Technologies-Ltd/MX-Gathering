@@ -166,12 +166,14 @@ The hook script is located at `.githooks/pre-commit`. To modify:
 This hook enforces the convergence principle:
 
 **Without the hook:**
+
 - Easy to forget data-* attributes
 - Might skip Schema.org structured data
 - Could miss accessibility requirements
 - Inconsistent implementation across pages
 
 **With the hook:**
+
 - Every HTML commit is validated
 - Patterns become habitual
 - Quality is consistent
@@ -222,6 +224,7 @@ bash -x .githooks/pre-commit
 ## Reference
 
 **Note:** Cross-repository documentation references removed per repository-scoped principle. See MX-Gathering's own documentation for patterns and specifications.
+
 - [Git Hooks Documentation](https://git-scm.com/docs/githooks) - Official git hooks reference
 
 ---
