@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s continue the MX Bible with the next chapter in the sequence.  
+---
+title: "MX Pattern Validation and Governance"
+description: "Chapter on how MX patterns are validated, governed, trusted, and made machine-verifiable"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's continue the MX Bible with the next chapter in the sequence.  
 You now have:
 
 - **Chapter X — The Origin and Purpose of MX Patterns**  

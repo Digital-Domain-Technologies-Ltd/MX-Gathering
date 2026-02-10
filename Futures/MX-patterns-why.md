@@ -1,3 +1,13 @@
+---
+title: "Why MX Patterns Exist"
+description: "Explanation of MX patterns as the mechanism for shared human-machine understanding of how things work"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 The idea of an **MX pattern** comes directly from the philosophy at the heart of the Machine Experience:  
 *machines and humans should share a common, explicit way of describing how things work.*
 

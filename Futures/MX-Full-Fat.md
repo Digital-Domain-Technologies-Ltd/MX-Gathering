@@ -1,4 +1,14 @@
-Got you—let’s slot the architecture diagram **into the same full pattern document**, right after the embedded Quick Start Card. Here’s the updated section you can paste straight into the MX Bible.
+---
+title: "MX Pattern: Clawdbot Local Agent on macOS (Full Document)"
+description: "Complete MX pattern document with architecture diagram and embedded quick start card for Clawdbot on macOS"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Got you—let's slot the architecture diagram **into the same full pattern document**, right after the embedded Quick Start Card. Here's the updated section you can paste straight into the MX Bible.
 
 ```markdown
 # MX Pattern: Clawdbot Local Agent on macOS

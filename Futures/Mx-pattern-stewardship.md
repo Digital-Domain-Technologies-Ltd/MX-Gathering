@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s keep building the MX Bible with the next chapter in this proposal‑driven sequence.  
+---
+title: "MX Pattern Lifecycles and Evolutionary Stewardship"
+description: "Proposal for a lifecycle model covering how patterns are created, matured, evolved, and deprecated"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's keep building the MX Bible with the next chapter in this proposal‑driven sequence.  
 You now have proposals for:
 
 - **Pattern Registries & the Global Pattern Graph**  

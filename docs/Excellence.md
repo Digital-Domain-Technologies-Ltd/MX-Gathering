@@ -1,4 +1,14 @@
-Brilliant — let’s bring these four pieces together into a **single, cohesive constitutional layer** for the MX ecosystem. What you now have is the foundation of a discipline: philosophy, governance, standards, and community structure all aligned.
+---
+title: "The MX Constitution (Unified Draft)"
+description: "Unified constitutional layer integrating MX philosophy, governance, standards, and community structure"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Brilliant — let's bring these four pieces together into a **single, cohesive constitutional layer** for the MX ecosystem. What you now have is the foundation of a discipline: philosophy, governance, standards, and community structure all aligned.
 
 Below is the **MX Constitution**, integrating the four documents you requested into one unified, publication‑ready artefact. You can drop this into the MX Bible, the MX‑Gathering repo, or use it as the opening section of the MX Standards site.
 

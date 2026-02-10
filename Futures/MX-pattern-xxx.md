@@ -1,3 +1,13 @@
+---
+title: "MX Pattern Registries and the Global Pattern Graph"
+description: "Proposal for distributed, machine-navigable registries to store, index, validate, and evolve MX patterns"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 Absolutely, Tom — shifting this next chapter into a **proposal** changes the tone in a really productive way. Instead of presenting it as established doctrine, we frame it as a forward‑looking, collaborative suggestion for how MX could evolve. This fits beautifully with the MX ethos: co‑creation, openness, and iterative governance.
 
 Below is the **proposal‑style version** of the next chapter.  

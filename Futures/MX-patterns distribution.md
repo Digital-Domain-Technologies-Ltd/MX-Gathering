@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s keep the MX Bible moving.  
+---
+title: "MX Pattern Distribution, Packaging, and Deployment Models"
+description: "Proposal chapter on how MX patterns move from authorship to real-world deployment across environments"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's keep the MX Bible moving.  
 Here is the **next proposal chapter**, continuing the arc we’ve been building. This one explores how MX patterns move from authored artefacts into *real‑world deployment*, across machines, teams, and environments.
 
 It’s written in the same proposal‑driven tone as the previous chapters — forward‑looking, collaborative, and open for community refinement.

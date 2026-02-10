@@ -1,4 +1,14 @@
-Here’s a clear, engaging blog post that explains the meaning and purpose of the **“Pattern intent”** section in the MX Bible — perfect for readers who are new to MX or curious about how agent patterns are structured.
+---
+title: "What Does Pattern Intent Mean in the MX Bible?"
+description: "Blog post explaining the meaning and purpose of the pattern intent section for newcomers to MX"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Here's a clear, engaging blog post that explains the meaning and purpose of the **"Pattern intent"** section in the MX Bible — perfect for readers who are new to MX or curious about how agent patterns are structured.
 
 ---
 

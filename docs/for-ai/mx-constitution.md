@@ -1,3 +1,13 @@
+---
+title: "The MX Constitution"
+description: "Foundational document establishing the philosophical, structural, and ethical foundations of Machine Experience"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 # **The MX Constitution**
 
 ### *The Foundational Document of Machine Experience (MX)*

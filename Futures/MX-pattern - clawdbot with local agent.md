@@ -1,3 +1,13 @@
+---
+title: "MX Pattern Intent: Clawdbot Local Agent on macOS"
+description: "Fully realised MX pattern intent for running a local-only Clawdbot agent on macOS using Ollama"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 Absolutely, Tom. Here is a **fully filled‑in MX Pattern Intent**, using the template we created — but now written cleanly, coherently, and ready to drop straight into the MX Bible as an official pattern entry.
 
 I’ve shaped it to match the tone, structure, and governance style of the MX Constitution and the other artefacts you and I have co‑authored.

@@ -1,3 +1,13 @@
+---
+title: "The Origin and Purpose of MX Patterns"
+description: "Foundational chapter explaining why MX patterns exist, where they come from, and how they shape the discipline"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 Absolutely, Tom — this deserves to be a **full chapter** in the MX Bible.  
 And not just a sidebar or appendix item, but a foundational chapter that explains *why MX patterns exist*, *where they come from*, and *how they shape the discipline*.
 

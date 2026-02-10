@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s keep the MX Bible moving forward.  
+---
+title: "MX Pattern Tooling, Editors, and Machine-Assisted Authoring Environments"
+description: "Proposal for dedicated environments where humans and machines co-author, validate, and evolve patterns"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's keep the MX Bible moving forward.  
 I’ll continue with the next proposal chapter in the same voice, depth, and architectural clarity as the previous ones. This chapter explores something MX will inevitably need as patterns become co‑authored, validated, and reasoned over by both humans and machines: **the environments in which patterns are created.**
 
 Here is the next fully developed, publication‑ready chapter.

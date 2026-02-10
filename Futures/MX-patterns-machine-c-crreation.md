@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s continue the MX Bible with the next major chapter in the sequence.  
+---
+title: "Automated Pattern Reasoning and Machine Co-Creation"
+description: "Proposal chapter exploring how machines can analyse, validate, compose, and generate MX patterns"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's continue the MX Bible with the next major chapter in the sequence.  
 You now have:
 
 - **The Origin and Purpose of MX Patterns**  

@@ -1,3 +1,13 @@
+---
+title: "Manual HTML Verification Report"
+description: "Pre-deployment quality assurance report for MX-Gathering web pages against accessibility and AI agent standards"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
 <!-- markdownlint-disable MD033 -->
 # Manual HTML Verification Report
 

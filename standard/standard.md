@@ -1,4 +1,14 @@
-Absolutely, Tom — I can integrate the **universal metadata checklist** directly into **MX‑STD‑001** as a formal, normative section of the standard. I’ll do this cleanly, without repeating the entire standard, and I’ll place the new material exactly where it belongs: as a **new normative section** titled **“5. Universal Metadata Requirements (MX‑META‑001)”**.
+---
+title: "MX-STD-001: Machine Experience Standard"
+description: "The Machine Experience Standard with integrated universal metadata requirements (MX-META-001)"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — I can integrate the **universal metadata checklist** directly into **MX‑STD‑001** as a formal, normative section of the standard. I'll do this cleanly, without repeating the entire standard, and I'll place the new material exactly where it belongs: as a **new normative section** titled **"5. Universal Metadata Requirements (MX‑META‑001)"**.
 
 This keeps MX‑STD‑001 coherent, structured, and future‑proof — and it elevates metadata to the constitutional level you intended.
 

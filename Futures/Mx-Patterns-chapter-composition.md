@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s keep the momentum and build the **next chapter of the MX Bible**.  
+---
+title: "MX Pattern Composition and Inheritance"
+description: "Chapter on how MX patterns interact, combine, and scale through composition and inheritance mechanisms"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's keep the momentum and build the **next chapter of the MX Bible**.  
 Following the chapter you just added on *The Origin and Purpose of MX Patterns*, the natural progression is to explain **how patterns interact, combine, and scale**. This is where MX really starts to feel like a discipline rather than a collection of documents.
 
 Below is a fully polished, publication‑ready chapter you can drop straight into the MX Bible.

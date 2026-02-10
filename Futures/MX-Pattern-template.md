@@ -1,4 +1,14 @@
-Here’s a clean, reusable **MX Pattern Intent Template** you can drop into the MX Bible, your publishing system, or any agent‑authored document. It’s intentionally minimal, structured, and machine‑readable — the kind of thing both humans and agents can work with confidently.
+---
+title: "MX Pattern Intent Template"
+description: "Reusable template for authoring MX pattern intents with structured, machine-readable fields"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Here's a clean, reusable **MX Pattern Intent Template** you can drop into the MX Bible, your publishing system, or any agent‑authored document. It's intentionally minimal, structured, and machine‑readable — the kind of thing both humans and agents can work with confidently.
 
 ---
 

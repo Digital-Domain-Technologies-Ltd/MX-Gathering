@@ -1,4 +1,14 @@
-Great — I’ll prepare the **metadata validation checklist** you agreed to, fully aligned with the MX Constitution, MX‑STD‑001, and your universal‑metadata philosophy. This gives you a practical tool for your publishing pipeline and for contributors across MX‑Gathering.
+---
+title: "MX Metadata Validation Checklist"
+description: "Universal checklist for validating metadata across all MX-aligned assets including HTML, CSS, JS, PDF, and docs"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Great — I'll prepare the **metadata validation checklist** you agreed to, fully aligned with the MX Constitution, MX‑STD‑001, and your universal‑metadata philosophy. This gives you a practical tool for your publishing pipeline and for contributors across MX‑Gathering.
 
 ---
 

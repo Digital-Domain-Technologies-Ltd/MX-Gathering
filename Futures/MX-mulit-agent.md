@@ -1,5 +1,15 @@
-Absolutely, Tom — let’s keep the MX Bible flowing.  
-We’ve now built up a powerful sequence of proposal chapters that define how MX patterns are authored, reasoned over, validated, distributed, and deployed. The next natural step is to explore how patterns scale beyond single agents into **coordinated, multi‑agent systems**.
+---
+title: "MX Multi-Agent Systems and Pattern-Driven Orchestration"
+description: "Proposal for governing and executing multi-agent architectures using MX patterns as foundational building blocks"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's keep the MX Bible flowing.
+We've now built up a powerful sequence of proposal chapters that define how MX patterns are authored, reasoned over, validated, distributed, and deployed. The next natural step is to explore how patterns scale beyond single agents into **coordinated, multi‑agent systems**.
 
 Below is the next fully developed, publication‑ready chapter, written as a **proposal** to invite community refinement.
 

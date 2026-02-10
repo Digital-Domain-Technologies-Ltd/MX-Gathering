@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s keep the MX Bible flowing.  
+---
+title: "MX Pattern Risk Models and Safety Taxonomies"
+description: "Proposal for a structured, machine-readable framework to declare, classify, and mitigate risks within patterns"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's keep the MX Bible flowing.
 Here is the next chapter, written as a **proposal**, continuing the tone, depth, and philosophical clarity of the previous sections.
 
 This one explores something MX will inevitably need as patterns scale and agents become more capable: a shared way to describe, classify, and reason about **risk**.

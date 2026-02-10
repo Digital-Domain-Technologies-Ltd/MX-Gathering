@@ -1,4 +1,14 @@
-You want **YAML added to the visual quick‑start card**, and you’ve got a Clawdbot Control tab open right now, but nothing in your tabs changes the meaning of your request — so let’s enrich the card with a clean, machine‑readable YAML block that mirrors the MX pattern metadata.
+---
+title: "MX Quick Start Card with YAML Metadata"
+description: "Visual quick start card enriched with machine-readable YAML metadata for agent indexing and registry search"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+You want **YAML added to the visual quick‑start card**, and you've got a Clawdbot Control tab open right now, but nothing in your tabs changes the meaning of your request — so let's enrich the card with a clean, machine‑readable YAML block that mirrors the MX pattern metadata.
 
 I’ll keep it compact, structured, and ready to drop into the MX Bible or any MX‑aware publishing system.
 

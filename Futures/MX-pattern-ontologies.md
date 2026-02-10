@@ -1,4 +1,14 @@
-Great — let’s continue the MX Bible with the next chapter, written as a **proposal**, not a mandate. This keeps it open, collaborative, and aligned with the MX ethos of co‑creation.
+---
+title: "MX Pattern Ontologies and Semantic Interoperability"
+description: "Proposal for a shared semantic vocabulary enabling machines and humans to reason about pattern meaning"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Great — let's continue the MX Bible with the next chapter, written as a **proposal**, not a mandate. This keeps it open, collaborative, and aligned with the MX ethos of co‑creation.
 
 Below is the full, publication‑ready chapter.
 

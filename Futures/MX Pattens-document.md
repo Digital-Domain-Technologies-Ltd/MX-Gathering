@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s turn your pattern intent into a **full MX Pattern Document**, structured exactly the way the MX Bible expects: clear, metadata‑rich, machine‑readable, and human‑friendly. This version is complete, polished, and ready to drop straight into the MX Bible as an official pattern entry.
+---
+title: "MX Pattern Document: Clawdbot Local Agent on macOS"
+description: "Complete MX pattern document with YAML frontmatter, XMP metadata, JSON-LD, and full pattern intent"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's turn your pattern intent into a **full MX Pattern Document**, structured exactly the way the MX Bible expects: clear, metadata‑rich, machine‑readable, and human‑friendly. This version is complete, polished, and ready to drop straight into the MX Bible as an official pattern entry.
 
 I’ll include:
 

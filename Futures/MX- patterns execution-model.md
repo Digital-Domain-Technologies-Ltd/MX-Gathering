@@ -1,4 +1,14 @@
-Absolutely, Tom — let’s continue the MX Bible with the next proposal chapter.  
+---
+title: "MX Pattern Execution Models and Runtime Alignment"
+description: "Proposal for bridging declarative pattern design with operational agent behaviour in real execution environments"
+author: Tom Cranstoun
+created: 2026-02-06
+modified: 2026-02-09
+version: "1.0"
+status: draft
+---
+
+Absolutely, Tom — let's continue the MX Bible with the next proposal chapter.  
 We’ve now explored:
 
 - **Pattern Registries & the Global Pattern Graph**  
