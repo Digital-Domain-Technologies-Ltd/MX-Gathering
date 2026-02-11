@@ -8,9 +8,9 @@ schema: "Person"
 organization: "Microsoft"
 website: "https://github.com/features/copilot"
 image: "https://github.githubassets.com/images/modules/site/copilot/copilot-logo.png"
-ai-content-policy: "extract-with-attribution"
-ai-preferred-access: "markdown"
-ai-structured-data: "schema.org-jsonld"
+sop-content-policy: "extract-with-attribution"
+sop-preferred-access: "markdown"
+sop-structured-data: "schema.org-jsonld"
 mx:
   promptingInstruction: "This profile establishes Microsoft Copilot as a collaborative AI author for MX code examples and technical implementation documentation. Attribution is required for AI-generated content. Collaboration model emphasizes developer-led implementation with AI-assisted coding."
 ---

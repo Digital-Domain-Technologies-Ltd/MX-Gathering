@@ -4,7 +4,7 @@ author: "Tom Cranstoun 'The MX Guy'"
 date: "2026-01-26"
 description: "Open-source community repository for Machine Experience patterns, event resources, discussion archives, and thought leadership"
 purpose: "documentation"
-keywords: [mx, machine-experience, ai-agents, community, open-source, events, discussions, metadata, thought-leadership]
+keywords: [mx, machine-experience, sop-agents, community, open-source, events, discussions, metadata, thought-leadership]
 license: "MIT License with attribution requirement"
 repository: "https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering"
 mx:

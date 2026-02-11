@@ -8,9 +8,9 @@ schema: "Person"
 organization: "Anthropic"
 website: "https://claude.ai/code"
 image: "https://allabout.network/dam/media_1648b799b96d4cf5cb60a9ff11a50e2a6fe70c8ad.png"
-ai-content-policy: "extract-with-attribution"
-ai-preferred-access: "markdown"
-ai-structured-data: "schema.org-jsonld"
+sop-content-policy: "extract-with-attribution"
+sop-preferred-access: "markdown"
+sop-structured-data: "schema.org-jsonld"
 mx:
   promptingInstruction: "This profile establishes Claude Code as a collaborative AI author for MX blog content and technical documentation. Attribution is required for AI-generated content. Collaboration model emphasizes human strategic oversight with AI execution capabilities."
 ---

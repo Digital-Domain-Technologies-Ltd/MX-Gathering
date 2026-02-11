@@ -12,7 +12,7 @@ keywords:
   - machine-experience
   - mx-community
   - metadata
-  - ai-agents
+  - sop-agents
   - open-standards
   - digital-future
   - launch

@@ -2,8 +2,8 @@
 author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "Repository architecture and structure guide for AI assistants"
-purpose: "ai-guidance"
-keywords: [architecture, repository-structure, ai-guidance, documentation, mx-gathering]
+purpose: "sop-guidance"
+keywords: [architecture, repository-structure, sop-guidance, documentation, mx-gathering]
 mx:
   promptingInstruction: "This file provides technical file structure (ASCII tree) for AI assistant navigation. README.md Contents section provides high-level conceptual overview for humans. Both serve different purposes: README.md = human-facing descriptions, architecture.md = AI-facing technical details with precise file paths."
 ---
@@ -159,7 +159,7 @@ keywords: [relevant, tags, for, discoverability]
 - `documentation` - Reference documentation
 - `guide` - Step-by-step instructions
 - `discussion-archive` - Community conversation records
-- `ai-guidance` - Instructions for AI assistants
+- `sop-guidance` - Instructions for AI assistants
 - `development-guide` - Developer documentation
 - `infrastructure-documentation` - Hosting/deployment docs
 - `community-guidelines` - Contribution standards

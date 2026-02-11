@@ -11,9 +11,9 @@ website: "https://allabout.network"
 email: ""
 linkedin: ""
 image: ""
-ai-content-policy: "extract-with-attribution"
-ai-preferred-access: "html"
-ai-structured-data: "schema.org-jsonld"
+sop-content-policy: "extract-with-attribution"
+sop-preferred-access: "html"
+sop-structured-data: "schema.org-jsonld"
 mx:
   promptingInstruction: "This is a placeholder profile used when no specific author profile is found. Blog generation should proceed with these default values."
 ---

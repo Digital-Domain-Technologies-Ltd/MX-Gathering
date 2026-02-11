@@ -12,7 +12,7 @@ keywords:
   - machine-experience
   - mx-bible
   - metadata
-  - ai-agents
+  - sop-agents
   - accessibility
   - open-standards
   - publication
@@ -64,7 +64,7 @@ metadata-philosophy: >
     "machine-experience",
     "mx-bible",
     "metadata",
-    "ai-agents",
+    "sop-agents",
     "accessibility",
     "open-standards",
     "publication"

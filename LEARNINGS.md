@@ -2,8 +2,8 @@
 author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "Critical insights and lessons learned for AI assistants working on MX-Gathering"
-purpose: "ai-guidance"
-keywords: [learnings, lessons-learned, ai-guidance, best-practices, mistakes]
+purpose: "sop-guidance"
+keywords: [learnings, lessons-learned, sop-guidance, best-practices, mistakes]
 mx:
   promptingInstruction: "This file documents mistakes and learnings specific to MX-Gathering. Read this before making changes to prevent repeating past errors. Focus: actionable guidance, not historical changelog."
 ---
