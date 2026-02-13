@@ -1,6 +1,6 @@
 ---
 title: "MX Data Lake Specification"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": TechArticle
   headline: "MX Data Lake Specification"

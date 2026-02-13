@@ -1,11 +1,11 @@
 ---
 author: "Microsoft Copilot"
-date: "2026-01-25"
+created: "2026-01-25"
 description: "AI author profile for Microsoft Copilot, collaborative coding assistant and technical content creator for MX implementation examples"
-keywords: [Microsoft Copilot, AI collaboration, code generation, Machine Experience, MX, technical writing, AI assistant, development tools]
+tags: [Microsoft Copilot, AI collaboration, code generation, Machine Experience, MX, technical writing, AI assistant, development tools]
 language: "en-GB"
 schema: "Person"
-organization: "Microsoft"
+organisation: "Microsoft"
 website: "https://github.com/features/copilot"
 image: "https://github.githubassets.com/images/modules/site/copilot/copilot-logo.png"
 sop-content-policy: "extract-with-attribution"

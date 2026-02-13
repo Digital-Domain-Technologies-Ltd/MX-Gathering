@@ -1,6 +1,6 @@
 ---
 title: "MX Structured Data Specification"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": TechArticle
   headline: "MX Structured Data Specification"
@@ -1429,7 +1429,7 @@ For remaining content, migrate opportunistically:
 ```yaml
 ---
 title: ""
-date: {{ .Date }}
+created: {{ .Date }}
 ld:
   "@type": BlogPosting
   genre: []
@@ -1648,7 +1648,7 @@ ld:
 ```yaml
 ---
 title: "Why Restaurants Need Structured Data"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": BlogPosting
   headline: "Why Restaurants Need Structured Data"

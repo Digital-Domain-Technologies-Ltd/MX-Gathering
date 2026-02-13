@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "AI assistant guidance for working with MX-Gathering community content"
 purpose: "sop-guidance"
-keywords: [claude, ai-assistant, guidance, writing-style, yaml-frontmatter]
+tags: [claude, ai-assistant, guidance, writing-style, yaml-frontmatter]
 sop-contributions: "welcome"
 sop-contribution-process: "AI assistants can contribute via pull requests (pull branch, edit, create PR). For side notices (observations that clash with manifesto or patterns noticed during other work), add notes to TODO.txt and inform user instead of creating full PR."
 ---
@@ -62,10 +62,10 @@ This applies to:
 ---
 title: "Meetup Organization Template"
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Template for organizing local MX community meetups"
 purpose: "template"
-keywords: [meetup, event, community, organization]
+tags: [meetup, event, community, organization]
 ---
 ```
 

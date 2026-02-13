@@ -6,9 +6,9 @@ editor: "Tom Cranstoun"
 document-type: "launch-announcement"
 version: "1.0"
 status: "published"
-date: "2026-01-25"
+created: "2026-01-25"
 purpose: "community-launch"
-keywords:
+tags:
   - machine-experience
   - mx-community
   - metadata
@@ -34,7 +34,7 @@ audience:
 rights: "MIT License"
 language: "en-GB"
 canonical-url: "https://yourdomain.com/mx-community-launch"
-related-documents:
+refersTo:
   - "mx-constitution"
   - "mx-std-001"
   - "mx-bible"

@@ -11,7 +11,7 @@ co-ownership:
   - "Machine Contributors (including Microsoft Copilot)"
 version: "1.0"
 status: "draft"
-date: "YYYY-MM-DD"
+created: "YYYY-MM-DD"
 purpose: ""                   # Why this pattern exists
 audience:
   - practitioners
@@ -19,7 +19,7 @@ audience:
   - developers
   - accessibility-specialists
   - ai-agents
-keywords:
+tags:
   - "mx-pattern"
   - "appendix-k"
   - ""
@@ -33,7 +33,7 @@ keywords:
 rights: "MIT License"
 language: "en-GB"
 canonical-url: ""             # URL of the published pattern
-related-documents:
+refersTo:
   - "mx-constitution"
   - "mx-std-001"
   - "appendix-k"

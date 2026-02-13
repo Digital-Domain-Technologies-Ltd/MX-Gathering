@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Git hooks for MX-Gathering repository to enforce AI-Friendly HTML patterns"
 purpose: "documentation"
-keywords: [git-hooks, validation, html, mx-patterns, quality-control]
+tags: [git-hooks, validation, html, mx-patterns, quality-control]
 ---
 
 # MX-Gathering Git Hooks

@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Hosting and DNS configuration guide for MX-Gathering domains"
 purpose: "infrastructure-documentation"
-keywords: ['hosting', 'machine-experience', 'domains', 'cloudflare', 'dns', 'mx-gathering']
+tags: ['hosting', 'machine-experience', 'domains', 'cloudflare', 'dns', 'mx-gathering']
 ---
 
 # MX-Gathering Hosting and DNS Setup Guide

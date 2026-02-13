@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Quick start guide for MX-Gathering developers"
 purpose: "development-guide"
-keywords: ['machine-experience', 'development', 'infrastructure', 'deployment', 'mx-gathering']
+tags: ['machine-experience', 'development', 'infrastructure', 'deployment', 'mx-gathering']
 ---
 
 # Developer Quick Start Guide

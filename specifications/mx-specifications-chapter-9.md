@@ -1,6 +1,6 @@
 ---
 title: "MX Specifications: Chapter 9"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": Chapter
   headline: "Composition"

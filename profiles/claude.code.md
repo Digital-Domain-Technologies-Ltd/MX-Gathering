@@ -1,11 +1,11 @@
 ---
 author: "Claude Code (Anthropic)"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "AI author profile for Claude Code, collaborative technical writer for MX content and implementation documentation"
-keywords: [Claude Code, AI collaboration, technical writing, Machine Experience, MX, blog authorship, AI assistant, documentation]
+tags: [Claude Code, AI collaboration, technical writing, Machine Experience, MX, blog authorship, AI assistant, documentation]
 language: "en-GB"
 schema: "Person"
-organization: "Anthropic"
+organisation: "Anthropic"
 website: "https://claude.ai/code"
 image: "https://allabout.network/dam/media_1648b799b96d4cf5cb60a9ff11a50e2a6fe70c8ad.png"
 sop-content-policy: "extract-with-attribution"

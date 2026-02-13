@@ -3,7 +3,7 @@ author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "Repository architecture and structure guide for AI assistants"
 purpose: "sop-guidance"
-keywords: [architecture, repository-structure, sop-guidance, documentation, mx-gathering]
+tags: [architecture, repository-structure, sop-guidance, documentation, mx-gathering]
 mx:
   promptingInstruction: "This file provides technical file structure (ASCII tree) for AI assistant navigation. README.md Contents section provides high-level conceptual overview for humans. Both serve different purposes: README.md = human-facing descriptions, architecture.md = AI-facing technical details with precise file paths."
 ---
@@ -149,7 +149,7 @@ author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "Brief summary of document purpose"
 purpose: "template|documentation|guide|discussion-archive"
-keywords: [relevant, tags, for, discoverability]
+tags: [relevant, tags, for, discoverability]
 ---
 ```
 
@@ -185,7 +185,7 @@ author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "Template for [event type]"
 purpose: "template"
-keywords: [event-type, community, organization]
+tags: [event-type, community, organization]
 ---
 
 # [Event Type] Template
@@ -223,7 +223,7 @@ author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "[Discussion topic] archive"
 purpose: "discussion-archive"
-keywords: [topic, patterns, analysis]
+tags: [topic, patterns, analysis]
 ---
 
 # [Discussion Topic]
@@ -262,7 +262,7 @@ author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "[Guideline aspect]"
 purpose: "community-guidelines"
-keywords: [contributing, community, standards]
+tags: [contributing, community, standards]
 ---
 
 # [Guideline Title]
@@ -289,7 +289,7 @@ author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "[Resource type] for MX implementation"
 purpose: "guide"
-keywords: [members, support, implementation]
+tags: [members, support, implementation]
 ---
 
 # [Resource Title]
@@ -316,7 +316,7 @@ author: "Tom Cranstoun"
 date: "2026-01-24"
 description: "[Infrastructure aspect]"
 purpose: "development-guide"
-keywords: [development, infrastructure, deployment]
+tags: [development, infrastructure, deployment]
 ---
 
 # [Infrastructure Topic]
@@ -473,8 +473,8 @@ The `llms.txt` file uses YAML frontmatter despite the `.txt` extension:
 ---
 title: "MX-Gathering: Community Resources and Thought Leadership"
 author: "Tom Cranstoun"
-creation-date: "24/Jan/2026"
-last-updated: "24/Jan/2026"
+created: "24/Jan/2026"
+modified: "24/Jan/2026"
 description: "Brief summary"
 longdescription: "Extended context for AI agents"
 repository: "https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering"
@@ -496,8 +496,8 @@ The `TODO.txt` file includes YAML frontmatter for task tracking metadata:
 ---
 title: "MX-Gathering: Next Steps and Deployment Tasks"
 author: "Tom Cranstoun"
-creation-date: "24/Jan/2026"
-last-updated: "24/Jan/2026"
+created: "24/Jan/2026"
+modified: "24/Jan/2026"
 purpose: "Deployment checklist and configuration reminders"
 priority: "high"
 status: "pending-cloudflare-configuration"

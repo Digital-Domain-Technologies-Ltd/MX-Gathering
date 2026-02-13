@@ -1,6 +1,6 @@
 ---
 title: "MX Specifications: Chapter 3"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": Chapter
   headline: "Structured Data"
@@ -55,7 +55,7 @@ Now consider the same content with structured data:
 ```yaml
 ---
 title: "Widget Pro Review"
-date: 2026-01-15
+created: 2026-01-15
 ld:
   "@type": Review
   author:
@@ -91,7 +91,7 @@ MX structured data lives in YAML frontmatter — the section at the top of a doc
 ```yaml
 ---
 title: "Page Title"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": Article
   headline: "Page Title"
@@ -185,7 +185,7 @@ Most web content is articles of some kind. Here's a complete example:
 ```yaml
 ---
 title: "Understanding Authentication Tokens"
-date: 2026-01-20
+created: 2026-01-20
 ld:
   "@type": TechArticle
   headline: "Understanding Authentication Tokens"
@@ -811,7 +811,7 @@ Here's a complete documentation page using everything covered in this chapter:
 ```yaml
 ---
 title: "Getting Started with Authentication"
-date: 2026-01-20
+created: 2026-01-20
 ld:
   "@type": TechArticle
   headline: "Getting Started with Authentication"

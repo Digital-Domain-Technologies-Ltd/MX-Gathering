@@ -1,11 +1,11 @@
 ---
 author: "Unknown Author"
-date: "2026-01-23"
+created: "2026-01-23"
 description: "Default profile for authors without a specific profile file"
-keywords: [author, profile, default]
+tags: [author, profile, default]
 language: "en-GB"
 schema: "Person"
-organization: "Unknown Organization"
+organisation: "Unknown Organization"
 site_name: "AllAbout.Network"
 website: "https://allabout.network"
 email: ""

@@ -3,12 +3,12 @@ title: ""
 subtitle: ""
 author: ""
 editor: ""
-date: "YYYY-MM-DD"
+created: "YYYY-MM-DD"
 status: "draft"
 version: "1.0"
 document-type: "blog-post"
 purpose: ""
-keywords:
+tags:
   - ""
   - ""
   principles:
@@ -28,7 +28,7 @@ rights: "MIT License"
 language: "en-GB"
 reading-time: ""
 canonical-url: ""
-related-documents:
+refersTo:
   - ""
   - ""
 co-ownership:

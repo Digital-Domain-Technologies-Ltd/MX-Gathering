@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Member support resources and getting started guide"
 purpose: "documentation"
-keywords: [members, support, resources, getting-started, implementation, troubleshooting]
+tags: [members, support, resources, getting-started, implementation, troubleshooting]
 ---
 
 # Member Resources

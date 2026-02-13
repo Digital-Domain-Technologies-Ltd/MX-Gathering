@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Event organization resources and template directory"
 purpose: "documentation"
-keywords: [events, community, organization, templates, meetup, workshop, conference, webinar]
+tags: [events, community, organization, templates, meetup, workshop, conference, webinar]
 ---
 
 # Event Resources

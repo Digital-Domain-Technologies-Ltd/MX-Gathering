@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Community discussion archives and contribution guidelines"
 purpose: "documentation"
-keywords: [discussions, community, patterns, analysis, case-studies, feedback]
+tags: [discussions, community, patterns, analysis, case-studies, feedback]
 ---
 
 # Discussion Archives

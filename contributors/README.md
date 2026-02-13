@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Contributor resources and community guidelines overview"
 purpose: "documentation"
-keywords: [contributing, community, guidelines, code-of-conduct, style-guide]
+tags: [contributing, community, guidelines, code-of-conduct, style-guide]
 ---
 
 # Contributor Resources

@@ -1,6 +1,6 @@
 ---
 title: "MX Specifications: Appendix B"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": Chapter
   headline: "Glossary"

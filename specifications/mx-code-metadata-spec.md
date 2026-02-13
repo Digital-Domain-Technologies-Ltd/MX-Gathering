@@ -1,6 +1,6 @@
 ---
 title: "MX Code Metadata Specification"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": TechArticle
   headline: "MX Code Metadata Specification"

@@ -10,7 +10,7 @@ co-ownership:
   - "Machine Contributors (including Microsoft Copilot)"
 version: "1.0"
 status: "draft"
-date: "YYYY-MM-DD"
+created: "YYYY-MM-DD"
 purpose: ""
 audience:
   - practitioners
@@ -18,7 +18,7 @@ audience:
   - developers
   - accessibility-specialists
   - ai-agents
-keywords:
+tags:
   - ""
   - ""
   principles:
@@ -31,7 +31,7 @@ keywords:
 rights: "MIT License"
 language: "en-GB"
 canonical-url: ""
-related-documents:
+refersTo:
   - ""
   - ""
 metadata-philosophy: >

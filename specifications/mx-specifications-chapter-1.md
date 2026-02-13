@@ -1,6 +1,6 @@
 ---
 title: "MX Specifications: Opening Chapter"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": Chapter
   headline: "The Language Machines Understand"

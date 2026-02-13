@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Community code of conduct and behavioral expectations"
 purpose: "community-guidelines"
-keywords: ['machine-experience', 'guidelines', 'community', 'contributing', 'mx-gathering']
+tags: ['machine-experience', 'guidelines', 'community', 'contributing', 'mx-gathering']
 ---
 
 # Code of Conduct

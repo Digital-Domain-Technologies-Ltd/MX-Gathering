@@ -1,11 +1,11 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-23"
+created: "2026-01-23"
 description: "Professional profile highlighting content systems architecture since 1977, Adobe AEM expertise, and Machine Experience (MX) strategic advisory"
-keywords: [Adobe AEM, Edge Delivery Services, AI agents, Machine Experience, MX, content architecture, accessibility, agent-ready infrastructure, strategic advisory]
+tags: [Adobe AEM, Edge Delivery Services, AI agents, Machine Experience, MX, content architecture, accessibility, agent-ready infrastructure, strategic advisory]
 language: "en-GB"
 schema: "Person"
-organization: "Digital Domain Technologies"
+organisation: "Digital Domain Technologies"
 site_name: "AllAbout.Network"
 website: "https://allabout.network"
 email: "tom.cranstoun@gmail.com"

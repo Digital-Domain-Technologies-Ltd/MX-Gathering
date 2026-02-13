@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Step-by-step checklist for implementing MX patterns"
 purpose: "member-support"
-keywords: ['machine-experience', 'members', 'resources', 'support', 'mx-gathering']
+tags: ['machine-experience', 'members', 'resources', 'support', 'mx-gathering']
 ---
 
 # Implementation Checklist

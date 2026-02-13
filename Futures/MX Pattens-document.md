@@ -37,7 +37,7 @@ author:
     role: "Author, MX Bible"
   - name: "Microsoft Copilot"
     role: "Machine co-author"
-date: "2026-01-25"
+created: "2026-01-25"
 version: "1.0.0"
 mx:
   discipline: "Machine Experience (MX)"

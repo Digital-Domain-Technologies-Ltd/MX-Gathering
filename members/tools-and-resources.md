@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Curated tools and resources for MX implementation"
 purpose: "member-support"
-keywords: ['machine-experience', 'members', 'resources', 'support', 'mx-gathering']
+tags: ['machine-experience', 'members', 'resources', 'support', 'mx-gathering']
 ---
 
 # Tools and Resources

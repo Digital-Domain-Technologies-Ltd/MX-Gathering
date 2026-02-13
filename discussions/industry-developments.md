@@ -1,9 +1,9 @@
 ---
 author: "Tom Cranstoun"
-date: "2026-01-24"
+created: "2026-01-24"
 description: "Analysis and commentary on AI agent industry developments"
 purpose: "discussion-archive"
-keywords: ['machine-experience', 'analysis', 'discussions', 'patterns', 'mx-gathering']
+tags: ['machine-experience', 'analysis', 'discussions', 'patterns', 'mx-gathering']
 ---
 
 # Industry Developments Archive

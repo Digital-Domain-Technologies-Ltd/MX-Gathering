@@ -1,6 +1,6 @@
 ---
 title: "MX Specifications: Chapter 10"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": Chapter
   headline: "The Ecosystem"

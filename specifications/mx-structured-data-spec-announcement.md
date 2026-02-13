@@ -1,6 +1,6 @@
 ---
 title: "Introducing the MX Structured Data Specification"
-date: 2026-01-28
+created: 2026-01-28
 ld:
   "@type": BlogPosting
   headline: "Introducing the MX Structured Data Specification"

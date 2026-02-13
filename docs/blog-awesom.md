@@ -3,12 +3,12 @@ title: "Announcing The MX Bible — Publishing April 2026"
 subtitle: "A new discipline begins: Machine Experience as a first‑class practice"
 author: "Tom Cranstoun"
 co-author: "Microsoft Copilot"
-date: "2026-01-25"
+created: "2026-01-25"
 status: "published"
 version: "1.0"
 document-type: "blog-post"
 purpose: "public-announcement"
-keywords:
+tags:
   - machine-experience
   - mx-bible
   - metadata
@@ -35,7 +35,7 @@ rights: "MIT License"
 language: "en-GB"
 reading-time: "7 minutes"
 canonical-url: "https://yourdomain.com/blog/mx-bible-announcement"
-related-documents:
+refersTo:
   - "mx-constitution"
   - "machine-experience-manifesto"
   - "mx-std-001"
