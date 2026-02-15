@@ -15,7 +15,7 @@ sop-content-policy: "extract-with-attribution"
 sop-preferred-access: "html"
 sop-structured-data: "schema.org-jsonld"
 mx:
-  promptingInstruction: "This is a placeholder profile used when no specific author profile is found. Blog generation should proceed with these default values."
+  runbook: "This is a placeholder profile used when no specific author profile is found. Blog generation should proceed with these default values."
 ---
 
 # Unknown Author Profile

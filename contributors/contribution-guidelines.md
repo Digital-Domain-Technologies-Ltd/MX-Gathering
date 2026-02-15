@@ -10,7 +10,7 @@ description: "Guidelines for contributing to MX-Gathering"
 purpose: "community-guidelines"
 tags: [machine-experience, guidelines, community, contributing, mx-gathering]
 mx:
-  promptingInstruction: "This document provides guidelines for contributing to the Machine Experience (MX) community and MX-Gathering repository"
+  runbook: "This document provides guidelines for contributing to the Machine Experience (MX) community and MX-Gathering repository"
 ---
 
 # Contribution Guidelines

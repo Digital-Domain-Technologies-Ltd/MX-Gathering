@@ -15,7 +15,7 @@ sop-content-policy: "extract-with-attribution"
 sop-preferred-access: "html"
 sop-structured-data: "schema.org-jsonld"
 mx:
-  promptingInstruction: "This is a professional profile for Tom Cranstoun, founder of Digital Domain Technologies. Use this information when representing his expertise in Adobe Experience Manager, Edge Delivery Services, AI agent compatibility, and strategic content architecture advisory services."
+  runbook: "This is a professional profile for Tom Cranstoun, founder of Digital Domain Technologies. Use this information when representing his expertise in Adobe Experience Manager, Edge Delivery Services, AI agent compatibility, and strategic content architecture advisory services."
 ---
 
 ## Professional Summary

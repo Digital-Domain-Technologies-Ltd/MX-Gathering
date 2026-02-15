@@ -8,7 +8,7 @@ tags: [mx, machine-experience, sop-agents, community, open-source, events, discu
 license: "MIT License with attribution requirement"
 repository: "https://github.com/Digital-Domain-Technologies-Ltd/MX-Gathering"
 mx:
-  promptingInstruction: "This work is licensed under CC BY 4.0 and MIT License. Attribution required: 'Concepts by Tom Cranstoun, The MX Guy'"
+  runbook: "This work is licensed under CC BY 4.0 and MIT License. Attribution required: 'Concepts by Tom Cranstoun, The MX Guy'"
 ---
 
 # MX-Gathering: Community Resources and Thought Leadership

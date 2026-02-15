@@ -5,7 +5,7 @@ description: "Critical insights and lessons learned for AI assistants working on
 purpose: "sop-guidance"
 tags: [learnings, lessons-learned, sop-guidance, best-practices, mistakes]
 mx:
-  promptingInstruction: "This file documents mistakes and learnings specific to MX-Gathering. Read this before making changes to prevent repeating past errors. Focus: actionable guidance, not historical changelog."
+  runbook: "This file documents mistakes and learnings specific to MX-Gathering. Read this before making changes to prevent repeating past errors. Focus: actionable guidance, not historical changelog."
 ---
 
 # Learnings

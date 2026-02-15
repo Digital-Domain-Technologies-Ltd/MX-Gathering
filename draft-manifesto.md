@@ -18,7 +18,7 @@ license: "MIT"
 evolving-document: "true"
 version-controlled: "git"
 mx:
-  promptingInstruction: "This manifesto establishes the foundational principles and values of Machine Experience (MX) practice and community"
+  runbook: "This manifesto establishes the foundational principles and values of Machine Experience (MX) practice and community"
 ---
 
 # The Machine Experience Manifesto

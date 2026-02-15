@@ -12,7 +12,7 @@ sop-content-policy: "extract-with-attribution"
 sop-preferred-access: "markdown"
 sop-structured-data: "schema.org-jsonld"
 mx:
-  promptingInstruction: "This profile establishes Claude Code as a collaborative AI author for MX blog content and technical documentation. Attribution is required for AI-generated content. Collaboration model emphasizes human strategic oversight with AI execution capabilities."
+  runbook: "This profile establishes Claude Code as a collaborative AI author for MX blog content and technical documentation. Attribution is required for AI-generated content. Collaboration model emphasizes human strategic oversight with AI execution capabilities."
 ---
 
 # Claude Code Author Profile

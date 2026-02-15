@@ -12,7 +12,7 @@ sop-content-policy: "extract-with-attribution"
 sop-preferred-access: "markdown"
 sop-structured-data: "schema.org-jsonld"
 mx:
-  promptingInstruction: "This profile establishes Microsoft Copilot as a collaborative AI author for MX code examples and technical implementation documentation. Attribution is required for AI-generated content. Collaboration model emphasizes developer-led implementation with AI-assisted coding."
+  runbook: "This profile establishes Microsoft Copilot as a collaborative AI author for MX code examples and technical implementation documentation. Attribution is required for AI-generated content. Collaboration model emphasizes developer-led implementation with AI-assisted coding."
 ---
 
 # Microsoft Copilot Author Profile
