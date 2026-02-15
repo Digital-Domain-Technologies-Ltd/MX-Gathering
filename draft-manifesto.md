@@ -396,6 +396,8 @@ Invitations for Tom Cranstoun to speak at your conferences, meetups, or corporat
 
 To discuss speaking opportunities, contact tom.cranstoun@gmail.com
 
+**Background:** Tom has 52 years in computing (since 1973) and 47 years building content systems (since 1977, including co-authoring Superbase, BBC's global news distribution, and Adobe Experience Manager implementations for Twitter, Nissan-Renault, and Ford Europe).
+
 ### Current Sponsors
 
 *We are actively seeking sponsors to support the MX community's growth.*
